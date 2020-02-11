@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a70e209a-4f11-4125-8f94-492922f070bc" name="Default Changelist" comment="" />
+    <list default="true" id="a70e209a-4f11-4125-8f94-492922f070bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Controller/DefaultController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Controller/MagasinController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Controller/OffreController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Entity/Magasin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Entity/Offre.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Form/MagasinType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Form/OffreType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/MagasinBundle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/config/routing.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/config/services.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/form_magasin.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Offre/form_offre.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Offre/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/MagasinBundle/Controller/DefaultControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/index.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,18 +82,21 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1Xbk9REb6lpkHODfkpsWSAIotuL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/UserBundle/Entity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MagasinBundle/Resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -81,11 +105,11 @@
       <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\src\ProduitBundle\Resources\views" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\pi_dev_2\src\MagasinBundle\Resources\views" />
+      <recent name="D:\wamp64\www\pi_dev_2\src\MagasinBundle\Controller" />
+      <recent name="D:\wamp64\www\pi_dev_2\src\MagasinBundle\Resources\views\Default" />
+      <recent name="D:\wamp64\www\pi_dev_2\src\MagasinBundle\Entity" />
       <recent name="D:\wamp64\www\pi_dev_2\src\UserBundle\Entity" />
-      <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\app\Resources\views\template" />
-      <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\src\ProduitBundle\Resources\views\Default" />
-      <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\src\ProduitBundle\Controller" />
-      <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\app\Resources\views" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -93,10 +117,16 @@
       <command value="$ composer require friendsofsymfony/user-bundle &quot;~2.0&quot; " />
       <command value="c dump-autoload" />
       <command value="composer require friendsofsymfony/user-bundle &quot;~2.0&quot;" />
-      <command value="s generate:bundle" />
       <command value="s doctrine:database:create" />
       <command value="s doctrine:schema:create" />
+      <command value="s generate:bundle" />
       <command value="s doctrine:schema:update --force" />
+      <command value="s doctrine:generate:form" />
+      <command value="s doctrine:generate:form Magasin:Magasin" />
+      <command value="s doctrine:generate:form @Magasin:Magasin" />
+      <command value="s doctrine:generate:form MagasinBundle:Magasin" />
+      <command value="s doctrine:generate:form @Magasin:Offre" />
+      <command value="s doctrine:generate:form MagasinBundle:Offre" />
     </option>
   </component>
   <component name="ServiceViewManager">
@@ -125,18 +155,25 @@
       <workItem from="1581354011800" duration="531000" />
       <workItem from="1581354560019" duration="394000" />
       <workItem from="1581354965081" duration="5902000" />
-      <workItem from="1581436981196" duration="4932000" />
+      <workItem from="1581436981196" duration="14144000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="753" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1581446028962">
+    <state x="753" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1581460373785">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="753" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581446028962" />
+    <state x="753" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581460373785" />
+    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581460433602">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581460433602" />
     <state x="684" y="399" key="ComposerCompositePathDialog" timestamp="1581355684522">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -145,30 +182,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1277" y="282" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581355667247" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1581446031912">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1581460256155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581446031912" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1581446031912">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581460256155" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1581460256154">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581446031912" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1581446031912">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581460256154" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1581460256154">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581446031912" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1581446031912">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581460256154" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1581460256155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581446031912" />
-    <state x="739" y="335" key="NewPhpClassDialog" timestamp="1581358684840">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581460256155" />
+    <state x="739" y="335" key="NewPhpClassDialog" timestamp="1581454063574">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="335" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581358684840" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1581355687616">
+    <state x="739" y="335" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581454063574" />
+    <state x="729" y="176" key="SettingsEditor" timestamp="1581452099015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581355687616" />
+    <state x="729" y="176" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581452099015" />
     <state x="802" y="423" key="SymfonyPathDialog" timestamp="1581355676343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -177,13 +214,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="661" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581354020845" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1581446031929">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1581460256172">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581446031929" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581358934801">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581460256172" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581460084985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581358934801" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581460084985" />
   </component>
 </project>

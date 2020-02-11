@@ -1,3 +1,7 @@
+magasin:
+    resource: "@MagasinBundle/Resources/config/routing.yml"
+    prefix:   /magasin
+
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 user:
