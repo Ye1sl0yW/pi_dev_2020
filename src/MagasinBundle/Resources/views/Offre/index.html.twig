@@ -1,0 +1,33 @@
+{% extends "/template/base.html.twig" %}
+
+{% block title %}
+Magasins Shoppy
+{% endblock title %}
+
+{% block body %}
+<h3>Bienvenue à la page des offres</h3>
+
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Taux</th>
+            <th>Durée</th>
+            <th>ID magasin </th>
+            <th>Actions</th>
+
+        </tr>
+        {% for elem in data  %}
+            <tr>
+
+                <td>{{ elem.id }}</td>
+                <td>{{elem.taux}}</td>
+                <td>{{ elem.duree}}</td>
+                <td>{{ elem.getIdMagasin().getId()}}</td>
+                <td><a href="{{path('offre_delete',{'id':elem.id})}}"><button>Supprimer</button><a/>
+                        <a href="{{path('offre_update',{'id':elem.id})}}"><button>Modifier</button><a/></td>
+            </tr>
+        {% endfor %}
+    </table>
+    <td><a href={{ path('offre_ajouter') }}><button>Ajouter une offre</button><a/></td>
+
+{% endblock body %}
