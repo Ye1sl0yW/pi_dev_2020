@@ -1,0 +1,23 @@
+{% if tab == NULL %}
+    <h3>Pas de Portfolios</h3>
+{% else %}
+    <table border="1">
+        <tr>
+            <td>ID</td>
+            <td>User ID</td>
+            <td>Actions</td>
+
+        </tr>
+        {% for i in tab  %}
+            <tr>
+                <td>{{ i.getId()}}</td>
+                <td>{{ i.getUserId()}}</td>
+                <td><a href="{{ path('ticket_afficher',{'id': i.getId()}) }}"><button>Gestion Tickets</button></a><a href="{{ path('portfolio_supprimer',{'id': i.getId()}) }}"><button>Supprimer</button></a><a href="{{ path('portfolio_modifier',{'id': i.getId()}) }}"><button>Modifier</button></a></td>
+
+
+            </tr>
+        {% endfor %}
+    </table>
+{% endif %}
+
+<a href="{{ path('portfolios_ajouter')}}"><button>Ajout portfolio</button></a>
