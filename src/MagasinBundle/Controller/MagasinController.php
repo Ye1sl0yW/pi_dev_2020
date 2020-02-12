@@ -19,7 +19,7 @@ class MagasinController extends Controller
     {
         $var=$this->getDoctrine()->getManager()->getRepository(Magasin::class)->findAll();
         //return $this->render('@Magasin/Magasin/index.html.twig',array('data'=>$var));
-        return $this->render('@Magasin/Magasin/index_test.html.twig',array('data'=>$var));
+        return $this->render('@Magasin/Magasin/index.html.twig',array('data'=>$var));
     }
 
 
