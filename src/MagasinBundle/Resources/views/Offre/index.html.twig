@@ -1,33 +1,36 @@
-{% extends "/template/base.html.twig" %}
+{% extends "/dashboard/pro/dashboard-list-base html.twig" %}
 
 {% block title %}
-Offres Shoppy
+    Offres Shoppy
 {% endblock title %}
 
-{% block body %}
-<h3>Bienvenue à la page des offres</h3>
+{% block list_title %}Liste des offres des magasins partenaires{% endblock list_title %}
 
-    <table border="1">
+{% block table %}
+    <thead>
         <tr>
             <th>ID</th>
             <th>Taux</th>
             <th>Durée</th>
             <th>ID magasin </th>
+            <th>Nom magasin </th>
             <th>Actions</th>
-
         </tr>
+    </thead>
         {% for elem in data  %}
             <tr>
-
                 <td>{{ elem.id }}</td>
                 <td>{{elem.taux}}</td>
                 <td>{{ elem.duree}}</td>
                 <td>{{ elem.getIdMagasin().getId()}}</td>
-                <td><a href="{{path('offre_delete',{'id':elem.id})}}"><button>Supprimer</button><a/>
-                        <a href="{{path('offre_update',{'id':elem.id})}}"><button>Modifier</button><a/></td>
+                <td>{{ elem.getIdMagasin().getNom()}}</td>
+                <td><a href="{{path('offre_delete',{'id':elem.id})}}"><i class="far fa-trash-alt text-danger"></i><a/>
+                        <a href="{{path('offre_update',{'id':elem.id})}}"><i class="far fa-edit text-info mr-1"></i><a/></td>
             </tr>
         {% endfor %}
-    </table>
-    <td><a href={{ path('offre_ajouter') }}><button>Ajouter une offre</button><a/></td>
 
-{% endblock body %}
+{% endblock table %}
+
+{% block buttons %}
+<a href={{ path('offre_ajouter') }}><img src="{{ asset('dashboard_style/assets/images/plus.png') }}"><a/>
+{% endblock buttons %}
