@@ -1,0 +1,24 @@
+{% if tab == NULL %}
+    <h3>Pas de Tickets</h3>
+{% else %}
+    <table border="1">
+        <tr>
+            <td>ID</td>
+            <td>Montant</td>
+            <td>Date d'expiration</td>
+            <td>Action</td>
+        </tr>
+        {% for i in tab  %}
+            <tr>
+                <td>{{ i.getId()}}</td>
+                <td>{{ i.getMontant()}}</td>
+                <td>{{ i.DateExp()|date('Y-m-d')}}</td>
+                <td><a href="{{ path('ticket_supprimer',{'id': i.getId()}) }}"><button>Supprimer</button></a><a href="{{ path('ticket_modifier',{'id': i.getId()}) }}"><button>Modifier</button></a></td>
+
+
+            </tr>
+        {% endfor %}
+    </table>
+{% endif %}
+<a href="{{ path('ticket_ajout')}}"><button>Ajout ticket</button></a>
+

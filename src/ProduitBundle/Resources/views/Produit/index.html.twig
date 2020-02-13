@@ -1,0 +1,44 @@
+ {% extends '/template/base.html.twig' %}
+ {% block title %}
+ Portail produits
+ {% endblock %}
+
+ {% block body %}
+
+  <h2>Liste des Produits</h2>
+  <table border="1">
+   <tr>
+    <th>id</th>
+    <th>quantite</th>
+    <th>nom</th>
+    <th>description</th>
+    <th>prix</th>
+    <th>marque</th>
+    <th>Categorie</th>
+    <th>Supprimer</th>
+    <th>modifier</th>
+
+   </tr>
+   {% for i in data  %}
+    <tr>
+
+     <td>{{ i.id }}</td>
+     <td>{{ i.quantite}}</td>
+     <td>{{ i.nom}}</td>
+     <td>{{ i.description}}</td>
+     <td>{{ i.prix}}</td>
+     <td>{{ i.marque}}</td>
+     <td>{{ i.getIdCategorie()}}</td>
+     <td><a href={{ path('produit_supprimer',{'id':i.id}) }}><button>supprimer</button><a/></td>
+        <td><a href={{ path('produit_modifier',{'id':i.id}) }}><button>modifier</button><a/></td>
+
+
+
+    </tr>
+{% endfor %}
+
+  </table>
+ <a href={{ path('produit_ajouter') }}><button>ajouter</button><a/>
+
+
+  {% endblock body %}
