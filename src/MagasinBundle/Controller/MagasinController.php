@@ -4,6 +4,7 @@ namespace MagasinBundle\Controller;
 
 use MagasinBundle\Entity\Magasin;
 use MagasinBundle\Form\MagasinType;
+use MagasinBundle\Services\MagasinService;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
