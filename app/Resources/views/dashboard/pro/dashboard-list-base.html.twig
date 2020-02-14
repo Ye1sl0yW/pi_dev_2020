@@ -452,6 +452,7 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
+                                    {% block content %}
                                     <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                         {% block table %}
                                         <thead>
@@ -493,6 +494,9 @@
                                         </tbody>
                                         {% endblock table %}
                                     </table>
+
+                                    {% endblock content %}
+
                                     {% block buttons %}
                                     <a href={{ "#" }}><img src="{{ asset('dashboard_style/assets/images/plus.png') }}"><a/>
                                     {% endblock buttons %}
