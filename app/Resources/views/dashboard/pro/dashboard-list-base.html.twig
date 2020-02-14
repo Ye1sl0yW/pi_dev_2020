@@ -494,12 +494,11 @@
                                         </tbody>
                                         {% endblock table %}
                                     </table>
-
+                                        {% block buttons %}
+                                        {% endblock buttons %}
                                     {% endblock content %}
 
-                                    {% block buttons %}
-                                    <a href={{ "#" }}><img src="{{ asset('dashboard_style/assets/images/plus.png') }}"><a/>
-                                    {% endblock buttons %}
+
                                 </div>
                             </div>
                         </div> <!-- end col -->
@@ -533,5 +532,8 @@
             $('#datatable').DataTable();
         </script>
         {% endblock scripts %}
+
+        {% block add_scripts %}
+        {% endblock add_scripts %}
     </body>
 </html>

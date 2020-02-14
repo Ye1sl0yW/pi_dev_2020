@@ -16,8 +16,11 @@ class OffreType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+            ->add('nom')
+            ->add('description')
             ->add('taux')
-            ->add('duree')
+            ->add('dateDebut')
+            ->add('dateFin')
             ->add('id_magasin',EntityType::class, array(
                 'class'=>'MagasinBundle:Magasin',
                 'choice_label'=>'id',
@@ -26,6 +29,7 @@ class OffreType extends AbstractType
             ->add('Valider',SubmitType::class);;
     }/**
      * {@inheritdoc}
+ *
      */
     public function configureOptions(OptionsResolver $resolver)
     {

@@ -1,4 +1,4 @@
-{% extends "/dashboard/pro/dashboard-form.html.twig" %}
+{% extends "/dashboard/pro/dashboard-list-base.html.twig" %}
 
 {% block title %}
 Ajouter ou modifier un magasin
@@ -8,7 +8,7 @@ Ajouter ou modifier un magasin
 Ajouter ou modifier un magasin
 {% endblock list_title %}
 
-{% block content %}
+{% block table %}
 
  {{ form_start(f) }}
 
@@ -36,13 +36,12 @@ Ajouter ou modifier un magasin
  </div>
 
 
+{% endblock table %}
+
+{% block buttons %}
  <div >
   {{ form_widget(f.Valider, {'attr':{'class':'btn btn-gradient-primary'}} ) }}
   <a href="{{ path('magasin_homepage') }}"><button type="button" class="btn btn-gradient-danger">Annuler</button></a>
  </div>
  {{form_end(f)}}
-
-{% endblock content %}
-
-{% block buttons %}
 {% endblock buttons %}
