@@ -17,7 +17,7 @@ class OffreController extends Controller
         return $this->render('@Magasin/Offre/index.html.twig');
     }
 
-    public function afficherAction()
+    public function showAction()
     {
         $var=$this->getDoctrine()->getManager()->getRepository(Offre::class)->findAll();
         return $this->render('@Magasin/Offre/index.html.twig',array('data'=>$var));

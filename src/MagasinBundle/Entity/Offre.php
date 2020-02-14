@@ -33,7 +33,7 @@ class Offre
     private $nom;
 
     /**
-     * @ORM\Column(type="string", options={"default": "AJOUTER DESCRIPTION"})
+     * @ORM\Column(type="string", nullable = true, options={"default": "AJOUTER DESCRIPTION"})
      */
     private $description;
 
