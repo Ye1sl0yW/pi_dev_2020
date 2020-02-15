@@ -47,7 +47,7 @@ class MagasinService
         return $result;
     }
 
-    public function createDefaultMagasin()
+    public function createDefaultMagasin($id_user)
     {
         $mg = new Magasin();
         $mg->setTailleStock(0);
