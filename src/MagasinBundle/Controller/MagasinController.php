@@ -2,9 +2,10 @@
 
 namespace MagasinBundle\Controller;
 
+use Doctrine\ORM\EntityManagerInterface;
 use MagasinBundle\Entity\Magasin;
 use MagasinBundle\Form\MagasinType;
-use MagasinBundle\Services\MagasinService;
+use MagasinBundle\Service\MagasinService;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -22,12 +23,18 @@ class MagasinController extends Controller
         return $this->render('@Magasin/Magasin/index.html.twig',array('data'=>$var));
     }
 
+    public function detailsAction($id)
+    {
+        $var = $this->get(MagasinService::class)->refreshMagasin($id);
+        return $this->render('@Magasin/Magasin/details.html.twig',array('data'=>$var));
+    }
 
     public function createMagasinAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
 
         $magasin = new Magasin();
+        $magasin->setTailleStock(0);
 
         $form = $this->createForm(MagasinType::class, $magasin);
         $form->handleRequest($request);

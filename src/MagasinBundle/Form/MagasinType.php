@@ -14,7 +14,9 @@ class MagasinType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('nom')->add('tailleStock')->add('matriculeFiscal')
+        $builder
+            ->add('nom')
+            ->add('matriculeFiscal')
         ->add('Valider',SubmitType::class);
     }/**
      * {@inheritdoc}

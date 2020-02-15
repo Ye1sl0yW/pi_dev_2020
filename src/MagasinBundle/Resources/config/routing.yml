@@ -22,3 +22,6 @@ offre_delete:
 offre_update:
     path:     /update_offre/{id}
     defaults: { _controller: MagasinBundle:Offre:updateOffre }
+magasin_details:
+    path:     /details/{id}
+    defaults: { _controller: MagasinBundle:Magasin:details }

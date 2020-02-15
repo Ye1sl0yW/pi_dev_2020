@@ -19,17 +19,19 @@
 
     {% for elem in data  %}
         <tr>
-
             <td>{{ elem.id }}</td>
             <td>{{elem.nom}}</td>
             <td>{{ elem.tailleStock}}</td>
             <td>{{ elem.matriculeFiscal}}</td>
-            <td><a href="{{path('magasin_delete',{'id':elem.id})}}"><i class="far fa-trash-alt text-danger"></i><a/>
-                    <a href="{{path('magasin_update',{'id':elem.id})}}"><i class="far fa-edit text-info mr-1"></i><a/></td>
+            <td>
+                <a href="{{path('magasin_delete',{'id':elem.id})}}"><i class="far fa-trash-alt text-danger"></i></a>
+                <a href="{{path('magasin_update',{'id':elem.id})}}"><i class="far fa-edit text-info mr-1"></i></a>
+                <a href="{{path('magasin_details',{'id':elem.id})}}"><i class="far dripicons-home text-info mr-1"></i></a>
+            </td>
         </tr>
     {% endfor %}
 {% endblock table %}
 
 {% block buttons %}
-    <a href={{ path('magasin_ajouter') }}><img src="{{ asset('dashboard_style/assets/images/plus.png') }}"><a/>
+    <a href={{ path('magasin_ajouter') }}><img src="{{ asset('dashboard_style/assets/images/plus.png') }}"/></a>
 {% endblock buttons %}

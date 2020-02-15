@@ -1,0 +1,34 @@
+{% extends "/dashboard/pro/dashboard-list-base.html.twig" %}
+
+{% block title %}
+    Détail magasin {{ data.getNom() }}
+{% endblock title %}
+
+{% block list_title %}Liste des Magasins partenaires{% endblock list_title %}
+
+{% block table %}
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Taille du stock</th>
+        <th>matricule fiscal</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+
+        <tr>
+
+            <td>{{ data.id }}</td>
+            <td>{{data.nom}}</td>
+            <td>{{ data.tailleStock}}</td>
+            <td>{{ data.matriculeFiscal}}</td>
+            <td><a href="{{path('magasin_delete',{'id':data.id})}}"><i class="far fa-trash-alt text-danger"></i><a/>
+                    <a href="{{path('magasin_update',{'id':data.id})}}"><i class="far fa-edit text-info mr-1"></i><a/></td>
+        </tr>
+
+{% endblock table %}
+
+{% block buttons %}
+    <a href={{ path('magasin_ajouter') }}><img src="{{ asset('dashboard_style/assets/images/plus.png') }}"><a/>
+{% endblock buttons %}
