@@ -2,6 +2,8 @@
 
 namespace MagasinBundle\Form;
 
+use Doctrine\ORM\EntityRepository;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -17,7 +19,18 @@ class MagasinType extends AbstractType
         $builder
             ->add('nom')
             ->add('matriculeFiscal')
-        ->add('Valider',SubmitType::class);
+            ->add('id_vendeur',EntityType::class, array(
+                'class'=>'UserBundle\Entity\User',
+                'query_builder' => function (EntityRepository $er) {
+                    return $er->createQueryBuilder('user')
+                        ->select('user')
+                        ->where('user.roles like :role')
+                        ->setParameter('role','%ROLE_VENDEUR%');
+                },
+                'choice_label'=>'id',
+                'multiple'=>false
+            ))
+            ->add('Valider',SubmitType::class);
     }/**
      * {@inheritdoc}
      */
