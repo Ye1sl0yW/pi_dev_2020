@@ -2,10 +2,12 @@
 
 namespace ProduitBundle\Form;
 
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+
 
 class ProduitType extends AbstractType
 {
@@ -14,7 +16,17 @@ class ProduitType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('quantite')->add('nom')->add('description')->add('prix')->add('marque')
+        $builder
+            ->add('nom')
+            ->add('marque')
+            ->add('prix')
+            ->add('quantite')
+            ->add('description')
+            ->add('id_magasin',EntityType::class, array(
+                'class'=>'MagasinBundle\Entity\Magasin',
+                'choice_label'=>'id',
+                'multiple'=>false
+            ))
         ->add('Valider',SubmitType::class);
     }/**
      * {@inheritdoc}

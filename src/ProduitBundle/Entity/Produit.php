@@ -44,6 +44,13 @@ class Produit
      */
     protected $marque;
 
+
+    /**
+     * @ORM\ManyToOne(targetEntity="MagasinBundle\Entity\Magasin")
+     * @ORM\JoinColumn(name="id_magasin",referencedColumnName="id")
+     */
+    protected $id_magasin;
+
     /**
      * @return mixed
      */
@@ -147,6 +154,23 @@ class Produit
     {
         return $this->id_categorie;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getIdMagasin()
+    {
+        return $this->id_magasin;
+    }
+
+    /**
+     * @param mixed $id_magasin
+     */
+    public function setIdMagasin($id_magasin)
+    {
+        $this->id_magasin = $id_magasin;
+    }
+
 
 
 
