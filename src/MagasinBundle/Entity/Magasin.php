@@ -44,11 +44,11 @@ class Magasin
     private $matriculeFiscal;
 
     /**
-     * @OneToOne(targetEntity="UserBundle\Entity\User", inversedBy="magasin")
+     * @OneToOne(targetEntity="UserBundle\Entity\User", mappedBy="magasin")
      * @ORM\JoinColumn(name="id_vendeur",referencedColumnName="id", nullable=true)
      */
-    protected $id_vendeur;
-
+    private $id_vendeur;
+//TODO: vérifier que le vendeur ait bien accès à son magasin si on l'ajoute depuis le magasin
     /**
      * @return mixed
      */

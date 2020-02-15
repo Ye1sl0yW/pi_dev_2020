@@ -45,7 +45,7 @@ class User extends BaseUser
     protected $tel;
 
     /**
-     * @OneToOne(targetEntity="MagasinBundle\Entity\Magasin", mappedBy="user")
+     * @OneToOne(targetEntity="MagasinBundle\Entity\Magasin", inversedBy="user")
      * @ORM\JoinColumn(name="id_magasin",referencedColumnName="id", nullable=true)
      */
     protected $id_magasin;
