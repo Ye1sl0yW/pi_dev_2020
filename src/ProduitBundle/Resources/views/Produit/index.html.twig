@@ -31,13 +31,13 @@
      <td>{{ i.prix}}</td>
      <td>{{ i.marque}}</td>
      <td>{{ i.getIdMagasin().getId()}}</td>
-     {% if (i.getIdCategorie() == null ) %}
+     {% if (i.getIdCategorie()) %}
      <td>
           <a href="{{ path('produit_modifier',{'id':i.id}) }}"><button class="btn-blue">Ajouter categorie</button></a>
      </td>
      {% else %}
       <td>
-         {{ i.getIdCategorie().getNom() }}
+         {{ "WIP - afficher liste des categories" }}
       </td>
       {% endif %}
 

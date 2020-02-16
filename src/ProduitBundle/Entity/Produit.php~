@@ -147,6 +147,10 @@ class Produit
      */
     protected $id_categorie;
 
+
+
+
+
     /**
      * @return mixed
      */
@@ -163,45 +167,7 @@ class Produit
         $this->id_magasin = $id_magasin;
     }
 
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->id_categorie = new \Doctrine\Common\Collections\ArrayCollection();
-    }
 
-    /**
-     * Add idCategorie
-     *
-     * @param \ProduitBundle\Entity\Categorie $idCategorie
-     *
-     * @return Produit
-     */
-    public function addIdCategorie(\ProduitBundle\Entity\Categorie $idCategorie)
-    {
-        $this->id_categorie[] = $idCategorie;
 
-        return $this;
-    }
 
-    /**
-     * Remove idCategorie
-     *
-     * @param \ProduitBundle\Entity\Categorie $idCategorie
-     */
-    public function removeIdCategorie(\ProduitBundle\Entity\Categorie $idCategorie)
-    {
-        $this->id_categorie->removeElement($idCategorie);
-    }
-
-    /**
-     * Get idCategorie
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getIdCategorie()
-    {
-        return $this->id_categorie;
-    }
 }

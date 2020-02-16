@@ -22,6 +22,13 @@ class ProduitType extends AbstractType
             ->add('prix')
             ->add('quantite')
             ->add('description')
+            ->add('id_categorie',EntityType::class, array(
+                'class'=>'ProduitBundle\Entity\Categorie',
+                'choice_label'=>'nom',
+                'required' => true,
+                'expanded' => true,
+                'multiple'=>true
+            ))
             ->add('id_magasin',EntityType::class, array(
                 'class'=>'MagasinBundle\Entity\Magasin',
                 'choice_label'=>'id',
