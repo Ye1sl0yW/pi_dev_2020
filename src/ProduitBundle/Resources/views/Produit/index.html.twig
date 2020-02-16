@@ -1,12 +1,13 @@
- {% extends '/template/base.html.twig' %}
+ {% extends '/dashboard/pro/dashboard-list-base.html.twig' %}
  {% block title %}
  Portail produits
  {% endblock %}
 
- {% block body %}
+{% block list_title %}Liste des produits sur Shoppy {% endblock list_title %}
 
-  <h2>Liste des Produits</h2>
-  <table border="1">
+ {% block table %}
+
+  <thead>
    <tr>
     <th>id</th>
     <th>quantite</th>
@@ -17,8 +18,9 @@
     <th>Categorie</th>
     <th>Supprimer</th>
     <th>modifier</th>
-
    </tr>
+  </thead>
+  
    {% for i in data  %}
     <tr>
 
@@ -38,7 +40,12 @@
 {% endfor %}
 
   </table>
+
+
+
+  {% endblock table %}
+
+
+ {% block buttons %}
  <a href={{ path('produit_ajouter') }}><button>ajouter</button><a/>
-
-
-  {% endblock body %}
+ {% endblock buttons %}
