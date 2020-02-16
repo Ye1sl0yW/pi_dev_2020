@@ -10,8 +10,9 @@ use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
 
+
 /**
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="UserBundle\Repository\UserRepository")
  */
 class User extends BaseUser
 {
@@ -45,7 +46,7 @@ class User extends BaseUser
     protected $tel;
 
     /**
-     * @OneToOne(targetEntity="MagasinBundle\Entity\Magasin", inversedBy="user")
+     * @OneToOne(targetEntity="MagasinBundle\Entity\Magasin", inversedBy="id_vendeur", cascade={"persist", "remove"})
      * @ORM\JoinColumn(name="id_magasin",referencedColumnName="id", nullable=true)
      */
     protected $id_magasin;
