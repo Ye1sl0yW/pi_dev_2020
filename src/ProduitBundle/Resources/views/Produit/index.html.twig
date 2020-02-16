@@ -15,6 +15,7 @@
     <th>description</th>
     <th>prix</th>
     <th>marque</th>
+    <th>ID magasin</th>
     <th>Categorie</th>
     <th>Action</th>
    </tr>
@@ -29,6 +30,7 @@
      <td>{{ i.description}}</td>
      <td>{{ i.prix}}</td>
      <td>{{ i.marque}}</td>
+     <td>{{ i.getIdMagasin().getId()}}</td>
      {% if (i.getIdCategorie() == null ) %}
      <td>
           <a href="{{ path('produit_modifier',{'id':i.id}) }}"><button class="btn-blue">Ajouter categorie</button></a>
