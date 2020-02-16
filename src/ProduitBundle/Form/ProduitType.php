@@ -25,6 +25,7 @@ class ProduitType extends AbstractType
             ->add('id_magasin',EntityType::class, array(
                 'class'=>'MagasinBundle\Entity\Magasin',
                 'choice_label'=>'id',
+                'required' => true,
                 'multiple'=>false
             ))
         ->add('Valider',SubmitType::class);

@@ -1,10 +1,65 @@
-{% extends '/template/base.html.twig' %}
+{% extends "/dashboard/pro/dashboard-list-base.html.twig" %}
 
- {% block title %}
-    Produit Shoppy
- {% endblock %}
+{% block title %}
+    Ajouter ou modifier un produit
+{% endblock title %}
 
- {% block body %}
-    Ajouter Produit
-     {{ form(f) }}
- {% endblock %}
+{% block list_title %}
+    Ajouter ou modifier un produit
+{% endblock list_title %}
+
+{% block table %}
+
+    {{ form_start(f) }}
+
+    <div class="form-group row">
+        <label for="example-text-input" class="col-sm-2 col-form-label text-right">{{ form_label(f.nom) }}</label>
+        <div class="col-sm-10">
+            {{ form_widget(f.nom,{'attr':{'class':'form-control'}}) }}
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="example-text-input" class="col-sm-2 col-form-label text-right">{{ form_label(f.marque) }}</label>
+        <div class="col-sm-10">
+            {{ form_widget(f.marque,{'attr':{'class':'form-control'}}) }}
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="example-text-input" class="col-sm-2 col-form-label text-right">{{ form_label(f.prix) }}</label>
+        <div class="col-sm-10">
+            {{ form_widget(f.prix,{'attr':{'class':'form-control'}}) }}
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="example-text-input" class="col-sm-2 col-form-label text-right">{{ form_label(f.quantite) }}</label>
+        <div class="col-sm-10">
+            {{ form_widget(f.quantite,{'attr':{'class':'form-control'}}) }}
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="example-text-input" class="col-sm-2 col-form-label text-right">{{ form_label(f.description) }}</label>
+        <div class="col-sm-10">
+            {{ form_widget(f.description,{'attr':{'class':'form-control'}}) }}
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="example-text-input" class="col-sm-2 col-form-label text-right">{{ form_label(f.id_magasin) }}</label>
+        <div class="col-sm-10">
+            {{ form_widget(f.id_magasin,{'attr':{'class':'form-control'}}) }}
+        </div>
+    </div>
+
+{% endblock table %}
+
+{% block buttons %}
+    <div >
+        {{ form_widget(f.Valider, {'attr':{'class':'btn btn-gradient-primary'}} ) }}
+        <a href="{{ path('produit_homepage') }}"><button type="button" class="btn btn-gradient-danger">Annuler</button></a>
+    </div>
+    {{form_end(f)}}
+{% endblock buttons %}
