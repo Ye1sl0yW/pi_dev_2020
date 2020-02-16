@@ -6,6 +6,7 @@ namespace MagasinBundle\Service;
 use Doctrine\ORM\EntityManagerInterface;
 use MagasinBundle\Entity\Magasin;
 use ProduitBundle\Entity\Produit;
+use UserBundle\Entity\User;
 
 class MagasinService
 {
@@ -39,6 +40,18 @@ class MagasinService
         return sizeof($inventaire);
     }
 
+    public function addManager($id_maggasin, $id_vendeur)
+    {
+        $magasin= $this->em->getRepository(Magasin::class)->find($id_maggasin);
+        if($id_vendeur != null)
+        {
+            $vendeur =  $this->em->getRepository(User::class)->find($id_vendeur);
+            $vendeur->setIdMagasin($magasin);
+            $this->em->persist($vendeur);
+            $this->em->flush();
+        }
+    }
+
     public function value($id)
     {
         //TODO Faire le service value product
@@ -52,7 +65,7 @@ class MagasinService
         $mg = new Magasin();
         $mg->setTailleStock(0);
         $mg->setMatriculeFiscal(0);
-        //TODO: Faire la jointure vendeur <-> Magasin
+        //TODO: Corriger la jointure vendeur magasin : le vendeur ne reçoit pas id_magasin
         return $mg;
     }
 

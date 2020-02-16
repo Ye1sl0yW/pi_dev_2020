@@ -23,12 +23,13 @@ class MagasinType extends AbstractType
                 'class'=>'UserBundle\Entity\User',
                 'query_builder' => function (EntityRepository $er) {
                     return $er->createQueryBuilder('user')
-                        ->select('user')
                         ->where('user.roles like :role')
+                        ->andWhere('user.id_magasin IS NULL')
                         ->setParameter('role','%ROLE_VENDEUR%');
                 },
                 'choice_label'=>'id',
-                'multiple'=>false
+                'multiple'=>false,
+                'placeholder'=>null
             ))
             ->add('Valider',SubmitType::class);
     }/**

@@ -13,7 +13,8 @@
         <th>Nom</th>
         <th>Taille du stock</th>
         <th>matricule fiscal</th>
-        <th>Gérant / Vendeur</th>
+        <th>ID Gérant / Vendeur</th>
+        <th>Nom Gérant / Vendeur</th>
         <th>Actions</th>
     </tr>
     </thead>
@@ -24,13 +25,21 @@
             <td>{{elem.nom}}</td>
             <td>{{ elem.tailleStock}}</td>
             <td>{{ elem.matriculeFiscal}}</td>
-            <td>{%  if(elem.getIdVendeur()==null)  %}
-                    {{ "Personne ne gère ce magasin, veuillez" }}
-                    <a href="{{path('magasin_update',{'id':elem.id})}}"> <button class="btn-blue">ajouter un responsable !</button></a>
-                {% else %}
+            {%  if(elem.getIdVendeur()==null)  %}
+                <td>
+                    <a href="{{path('magasin_update',{'id':elem.id})}}"> <button class="btn-blue">Ajouter un responsable</button></a>
+                </td>
+                <td>
+                </td>
+            {% else %}
+                <td>
+                    {{ elem.getIdVendeur().getID()}}
+                </td>
+                <td>
                     {{ elem.getIdVendeur()}}
-                {% endif %}
-            </td>
+                </td>
+            {% endif %}
+
             <td>
                 <a href="{{path('magasin_delete',{'id':elem.id})}}"><i class="far fa-trash-alt text-danger"></i></a>
                 <a href="{{path('magasin_update',{'id':elem.id})}}"><i class="far fa-edit text-info mr-1"></i></a>

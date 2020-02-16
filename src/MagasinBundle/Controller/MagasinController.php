@@ -8,6 +8,8 @@ use MagasinBundle\Form\MagasinType;
 use MagasinBundle\Service\MagasinService;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use UserBundle\Entity\User;
+use UserBundle\Repository\UserRepository;
 
 
 class MagasinController extends Controller
@@ -40,8 +42,13 @@ class MagasinController extends Controller
         $form->handleRequest($request);
 
         if ($form->isValid()) {
+
             $em->persist($magasin);
             $em->flush();
+
+            $id_vendeur = $magasin->getIdVendeur()->getId();
+            $this->get(MagasinService::class)->addManager($magasin->getId(),$id_vendeur);
+
             return $this->redirectToRoute('magasin_homepage');
         }
         return $this->render('@Magasin/Magasin/form_magasin.html.twig',array('f' => $form->createView()));
@@ -68,6 +75,10 @@ class MagasinController extends Controller
         if ($form->isValid()) {
             $em->persist($magasin);
             $em->flush();
+
+            $id_vendeur = $magasin->getIdVendeur()->getId();
+            $this->get(MagasinService::class)->addManager($magasin->getId(),$id_vendeur);
+
             return $this->redirectToRoute('magasin_homepage');
         }
         return $this->render('@Magasin/Magasin/form_magasin.html.twig',array('f' => $form->createView()));
