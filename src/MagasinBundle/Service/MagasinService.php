@@ -65,7 +65,6 @@ class MagasinService
         $mg = new Magasin();
         $mg->setTailleStock(0);
         $mg->setMatriculeFiscal(0);
-        //TODO: Corriger la jointure vendeur magasin : le vendeur ne reçoit pas id_magasin
         return $mg;
     }
 

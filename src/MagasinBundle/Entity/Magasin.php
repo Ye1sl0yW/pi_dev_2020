@@ -48,7 +48,7 @@ class Magasin
      * @ORM\JoinColumn(name="id_vendeur",referencedColumnName="id", nullable=true)
      */
     private $id_vendeur;
-//TODO: vérifier que le vendeur ait bien accès à son magasin si on l'ajoute depuis le magasin
+
     /**
      * @return mixed
      */

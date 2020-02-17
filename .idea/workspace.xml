@@ -2,26 +2,175 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a70e209a-4f11-4125-8f94-492922f070bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Controller/DefaultController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Controller/MagasinController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Controller/OffreController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Entity/Magasin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Entity/Offre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Form/MagasinType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Form/OffreType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/MagasinBundle.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/config/routing.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/config/services.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/form_magasin.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Offre/form_offre.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Offre/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/MagasinBundle/Controller/DefaultControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/README.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/AdvancedMetadataFactoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Cache/CacheInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Cache/DoctrineCacheAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Cache/FileCache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Cache/PsrCacheAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/ClassHierarchyMetadata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/ClassMetadata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/AbstractFileDriver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/AdvancedDriverInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/AdvancedFileLocatorInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/DriverChain.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/DriverInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/FileLocator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/FileLocatorInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/LazyLoadingDriver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/MergeableClassMetadata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/MergeableInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/MetadataFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/MetadataFactoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/MethodMetadata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/NullMetadata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/PropertyMetadata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Version.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Cache/DoctrineCacheAdapterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Cache/FileCacheTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Cache/PsrCacheAdapterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/ClassMetadataTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/AbstractFileDriverTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/DriverChainTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/FileLocatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/A/A.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/A/A.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/B/B.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/B/B.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/C/SubDir.C.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/C/SubDir/C.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/D/D.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/D/D.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/T/T.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/T/T.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/ComplexHierarchy/BaseClass.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/ComplexHierarchy/InterfaceA.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/ComplexHierarchy/InterfaceB.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/ComplexHierarchy/SubClassA.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/ComplexHierarchy/SubClassB.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/TestObject.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/TestParent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/MergeableClassMetadataTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/MetadataFactoryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/MethodMetadataTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/PropertyMetadataTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Adapter/AdapterInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Adapter/ODM/MongoDB/MongoDBAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Adapter/ORM/DoctrineORMAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Adapter/PHPCR/PHPCRAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Adapter/Propel/PropelORMAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Command/MappingDebugClassCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Command/MappingDebugCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Command/MappingListClassesCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/DependencyInjection/Compiler/RegisterPropelModelsPass.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/DependencyInjection/Configuration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/DependencyInjection/VichUploaderExtension.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Event/Event.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Event/Events.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Doctrine/BaseListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Doctrine/CleanListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Doctrine/InjectListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Doctrine/RemoveListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Doctrine/UploadListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Propel/BaseListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Propel/CleanListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Propel/InjectListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Propel/RemoveListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Propel/UploadListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Exception/MappingNotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Exception/NameGenerationException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Exception/NoFileFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Exception/NotUploadableException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Form/DataTransformer/FileTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Form/Type/VichFileType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Form/Type/VichImageType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Handler/AbstractHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Handler/DownloadHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Handler/UploadHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Injector/FileInjector.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Injector/FileInjectorInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Mapping/Annotation/Uploadable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Mapping/Annotation/UploadableField.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Mapping/PropertyMapping.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Mapping/PropertyMappingFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/ClassMetadata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/AbstractFileDriver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/AnnotationDriver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/ChainDriver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/FileLocator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/XmlDriver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/YamlDriver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/MetadataReader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/ConfigurableInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/DirectoryNamerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/HashNamer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/NamerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/OrignameNamer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/Polyfill/FileExtensionTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/PropertyNamer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/SubdirDirectoryNamer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/UniqidNamer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/adapter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/factory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/flysystem.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/form.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/gaufrette.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/handler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/injector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/listener.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/mapping.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/namer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/storage.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/templating.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/twig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.ar.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.de.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.en.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.es.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.fr.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.hu.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.it.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.pl.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.pt.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.ru.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.sl.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.tr.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.uk.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/views/Form/fields.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/AbstractStorage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/FileSystemStorage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/FlysystemStorage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/GaufretteStorage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/StorageInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Templating/Helper/UploaderHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Twig/Extension/UploaderExtension.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Util/ClassUtils.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Util/Transliterator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/VichUploaderBundle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pi_dev_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pi_dev_2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/symfony_requirements" beforeDir="false" afterPath="$PROJECT_DIR$/bin/symfony_requirements" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Entity/Magasin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Entity/Magasin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Service/MagasinService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Service/MagasinService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/config.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +182,30 @@
     <execution>
       <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="378c06df-54ff-4530-a8e4-040e24327dc9" />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - shoppy@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - shoppy@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="shoppy: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,6 +252,8 @@
       <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
       <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Xbk9REb6lpkHODfkpsWSAIotuL" />
@@ -92,24 +267,26 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MagasinBundle/Resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/config" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\pi_dev_2020\app\config" />
+      <recent name="D:\wamp64\www\pi_dev_2020\src\MagasinBundle\Form" />
+      <recent name="D:\wamp64\www\pi_dev_2020\src\MagasinBundle\Resources\views\Magasin" />
+      <recent name="D:\wamp64\www\pi_dev_2020\app\Resources\FOSUserBundle\views" />
+      <recent name="D:\wamp64\www\pi_dev_2020\app\Resources\views\template" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\web" />
       <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\app\Resources\views" />
       <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\src\ProduitBundle\Resources\views" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\wamp64\www\pi_dev_2\src\MagasinBundle\Resources\views" />
-      <recent name="D:\wamp64\www\pi_dev_2\src\MagasinBundle\Controller" />
-      <recent name="D:\wamp64\www\pi_dev_2\src\MagasinBundle\Resources\views\Default" />
-      <recent name="D:\wamp64\www\pi_dev_2\src\MagasinBundle\Entity" />
-      <recent name="D:\wamp64\www\pi_dev_2\src\UserBundle\Entity" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -117,16 +294,23 @@
       <command value="$ composer require friendsofsymfony/user-bundle &quot;~2.0&quot; " />
       <command value="c dump-autoload" />
       <command value="composer require friendsofsymfony/user-bundle &quot;~2.0&quot;" />
-      <command value="s doctrine:database:create" />
-      <command value="s doctrine:schema:create" />
       <command value="s generate:bundle" />
-      <command value="s doctrine:schema:update --force" />
       <command value="s doctrine:generate:form" />
       <command value="s doctrine:generate:form Magasin:Magasin" />
       <command value="s doctrine:generate:form @Magasin:Magasin" />
       <command value="s doctrine:generate:form MagasinBundle:Magasin" />
       <command value="s doctrine:generate:form @Magasin:Offre" />
       <command value="s doctrine:generate:form MagasinBundle:Offre" />
+      <command value="php bin/console debug:autowiring" />
+      <command value="protected" />
+      <command value="doctrin crez" />
+      <command value="s doctrine:database:create" />
+      <command value="s doctrine:schema:create" />
+      <command value="s doctrine:generate:entities MagasinBundle:Magasin" />
+      <command value="s doctrine:generate:entities UserBundle:User" />
+      <command value="s doctrine:schema:update --force" />
+      <command value="c require vich/uploader-bundle dev-master" />
+      <command value="c require vich/uploader-bundle" />
     </option>
   </component>
   <component name="ServiceViewManager">
@@ -156,6 +340,9 @@
       <workItem from="1581354560019" duration="394000" />
       <workItem from="1581354965081" duration="5902000" />
       <workItem from="1581436981196" duration="14144000" />
+      <workItem from="1581689276177" duration="16638000" />
+      <workItem from="1581777144530" duration="36466000" />
+      <workItem from="1581965196573" duration="7305000" />
     </task>
     <servers />
   </component>
@@ -166,61 +353,93 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="753" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1581460373785">
+    <state x="971" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581847868488">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="753" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581460373785" />
-    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581460433602">
+    <state x="971" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581847868488" />
+    <state x="693" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581972656620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581460433602" />
-    <state x="684" y="399" key="ComposerCompositePathDialog" timestamp="1581355684522">
+    <state x="693" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581972656620" />
+    <state x="753" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1581791176036">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="684" y="399" key="ComposerCompositePathDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581355684522" />
-    <state x="1277" y="282" key="FileChooserDialogImpl" timestamp="1581355667247">
+    <state x="753" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581791176036" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581967137499">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1277" y="282" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581355667247" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1581460256155">
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581967137499" />
+    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581792323834">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581460256155" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1581460256154">
+    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581792323834" />
+    <state x="684" y="399" key="ComposerCompositePathDialog" timestamp="1581691217532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581460256154" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1581460256154">
+    <state x="684" y="399" key="ComposerCompositePathDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581691217532" />
+    <state x="1277" y="282" key="FileChooserDialogImpl" timestamp="1581691231702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581460256154" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1581460256155">
+    <state x="1277" y="282" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581691231702" />
+    <state width="1877" height="298" key="GridCell.Tab.0.bottom" timestamp="1581972867943">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581460256155" />
-    <state x="739" y="335" key="NewPhpClassDialog" timestamp="1581454063574">
+    <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581972867943" />
+    <state width="1877" height="298" key="GridCell.Tab.0.center" timestamp="1581972867942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="335" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581454063574" />
-    <state x="729" y="176" key="SettingsEditor" timestamp="1581452099015">
+    <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581972867942" />
+    <state width="1877" height="298" key="GridCell.Tab.0.left" timestamp="1581972867942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="729" y="176" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581452099015" />
-    <state x="802" y="423" key="SymfonyPathDialog" timestamp="1581355676343">
+    <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581972867942" />
+    <state width="1877" height="298" key="GridCell.Tab.0.right" timestamp="1581972867943">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="802" y="423" key="SymfonyPathDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581355676343" />
+    <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581972867943" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1581847877709">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581847877709" />
+    <state x="739" y="335" key="NewPhpClassDialog" timestamp="1581802422193">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="335" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581802422193" />
+    <state x="729" y="176" key="SettingsEditor" timestamp="1581691237514">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="729" y="176" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581691237514" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1581788178887">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581788178887" />
+    <state x="802" y="423" key="SymfonyPathDialog" timestamp="1581691232583">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="802" y="423" key="SymfonyPathDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581691232583" />
     <state x="661" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1581354020845">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="661" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581354020845" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1581460256172">
+    <state x="1920" y="0" width="1498" height="1025" maximized="true" key="dock-window-1" timestamp="1581703810625">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1920" y="0" width="1498" height="1025" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581703810625" />
+    <state x="1920" y="0" width="1498" height="1025" maximized="true" key="dock-window-2" timestamp="1581703810625">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1920" y="0" width="1498" height="1025" maximized="true" key="dock-window-2/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581703810625" />
+    <state x="1913" y="0" width="974" height="1087" maximized="true" key="dock-window-3" timestamp="1581718494439">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1913" y="0" width="974" height="1087" maximized="true" key="dock-window-3/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581718494439" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1581972742368">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581460256172" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581460084985">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581972742368" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581973112172">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581460084985" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581973112172" />
   </component>
 </project>
