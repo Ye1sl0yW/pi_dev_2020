@@ -4,19 +4,27 @@
     <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 {% endif %}
 
-<form action="{{ path("fos_user_security_check") }}" method="post">
+<form action="{{ path("fos_user_security_check") }}" method="post" class="login">
     {% if csrf_token %}
         <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
     {% endif %}
 
-    <label for="username">{{ 'security.login.username'|trans }}</label>
-    <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" />
+    <p class="form-row form-row-wide">
+        <label for="username" >{{ 'security.login.username'|trans }}<span class="required">*</span></label>
+        <input type="text" id="username" class="input-text" name="_username" value="{{ last_username }}" required="required" autocomplete="username" />
+    </p>
 
-    <label for="password">{{ 'security.login.password'|trans }}</label>
-    <input type="password" id="password" name="_password" required="required" autocomplete="current-password" />
+    <p class="form-row form-row-wide">
+        <label for="password">{{ 'security.login.password'|trans }}<span class="required">*</span></label>
+        <input type="password" class="input-text" id="password" name="_password" required="required" autocomplete="current-password" />
+    </p>
+    <p class="form-row">
+        <input type="checkbox"  id="remember_me" name="_remember_me" value="on" />
+        <label  for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+    </p>
 
-    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-    <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+    <p class="form-row">
+        <input type="submit" id="_submit" class="button" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+    </p>
 
-    <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
 </form>
