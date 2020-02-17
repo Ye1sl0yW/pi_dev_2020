@@ -1805,7 +1805,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="container">
 			<div class="row">
 				<div id="contents" role="main" class="main-page  col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -1821,6 +1821,7 @@
 														<div class="vc_column-inner ">
 															<div class="wpb_wrapper">
 																<div class="vc_wp_custommenu wpb_content_element wrap-title">
+																	{% block side_bar_categories %}
 																	<div class="mega-left-title">
 																		<strong>Categories</strong>
 																	</div>
@@ -2550,6 +2551,7 @@
 																			</li>
 																		</ul>
 																	</div>
+																	{% endblock side_bar_categories %}
 																</div>
 															</div>
 														</div>
@@ -2559,6 +2561,7 @@
 														<div class="vc_column-inner">
 															<div class="wpb_wrapper">
 																<!-- OWL SLIDER -->
+																{% block big_carousel %}
 																<div class="wpb_revslider_element wpb_content_element no-margin">
 																	<div class="vc_column-inner ">
 																		<div class="wpb_wrapper">
@@ -2581,6 +2584,8 @@
 																		</div>
 																	</div>
 																</div>
+																{% endblock big_carousel %}
+
 																<!-- OWL LIGHT SLIDER -->
 																
 																<div class=" wpb_content_element ">
