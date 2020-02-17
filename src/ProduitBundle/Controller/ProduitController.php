@@ -122,4 +122,6 @@ class ProduitController extends Controller
         return $this->render('@Produit/Produit/frontPage.html.twig');
 
     }
+
+
 }
