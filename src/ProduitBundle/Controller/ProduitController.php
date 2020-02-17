@@ -117,4 +117,9 @@ class ProduitController extends Controller
 
     }
 
+    public function frontPageAction()
+    {
+        return $this->render('@Produit/Produit/frontPage.html.twig');
+
+    }
 }
