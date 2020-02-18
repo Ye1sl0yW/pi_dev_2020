@@ -7,6 +7,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 
 class ProduitType extends AbstractType
@@ -34,6 +35,10 @@ class ProduitType extends AbstractType
                 'choice_label'=>'id',
                 'required' => true,
                 'multiple'=>false
+            ))
+            ->add('imageFile',VichImageType::class,array(
+                'required'=> false,
+                'allow_delete' => true,
             ))
         ->add('Valider',SubmitType::class);
     }/**
