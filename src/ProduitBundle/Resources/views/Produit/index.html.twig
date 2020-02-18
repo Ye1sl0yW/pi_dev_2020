@@ -9,6 +9,7 @@
 
   <thead>
    <tr>
+    <th>Image</th>
     <th>id</th>
     <th>quantite</th>
     <th>nom</th>
@@ -24,6 +25,10 @@
    {% for i in data  %}
     <tr>
 
+     <td> {% if i.imageName %}
+              {%   set image = "uploads/images/products/"~i.imageName  %}
+              <img src="{{asset(image) }}" height="50px"/>
+      {% endif %}</td>
      <td>{{ i.id }}</td>
      <td>{{ i.quantite}}</td>
      <td>{{ i.nom}}</td>
