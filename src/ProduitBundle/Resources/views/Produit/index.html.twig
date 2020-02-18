@@ -28,9 +28,9 @@
      <td>{{ i.description}}</td>
      <td>{{ i.prix}}</td>
      <td>{{ i.marque}}</td>
-     <td>{{ i.getIdCategorie()}}</td>
-     <td><a href={{ path('produit_supprimer',{'id':i.id}) }}><button>supprimer</button><a/></td>
-        <td><a href={{ path('produit_modifier',{'id':i.id}) }}><button>modifier</button><a/></td>
+     <td>{{ i.id}}</td>
+     <td><a href={{ path('produit_supprimer',{'id':i.id}) }}><button>supprimer</button></a></td>
+        <td><a href={{ path('produit_modifier',{'id':i.id}) }}><button>modifier</button></a></td>
 
 
 
@@ -38,7 +38,7 @@
 {% endfor %}
 
   </table>
- <a href={{ path('produit_ajouter') }}><button>ajouter</button><a/>
+  <a href={{ path('produit_ajouter') }}><button>ajouter</button></a>
 
 
   {% endblock body %}

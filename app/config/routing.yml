@@ -1,3 +1,7 @@
+panier:
+    resource: "@PanierBundle/Resources/config/routing.yml"
+    prefix:   /panier
+
 magasin:
     resource: "@MagasinBundle/Resources/config/routing.yml"
     prefix:   /magasin

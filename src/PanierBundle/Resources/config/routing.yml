@@ -1,0 +1,18 @@
+panier_homepage:
+    path:     /
+    defaults: { _controller: PanierBundle:Default:index }
+panier_trade:
+    path:     /trade
+    defaults: { _controller: PanierBundle:Panier:trade }
+panier_cart:
+    path:     /cart
+    defaults: { _controller: PanierBundle:Panier:index }
+cart_add:
+    path:     /add/{id}
+    defaults: { _controller: PanierBundle:Panier:add }
+cart_show:
+    path:     /show
+    defaults: { _controller: PanierBundle:Panier:showCart }
+cartPage_show:
+    path:     /showPage
+    defaults: { _controller: PanierBundle:Panier:showCart }

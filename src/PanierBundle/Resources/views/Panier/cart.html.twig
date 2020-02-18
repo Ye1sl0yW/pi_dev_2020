@@ -1,0 +1,51 @@
+{% extends "/template/base.html.twig" %}
+
+
+
+{% block title %}Hello CartController!
+{% endblock %}
+
+{% block body %}
+    <div class="bg-light p-3">
+        <h1>Votre panier</h1>
+    </div>
+    <h2>Liste des Produits</h2>
+    {% if elms | length > 0 %}
+    <table border="1"><thead>
+        <tr>
+
+            <th>produit</th>
+            <th>qte</th>
+            <th>prix</th>
+            <th>total</th>
+            <th>suppriemr</th>
+
+        </tr></thead>
+        <tbody>
+        {% for el in elms  %}
+            <tr>
+
+
+                <td>{{ el.produit.id}}</td>
+                <td>{{ el.quantite}}</td>
+                <td>{{ el.produit.prix}}</td>
+                <td>{{ el.produit.quantite*el.produit.prix}}</td>
+
+                <td><a  href=# class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a></td>
+
+
+
+
+
+            </tr>
+        {% endfor %}
+        </tbody>
+<tfoot>
+
+</tfoot>
+    </table>
+    {% else %}
+    <p>Surprise, c'est vide !</p>
+    {% endif %}
+
+{% endblock %}

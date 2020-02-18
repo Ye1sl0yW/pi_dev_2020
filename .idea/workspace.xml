@@ -2,27 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a70e209a-4f11-4125-8f94-492922f070bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Controller/DefaultController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Controller/MagasinController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Controller/OffreController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Entity/Magasin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Entity/Offre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Form/MagasinType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Form/OffreType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/MagasinBundle.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/config/routing.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/config/services.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/form_magasin.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Offre/form_offre.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Offre/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/MagasinBundle/Controller/DefaultControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_15_02_2020_10_35_c.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_15_02_2020_10_35_s.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Controller/DefaultController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Controller/PanierController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Entity/Panier.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/PanierBundle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Repository/PanierRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/config/routing.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/config/services.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Default/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/CartPage.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/cart.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/trade.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Tests/Controller/PanierControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProduitBundle/Repository/ProduitRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/PanierBundle/Controller/DefaultControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_10_02_2020_18_28_c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_10_02_2020_18_28_c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_10_02_2020_18_27_s.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_10_02_2020_18_27_s.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pi_dev_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pi_dev_2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/symfony_requirements" beforeDir="false" afterPath="$PROJECT_DIR$/bin/symfony_requirements" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProduitBundle/Entity/Produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduitBundle/Entity/Produit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProduitBundle/Resources/views/Produit/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduitBundle/Resources/views/Produit/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/config.php" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,51 +103,59 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MagasinBundle/Resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\web" />
-      <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\app\Resources\views" />
-      <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\src\ProduitBundle\Resources\views" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\pi_dev\src\PanierBundle\Resources\views\Panier" />
+      <recent name="C:\wamp64\www\pi_dev\src\ProduitBundle" />
       <recent name="D:\wamp64\www\pi_dev_2\src\MagasinBundle\Resources\views" />
       <recent name="D:\wamp64\www\pi_dev_2\src\MagasinBundle\Controller" />
       <recent name="D:\wamp64\www\pi_dev_2\src\MagasinBundle\Resources\views\Default" />
-      <recent name="D:\wamp64\www\pi_dev_2\src\MagasinBundle\Entity" />
-      <recent name="D:\wamp64\www\pi_dev_2\src\UserBundle\Entity" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\pi_dev\app\config" />
+      <recent name="C:\wamp64\www\pi_dev\src\PanierBundle\Resources\views\Panier" />
+      <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\web" />
+      <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\app\Resources\views" />
+      <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\src\ProduitBundle\Resources\views" />
     </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="$ composer require friendsofsymfony/user-bundle &quot;~2.0&quot; " />
-      <command value="c dump-autoload" />
       <command value="composer require friendsofsymfony/user-bundle &quot;~2.0&quot;" />
       <command value="s doctrine:database:create" />
       <command value="s doctrine:schema:create" />
-      <command value="s generate:bundle" />
-      <command value="s doctrine:schema:update --force" />
       <command value="s doctrine:generate:form" />
       <command value="s doctrine:generate:form Magasin:Magasin" />
       <command value="s doctrine:generate:form @Magasin:Magasin" />
       <command value="s doctrine:generate:form MagasinBundle:Magasin" />
       <command value="s doctrine:generate:form @Magasin:Offre" />
       <command value="s doctrine:generate:form MagasinBundle:Offre" />
+      <command value="c dump auto load" />
+      <command value="c dump-autoload" />
+      <command value="s generate:bundle" />
+      <command value="s generate:controller" />
+      <command value="s doctrine:generate:entity" />
+      <command value="s doctrine:schema:update --force" />
+      <command value="require knplabs/knp-snappy-bundle" />
+      <command value="composer require knplabs/knp-snappy-bundle" />
     </option>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+  <component name="RunDashboard">
+    <option name="ruleStates">
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
       </list>
     </option>
   </component>
@@ -156,11 +174,28 @@
       <workItem from="1581354560019" duration="394000" />
       <workItem from="1581354965081" duration="5902000" />
       <workItem from="1581436981196" duration="14144000" />
+      <workItem from="1581759183468" duration="15622000" />
+      <workItem from="1581847895618" duration="3510000" />
+      <workItem from="1581881377349" duration="10385000" />
+      <workItem from="1581932358052" duration="15191000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -222,5 +257,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581460084985" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/PanierBundle/Controller/PanierController.php</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
