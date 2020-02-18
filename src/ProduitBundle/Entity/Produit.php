@@ -53,7 +53,7 @@ class Produit
     private $imageName;
 
     /**
-     * @Vich\UploadableField(mapping="product_images", fileNameProperty="image")
+     * @Vich\UploadableField(mapping="product_images", fileNameProperty="imageName", mimeType="png")
      * @var File|null
      */
     private $imageFile;
