@@ -135,4 +135,13 @@ class ProduitController extends Controller
 //TODO Randomize product ajouter lien detail produit
     }
 
+    public function detailProduitAction($id)
+    {
+        $produit=$this->getDoctrine()->getManager()->getRepository(Produit::class)->find($id);
+        return $this->render('@Produit/Produit/product.html.twig',array('produit'=>$produit));
+
+    }
+
+
+
 }
