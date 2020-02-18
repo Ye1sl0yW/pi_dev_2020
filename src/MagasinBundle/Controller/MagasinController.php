@@ -46,9 +46,11 @@ class MagasinController extends Controller
             $em->persist($magasin);
             $em->flush();
 
-            $id_vendeur = $magasin->getIdVendeur()->getId();
-            $this->get(MagasinService::class)->addManager($magasin->getId(),$id_vendeur);
-
+            if($magasin->getIdVendeur() !== null)
+            {
+                $id_vendeur = $magasin->getIdVendeur()->getId();
+                $this->get(MagasinService::class)->addManager($magasin->getId(),$id_vendeur);
+            }
             return $this->redirectToRoute('magasin_homepage');
         }
         return $this->render('@Magasin/Magasin/form_magasin.html.twig',array('f' => $form->createView()));
