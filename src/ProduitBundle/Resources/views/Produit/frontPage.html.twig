@@ -15,15 +15,12 @@
                     <div class="wpb_revslider_element wpb_content_element">
                         <div id="main-slider" class="fullwidthbanner-container" style="position:relative; width:100%; height:auto; margin-top:0px; margin-bottom:0px">
                             <div class="module slideshow no-margin">
-                                <div class="item">
-                                    <a href="simple_product.html"><img src="{{ asset('images/1903/slider2.jpg') }}" alt="slider1" class="img-responsive" height="559"></a>
-                                </div>
-                                <div class="item">
-                                    <a href="simple_product.html"><img src="{{ asset('images/1903/01_index_v1.jpg') }}" alt="slider2" class="img-responsive" height="559"></a>
-                                </div>
-                                <div class="item">
-                                    <a href="simple_product.html"><img src="{{ asset('images/1903/slider3.jpg') }}" alt="slider3" class="img-responsive" height="559"></a>
-                                </div>
+                                {% for i in produit %}
+                                    {%   set image = "uploads/images/products/"~i.imageName  %}
+                                    <div class="item">
+                                        <a href="#"><img src="{{ asset(image) }}" alt="slider1" class="img-responsive" height="559"></a>
+                                    </div>
+                                {% endfor %}
                             </div>
                             <div class="loadeding"></div>
                         </div>

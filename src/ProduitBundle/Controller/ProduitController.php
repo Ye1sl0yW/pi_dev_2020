@@ -119,9 +119,20 @@ class ProduitController extends Controller
 
     public function frontPageAction()
     {
-        return $this->render('@Produit/Produit/frontPage.html.twig');
+        $em=$this->getDoctrine()->getManager();
+        $produit = array();
+        while (sizeof($produit)<3)
+        {
+            $rd = rand(1,10);
+            $item=$this->getDoctrine()->getRepository(Produit::class)->find(9);
+            if(($item !== null)&&($item->getImageName()!==null))
+            {
+                array_push($produit,$item);
+            }
 
+        }
+        return $this->render('@Produit/Produit/frontPage.html.twig',array('produit'=>$produit));
+//TODO Randomize product ajouter lien detail produit
     }
-
 
 }
