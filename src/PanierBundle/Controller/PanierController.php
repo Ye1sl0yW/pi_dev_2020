@@ -2,10 +2,11 @@
 
 namespace PanierBundle\Controller;
 
-use PanierBundle\Entity\Panier;
+use PanierBundle\Service\Cart\CartService;
+use ProduitBundle\Entity\Produit;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
-use ProduitBundle\Entity\Produit;
 use ProduitBundle\Repository\ProduitRepository;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -33,6 +34,7 @@ class PanierController extends Controller
              * @var Produuit $product
              */
             $product = $productRepository->find((int)$id);
+
             if (is_object($product)) {
                 $productPosition = [];
 
@@ -54,7 +56,9 @@ class PanierController extends Controller
             'totalsum' => $totalSum
         ];
       //exit(VarDumper::dump($cart));
-        return $this->render('@Panier/Panier/cart.html.twig',$CartWithData);
+        return $this->render('@Panier/Panier/cartPage.html.twig',[
+            'elms'=>$CartWithData
+        ]);
     }
     public function indexAction(SessionInterface  $session)
 
@@ -64,18 +68,32 @@ class PanierController extends Controller
 
         $panier  = $session->get('panier',[]);
 
-
          $CartWithData=[];
-         foreach ($panier as $id =>$quantite){
+
+         foreach ($panier as $id => $quantite){
+
+
              $CartWithData[]=[
                  'produit'=>$productRepository->find($id),
-                 'quantite'=> $quantite
+                 'quantite'=> $quantite ,
+
              ];
          }
-       unset( $CartWithData[3]);
-        // exit(VarDumper::dump($CartWithData));
-         return $this->render('@Panier/Panier/cart.html.twig',[
-             'elms'=>$CartWithData
+
+         $total=0;
+        /* foreach ($CartWithData as $ct)
+         {
+
+             $totalct=$ct['produit'] * $ct['quantite'];
+             $total+=$totalct;
+
+         }*/
+    //  unset( $panier[0]);
+
+   //  exit(VarDumper::dump($CartWithData));
+         return $this->render('@Panier/Panier/cartPage.html.twig',[
+             'elms'=>$CartWithData,
+             'a'=>$total
          ]);
 
     }
@@ -85,9 +103,9 @@ class PanierController extends Controller
 
     }
 
-    public  function addAction($id,SessionInterface $session){
-
-$panier = $session->get('panier',[]);
+    public  function addAction($id,CartService $cartService){
+$cartService->add($id);
+/*$panier = $session->get('panier',[]);
 if (!empty($panier[$id]))
 {
     $panier[$id]++;
@@ -101,9 +119,22 @@ else
 
   $session->set('panier',$panier);
 
-//exit(VarDumper::dump($session->get('panier')));
+//exit(VarDumper::dump($session->get('panier')));*/
         $produit=$this->getDoctrine()->getManager()->getRepository(Produit::class)->findAll();
        return $this->render('@Panier/Panier/trade.html.twig',array('data'=>$produit));
 
+    }
+    public function RemoveCartAction($id,SessionInterface $session)
+    {
+
+
+        $panier=$session->get('panier',[]);
+        if(!empty($panier[$id])){
+
+   unset($panier[$id]);
+        }
+        $session->set('panier',$panier);
+        $this->addFlash('success', 'element removed from the cart.');
+        return $this->redirectToRoute('panier_cart');
     }
 }

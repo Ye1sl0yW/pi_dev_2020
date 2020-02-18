@@ -12,7 +12,10 @@ cart_add:
     defaults: { _controller: PanierBundle:Panier:add }
 cart_show:
     path:     /show
-    defaults: { _controller: PanierBundle:Panier:showCart }
+    defaults: { _controller: PanierBundle:Panier:index}
 cartPage_show:
     path:     /showPage
     defaults: { _controller: PanierBundle:Panier:showCart }
+cart_delete:
+     path:     /delete_cart/{id}
+     defaults: { _controller: PanierBundle:Panier:RemoveCart }

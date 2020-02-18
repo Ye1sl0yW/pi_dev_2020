@@ -17,9 +17,9 @@
 									 <table class="shop_table shop_table_responsive cart" cellspacing="0">
 										 <thead>
 										 <tr>
-											 <th class="product-remove">&nbsp;</th>
-											 <th class="product-thumbnail">&nbsp;</th>
-											 <th class="product-name">Product</th>
+											 <th class="product-remove">&nbsp;supprimer</th>
+											 <th class="product-thumbnail">id produit</th>
+											 <th class="product-name">qte produit</th>
 											 <th class="product-price">Price</th>
 											 <th class="product-quantity">Quantity</th>
 											 <th class="product-subtotal">Total</th>
@@ -28,19 +28,20 @@
 
 										 <tbody>
 										 {% for el in elms  %}
+											 {% if el.produit is not empty  %}
+
+
 										 <tr class="cart_item">
 											 <td class="product-remove">
-												 <a href="#" class="remove" title="Remove this item"><i class="fa fa-times" aria-hidden="true"></i></a>
+												 <a href="{{ path('cart_delete',{'id':el.produit.id}) }}" class="remove" title="Remove this item"><i class="fa fa-times" aria-hidden="true"></i></a>
 											 </td>
 
-											 <td class="product-thumbnail">
-												 <a href="simple_product.html">
-													 <img width="180" height="180" src="{{ asset('web/images/1903/56-180x180.jpg') }}"class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="" srcset="../../../../web/images/1903/56-180x180.jpg 180w, images/1903/56-150x150.jpg 150w, images/1903/56-300x300.jpg 300w, images/1903/56.jpg 600w" sizes="(max-width: 180px) 100vw, 180px">
-												 </a>
-											 </td>
+											 <td class="product-thumbnail"data-title="Pro">
 
-											 <td class="product-name" data-title="Product">
-												 <a href="simple_product.html">{{ el.produit.quantite}}</a>
+												 <span class="woocommerce-Price-amount amount">{{ el.produit.id}}</span>
+
+											 <td class="product-name" data-title="Name">
+												 <span class="woocommerce-Price-amount amount">{{ el.quantite}}</span>
 											 </td>
 
 											 <td class="product-price" data-title="Price">
@@ -49,25 +50,22 @@
 
 											 <td class="product-quantity" data-title="Quantity">
 												 <div class="quantity buttons_added"><input type="button" value="-" class="minus">
-													 <input type="number" step="1" min="0" max="" name="" value="{{ el.produit.quantite}}" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+													 <input type="number" step="1" min="0" max="" name="" value="{{ el.quantite}}" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
 													 <input type="button" value="+" class="plus"></div>
 											 </td>
 
 											 <td class="product-subtotal" data-title="Total">
-												 <span class="woocommerce-Price-amount amount">{{ el.produit.quantite*el.produit.prix}}</span>
+												 <span class="woocommerce-Price-amount amount">{{ el.quantite*el.produit.prix}}</span>
 											 </td>
 										 </tr>
 
 										 <tr>
 											 <td colspan="6" class="actions">
-												 <div class="coupon">
-													 <label for="coupon_code">Coupon:</label>
-													 <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="Coupon code">
-													 <input type="submit" class="button" name="apply_coupon" value="Apply Coupon">
-												 </div>
-												 <input type="submit" class="button" name="update_cart" value="Update Cart">
+
+												 {% set a=a+el.quantite*el.produit.prix %}
 											 </td>
 										 </tr>
+											 {% endif %}
 										 {% endfor %}
 										 </tbody>
 										 <tfoot>
@@ -91,13 +89,13 @@
 												 <tr class="cart-subtotal">
 													 <th>Subtotal</th>
 													 <td data-title="Subtotal">
-														 <span class="woocommerce-Price-amount amount">$300.00</span>
+														 <span class="woocommerce-Price-amount amount">{{ a }} $</span>
 													 </td>
 												 </tr>
 												 <tr class="order-total">
 													 <th>Total</th>
 													 <td data-title="Total">
-														 <strong><span class="woocommerce-Price-amount amount">$300.00</span></strong>
+														 <strong><span class="woocommerce-Price-amount amount">{{ a }} $</span></strong>
 													 </td>
 												 </tr>
 												 </tbody>
