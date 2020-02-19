@@ -219,7 +219,7 @@ class Produit
 
 
     /**
-     * @ORM\ManyToMany(targetEntity="Categorie" , cascade={"persist", "remove"})
+     * @ORM\ManyToMany(targetEntity="Categorie" , cascade={"persist"})
      * @ORM\JoinColumn(name="id_categorie",referencedColumnName="id")
      */
     protected $id_categorie;

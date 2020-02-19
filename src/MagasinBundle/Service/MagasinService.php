@@ -135,7 +135,7 @@ class MagasinService
 
     public function findAllProductsByShop($id)
     {
-        $magasin= $this->em->getRepository(Magasin::class)->find($id);
+       // $magasin= $this->em->getRepository(Magasin::class)->find($id);
         return ($this->em->getRepository(Produit::class)->findBy(array('id_magasin' => $id)));
     }
 

@@ -6,6 +6,7 @@ use MagasinBundle\Entity\Magasin;
 use MagasinBundle\Entity\Offre;
 use MagasinBundle\Form\MagasinType;
 use MagasinBundle\Form\OffreType;
+use MagasinBundle\Service\MagasinService;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -67,5 +68,12 @@ class OffreController extends Controller
         return $this->render('@Magasin/Offre/form_offre.html.twig',array('f' => $form->createView()));
 
     }
+
+    public function showOffersOfThisShopAction($id)
+    {
+        $data=$this->get(MagasinService::class)->findAllOffersByShop($id);
+        return $this->render('@Magasin/Offre/offers.html.twig',array('data'=>$data));
+    }
+
 
 }

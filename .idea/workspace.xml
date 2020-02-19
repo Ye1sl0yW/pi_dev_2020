@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a70e209a-4f11-4125-8f94-492922f070bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Offre/offers.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/uploads/images/products/default_image.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Controller/MagasinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Controller/MagasinController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Controller/OffreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Controller/OffreController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/details.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/details.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/products.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/products.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Service/MagasinService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Service/MagasinService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProduitBundle/Entity/Produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduitBundle/Entity/Produit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +122,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/uploads/images/products" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
   </component>
@@ -127,11 +135,11 @@
       <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\src\ProduitBundle\Resources\views" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\pi_dev_2020\web\uploads\images\products" />
+      <recent name="D:\wamp64\www\pi_dev_2020\src\MagasinBundle\Resources\views\Offre" />
       <recent name="D:\wamp64\www\pi_dev_2020\src\MagasinBundle\Resources\views\Magasin" />
       <recent name="D:\wamp64\www\pi_dev_2020\src\ProduitBundle\Repository" />
       <recent name="D:\wamp64\www\pi_dev_2020\app\config" />
-      <recent name="D:\wamp64\www\pi_dev_2020\src\MagasinBundle\Form" />
-      <recent name="D:\wamp64\www\pi_dev_2020\app\Resources\FOSUserBundle\views" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -190,7 +198,7 @@
       <workItem from="1581689276177" duration="16638000" />
       <workItem from="1581777144530" duration="36466000" />
       <workItem from="1581965196573" duration="8910000" />
-      <workItem from="1582117591587" duration="26100000" />
+      <workItem from="1582117591587" duration="27694000" />
     </task>
     <servers />
   </component>
@@ -217,10 +225,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582139926629" />
-    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581792323834">
+    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582148508174">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581792323834" />
+    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582148508174" />
     <state x="684" y="399" key="ComposerCompositePathDialog" timestamp="1581691217532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -229,22 +237,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1277" y="282" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581691231702" />
-    <state width="1877" height="298" key="GridCell.Tab.0.bottom" timestamp="1582146361418">
+    <state width="1877" height="298" key="GridCell.Tab.0.bottom" timestamp="1582148875040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582146361418" />
-    <state width="1877" height="298" key="GridCell.Tab.0.center" timestamp="1582146361418">
+    <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582148875040" />
+    <state width="1877" height="298" key="GridCell.Tab.0.center" timestamp="1582148875040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582146361418" />
-    <state width="1877" height="298" key="GridCell.Tab.0.left" timestamp="1582146361418">
+    <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582148875040" />
+    <state width="1877" height="298" key="GridCell.Tab.0.left" timestamp="1582148875040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582146361418" />
-    <state width="1877" height="298" key="GridCell.Tab.0.right" timestamp="1582146361418">
+    <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582148875040" />
+    <state width="1877" height="298" key="GridCell.Tab.0.right" timestamp="1582148875040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582146361418" />
+    <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582148875040" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1581847877709">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -281,13 +289,13 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="1913" y="0" width="974" height="1087" maximized="true" key="dock-window-3/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581718494439" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1582145166903">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1582148835641">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582145166903" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582143299488">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582148835641" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582149574827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582143299488" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582149574827" />
   </component>
 </project>

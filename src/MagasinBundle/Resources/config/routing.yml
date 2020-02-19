@@ -28,3 +28,6 @@ magasin_details:
 magasin_products:
     path:     /products/{id}
     defaults: { _controller: MagasinBundle:Magasin:showProductsOfThisShop }
+magasin_offers:
+    path:     /offers/{id}
+    defaults: { _controller: MagasinBundle:Offre:showOffersOfThisShop }

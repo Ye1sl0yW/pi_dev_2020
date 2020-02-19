@@ -1,9 +1,9 @@
  {% extends '/dashboard/pro/dashboard-list-base.html.twig' %}
  {% block title %}
- Portail produits
+ vos produits
  {% endblock %}
 
-{% block list_title %}Liste des produits sur Shoppy {% endblock list_title %}
+{% block list_title %}Liste de vos produits sur Shoppy {% endblock list_title %}
 
  {% block table %}
 
@@ -27,7 +27,6 @@
      <td> {% if elem.imageName %}
               {%   set image = "uploads/images/products/"~elem.imageName  %}
               <img src="{{asset(image) }}" height="50px"/>
-       {{ elem.imageName }}
       {% endif %}</td>
      <td>{{ elem.id }}</td>
      <td>{{ elem.quantite}}</td>
