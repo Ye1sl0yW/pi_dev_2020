@@ -30,6 +30,7 @@ class MagasinController extends Controller
         $ms = $this->get(MagasinService::class);
         $magasin = $ms->refreshMagasin($id);
         $pieChart = $ms->pieChartOfNumberOfProductsByCategory($id);
+        //return $this->render('@Magasin/Magasin/test.html.twig',array('piechart'=>$pieChart));
         return $this->render('@Magasin/Magasin/details.html.twig',array('data'=>$magasin,'piechart'=>$pieChart));
     }
 

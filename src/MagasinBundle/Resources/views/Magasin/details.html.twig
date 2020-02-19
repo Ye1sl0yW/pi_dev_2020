@@ -27,15 +27,15 @@
                     <a href="{{path('magasin_update',{'id':data.id})}}"><i class="far fa-edit text-info mr-1"></i></a></td>
         </tr>
 
-    <div id="div chart">
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script  type="text/javascript">
-            {{ gc gc_draw(piechart,'div chart') }}
-        </script>
-    </div>
-
 {% endblock table %}
 
-{% block buttons %}
-    <a href={{ path('magasin_ajouter') }}><img src="{{ asset('dashboard_style/assets/images/plus.png') }}"><a/>
-{% endblock buttons %}
+{% block append_content %}
+    <br>
+    <br>
+    {{ dump(piechart) }}
+<div id="div_chart"></div>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    {{ gc_draw(piechart, 'div_chart') }}
+</script>
+{% endblock append_content %}

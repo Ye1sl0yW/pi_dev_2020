@@ -9,7 +9,7 @@ use Symfony\Component\Httpfoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="ProduitBundle\Repository\ProduitRepository")
  * @Vich\Uploadable
  */
 class Produit

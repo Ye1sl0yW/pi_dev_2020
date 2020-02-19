@@ -73,7 +73,7 @@ class MagasinService
     public function findAllProductsByShopAndCategory($id_magasin,$category)
     {
         $magasin= $this->em->getRepository(Magasin::class)->find($id_magasin);
-        $produits = $this->em->getRepository(Produit::class)->findBy(['id_magasin' => $magasin]);
+        $produits = $this->em->getRepository(Produit::class)->findBy(array('id_magasin' => $id_magasin));
         $result = array();
         foreach ($produits as $p)
         {
@@ -101,13 +101,15 @@ class MagasinService
 
         $magasin= $this->em->getRepository(Magasin::class)->find($id);
         $categories = $this->em->getRepository(Categorie::class)->findAll();
-        $totalProduits = sizeof($this->em->getRepository(Produit::class)->findBy(array('id_magasin',$id)));
+        $totalProduits = sizeof($this->em->getRepository(Produit::class)->findBy(array('id_magasin' => $id)));
 
         foreach ($categories as $cat )
         {
             $stat = array();
             $nomCat = $cat->getNom();
-            $percent = sizeof($this->findAllProductsByShopAndCategory($id,$cat)) *100 /$totalProduits;
+            $er = $this->em->getRepository(Produit::class);
+            $percent = ( sizeof($this->findAllProductsByShopAndCategory($magasin,$cat)) *100 /$totalProduits );
+            //$percent = ($er->findAllProductsByShopAndCategory($magasin,$cat)) *100 /$totalProduits;
             array_push($stat, $nomCat, $percent);
             $stat=[$nomCat,$percent];
             array_push($data, $stat);
@@ -116,7 +118,7 @@ class MagasinService
         $pieChart->getData()->setArrayToDataTable($data);
 
         $pieChartOptions = $pieChart->getOptions();
-        $pieChartOptions->setTitle('Pourcentage de produits proposés par catégorie');
+        $pieChartOptions->setTitle('Pourcentages de produits proposés par catégorie');
         $pieChartOptions->setHeight(500);
         $pieChartOptions->setWidth(900);
         $pieChartOptions->getTitleTextStyle()->setBold(true);
