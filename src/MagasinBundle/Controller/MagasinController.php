@@ -31,11 +31,10 @@ class MagasinController extends Controller
         $ms = $this->get(MagasinService::class);
         $magasin = $ms->refreshMagasin($id);
         $pieChart = $ms->pieChartOfNumberOfProductsByCategory($id);
+        $pieChartArticles = $ms->pieChartOfNumberOfArticlesByCategory($id);
 
-        $test_cat = $this->getDoctrine()->getManager()->getRepository(Categorie::class)->find(1);
-        $test1 = $ms->findAllProductsByShopAndCategory($id,$test_cat);
-        //return $this->render('@Magasin/Magasin/test.html.twig',array('piechart'=>$pieChart));
-        return $this->render('@Magasin/Magasin/details.html.twig',array('data'=>$magasin,'piechart'=>$pieChart,'test_fct'=>$test1));
+
+        return $this->render('@Magasin/Magasin/details.html.twig',array('data'=>$magasin,'piechart'=>$pieChart,'piechart2'=>$pieChartArticles));
     }
 
     public function createMagasinAction(Request $request)

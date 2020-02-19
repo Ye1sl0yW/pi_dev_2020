@@ -81,21 +81,43 @@ class MagasinService
     }
 
     public function findAllProductsByShopAndCategory($id_magasin,$category)
+{
+    $magasin= $this->em->getRepository(Magasin::class)->find($id_magasin);
+    $produits = $this->em->getRepository(Produit::class)->findBy(array('id_magasin' => $id_magasin));
+    $result = array();
+    foreach ($produits as $p)
+    {
+        $categoriesList = $p->getIdCategorie()->getValues();
+        if (in_array($category,$categoriesList))
+        {
+            array_push($result,$p);
+        }
+    }
+    return $result;
+}
+
+    public function calculateArticlesByShopAndCategory($id_magasin,$category)
     {
         $magasin= $this->em->getRepository(Magasin::class)->find($id_magasin);
         $produits = $this->em->getRepository(Produit::class)->findBy(array('id_magasin' => $id_magasin));
-        $result = array();
+        $result = 0;
         foreach ($produits as $p)
         {
             $categoriesList = $p->getIdCategorie()->getValues();
-            //if($p->getIdCategorie() ===$category)
             if (in_array($category,$categoriesList))
             {
-                array_push($result,$p);
+                $result+=(int)$p->getQuantite();
             }
         }
         return $result;
     }
+
+    public function findAllProductsByShop($id)
+    {
+        $magasin= $this->em->getRepository(Magasin::class)->find($id);
+        return ($this->em->getRepository(Produit::class)->findBy(array('id_magasin' => $id)));
+    }
+
 
     public function bestSellers($magasin)
     {
@@ -121,11 +143,9 @@ class MagasinService
         return 0;
     }
 
-    public function findAllProductsByShop($id)
-    {
-        $magasin= $this->em->getRepository(Magasin::class)->find($id);
-        return ($this->em->getRepository(Produit::class)->findBy(array('id_magasin' => $id)));
-    }
+
+
+
 
     /*
      * Statistics Methods
@@ -143,15 +163,12 @@ class MagasinService
 
         $magasin= $this->em->getRepository(Magasin::class)->find($id);
         $categories = $this->em->getRepository(Categorie::class)->findAll();
-        $totalProduits = sizeof($this->em->getRepository(Produit::class)->findBy(array('id_magasin' => $id)));
 
         foreach ($categories as $cat )
         {
             $stat = array();
             $nomCat = $cat->getNom();
-            //$er = $this->em->getRepository(Produit::class);
-            //$percent = ($er->findAllProductsByShopAndCategory($magasin,$cat)) *100 /$totalProduits;
-            $percent = ( sizeof($this->findAllProductsByShopAndCategory($magasin,$cat)) *100 /$totalProduits );
+            $percent = ( sizeof($this->findAllProductsByShopAndCategory($magasin,$cat)) );
             array_push($stat, $nomCat, $percent);
             $stat=[$nomCat,$percent];
             array_push($data, $stat);
@@ -160,7 +177,7 @@ class MagasinService
         $pieChart->getData()->setArrayToDataTable($data);
 
         $pieChartOptions = $pieChart->getOptions();
-        $pieChartOptions->setTitle('Pourcentages de produits proposés par catégorie');
+        $pieChartOptions->setTitle('Représentation des catégories par nombre de produits');
         $pieChartOptions->setHeight(400);
         $pieChartOptions->setWidth(700);
         $pieChartOptions->setPieResidueSliceColor('black');
@@ -170,7 +187,47 @@ class MagasinService
         $pieChartOptions->getTitleTextStyle()->setColor('#009900');
         $pieChartOptions->getTitleTextStyle()->setItalic(false);
         $pieChartOptions->getTitleTextStyle()->setFontName('Poppins');
-        $pieChartOptions->getTitleTextStyle()->setFontSize('25');
+        $pieChartOptions->getTitleTextStyle()->setFontSize('20');
+
+        return $pieChart;
+    }
+
+
+    public function pieChartOfNumberOfArticlesByCategory($id)
+    {
+        $pieChart = new PieChart();
+        $data = array();
+        $stat = ['Catégorie','Nombre d\' articles'];
+        $percent = 0;
+        array_push($data,$stat);
+
+        $magasin= $this->em->getRepository(Magasin::class)->find($id);
+        $categories = $this->em->getRepository(Categorie::class)->findAll();
+
+        foreach ($categories as $cat )
+        {
+            $stat = array();
+            $nomCat = $cat->getNom();
+            $percent = ( $this->calculateArticlesByShopAndCategory($magasin,$cat)) ;
+            array_push($stat, $nomCat, $percent);
+            $stat=[$nomCat,$percent];
+            array_push($data, $stat);
+        }
+
+        $pieChart->getData()->setArrayToDataTable($data);
+
+        $pieChartOptions = $pieChart->getOptions();
+        $pieChartOptions->setTitle('Représentation des catégories par nombre de produits');
+        $pieChartOptions->setHeight(400);
+        $pieChartOptions->setWidth(700);
+        $pieChartOptions->setPieResidueSliceColor('black');
+        $pieChartOptions->setPieResidueSliceLabel('Add more data');
+        $pieChartOptions->setBackgroundColor('#151933');
+        $pieChartOptions->getTitleTextStyle()->setBold(true);
+        $pieChartOptions->getTitleTextStyle()->setColor('#009900');
+        $pieChartOptions->getTitleTextStyle()->setItalic(false);
+        $pieChartOptions->getTitleTextStyle()->setFontName('Poppins');
+        $pieChartOptions->getTitleTextStyle()->setFontSize('20');
 
         return $pieChart;
     }
