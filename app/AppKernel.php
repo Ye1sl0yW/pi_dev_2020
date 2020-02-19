@@ -24,6 +24,8 @@ class AppKernel extends Kernel
             new MagasinBundle\MagasinBundle(),
             new PointsBundle\PointsBundle(),
             new Vich\UploaderBundle\VichUploaderBundle(),
+            new CMEN\GoogleChartsBundle\CMENGoogleChartsBundle(),
+            new StatisticsBundle\StatisticsBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
