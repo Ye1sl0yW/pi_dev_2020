@@ -27,8 +27,10 @@ class MagasinController extends Controller
 
     public function detailsAction($id)
     {
-        $var = $this->get(MagasinService::class)->refreshMagasin($id);
-        return $this->render('@Magasin/Magasin/details.html.twig',array('data'=>$var));
+        $ms = $this->get(MagasinService::class);
+        $magasin = $ms->refreshMagasin($id);
+        $pieChart = $ms->pieChartOfNumberOfProductsByCategory($id);
+        return $this->render('@Magasin/Magasin/details.html.twig',array('data'=>$magasin,'piechart'=>$pieChart));
     }
 
     public function createMagasinAction(Request $request)

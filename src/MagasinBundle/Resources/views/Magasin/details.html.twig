@@ -23,9 +23,16 @@
             <td>{{data.nom}}</td>
             <td>{{ data.tailleStock}}</td>
             <td>{{ data.matriculeFiscal}}</td>
-            <td><a href="{{path('magasin_delete',{'id':data.id})}}"><i class="far fa-trash-alt text-danger"></i><a/>
-                    <a href="{{path('magasin_update',{'id':data.id})}}"><i class="far fa-edit text-info mr-1"></i><a/></td>
+            <td><a href="{{path('magasin_delete',{'id':data.id})}}"><i class="far fa-trash-alt text-danger"></i></a>
+                    <a href="{{path('magasin_update',{'id':data.id})}}"><i class="far fa-edit text-info mr-1"></i></a></td>
         </tr>
+
+    <div id="div chart">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script  type="text/javascript">
+            {{ gc gc_draw(piechart,'div chart') }}
+        </script>
+    </div>
 
 {% endblock table %}
 

@@ -72,8 +72,9 @@ class MagasinService
 
     public function findAllProductsByShopAndCategory($id_magasin,$category)
     {
-        $produits = $this->em->getRepository(Produit::class)->findBy(array('id_magasin',$id_magasin));
-       $result = array();
+        $magasin= $this->em->getRepository(Magasin::class)->find($id_magasin);
+        $produits = $this->em->getRepository(Produit::class)->findBy(['id_magasin' => $magasin]);
+        $result = array();
         foreach ($produits as $p)
         {
             if($p->getIdCategorie()===$category)
@@ -92,23 +93,37 @@ class MagasinService
 
     public function pieChartOfNumberOfProductsByCategory($id)
     {
+        $pieChart = new PieChart();
+        $data = array();
+        $stat = ['Catégorie','Nombre de produits'];
+        $percent = 0;
+        array_push($data,$stat);
+
         $magasin= $this->em->getRepository(Magasin::class)->find($id);
         $categories = $this->em->getRepository(Categorie::class)->findAll();
-        $produits = $this->em->getRepository(Produit::class)->findBy(array('id_magasin',$id));
+        $totalProduits = sizeof($this->em->getRepository(Produit::class)->findBy(array('id_magasin',$id)));
 
-        if ($produits !== null )
+        foreach ($categories as $cat )
         {
-            $totalProduits = sizeof($produits);
+            $stat = array();
+            $nomCat = $cat->getNom();
+            $percent = sizeof($this->findAllProductsByShopAndCategory($id,$cat)) *100 /$totalProduits;
+            array_push($stat, $nomCat, $percent);
+            $stat=[$nomCat,$percent];
+            array_push($data, $stat);
         }
-        else
-        {
-            $totalProduits = 0;
-        }
 
+        $pieChart->getData()->setArrayToDataTable($data);
 
-
-        $pieChart = new PieChart();
-
+        $pieChartOptions = $pieChart->getOptions();
+        $pieChartOptions->setTitle('Pourcentage de produits proposés par catégorie');
+        $pieChartOptions->setHeight(500);
+        $pieChartOptions->setWidth(900);
+        $pieChartOptions->getTitleTextStyle()->setBold(true);
+        $pieChartOptions->getTitleTextStyle()->setColor('#009900');
+        $pieChartOptions->getTitleTextStyle()->setItalic(false);
+        $pieChartOptions->getTitleTextStyle()->setFontName('Helvetica');
+        $pieChartOptions->getTitleTextStyle()->setFontSize('25');
 
         return $pieChart;
     }
