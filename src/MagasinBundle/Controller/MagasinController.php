@@ -6,6 +6,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use MagasinBundle\Entity\Magasin;
 use MagasinBundle\Form\MagasinType;
 use MagasinBundle\Service\MagasinService;
+use ProduitBundle\Entity\Categorie;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use UserBundle\Entity\User;
@@ -30,8 +31,11 @@ class MagasinController extends Controller
         $ms = $this->get(MagasinService::class);
         $magasin = $ms->refreshMagasin($id);
         $pieChart = $ms->pieChartOfNumberOfProductsByCategory($id);
+
+        $test_cat = $this->getDoctrine()->getManager()->getRepository(Categorie::class)->find(1);
+        $test1 = $ms->findAllProductsByShopAndCategory($id,$test_cat);
         //return $this->render('@Magasin/Magasin/test.html.twig',array('piechart'=>$pieChart));
-        return $this->render('@Magasin/Magasin/details.html.twig',array('data'=>$magasin,'piechart'=>$pieChart));
+        return $this->render('@Magasin/Magasin/details.html.twig',array('data'=>$magasin,'piechart'=>$pieChart,'test_fct'=>$test1));
     }
 
     public function createMagasinAction(Request $request)

@@ -7,24 +7,39 @@
 {% block list_title %}Liste des Magasins partenaires{% endblock list_title %}
 
 {% block table %}
+    <h3>Bienvenue à la page de gestion de {{ data.nom }}</h3>
+    <h5>Détails du magasin:</h5>
+
+    <table>
     <thead>
     <tr>
-        <th>ID</th>
         <th>Nom</th>
+        <th></th>
         <th>Taille du stock</th>
+        <th></th>
         <th>matricule fiscal</th>
-        <th>Actions</th>
     </tr>
     </thead>
 
         <tr>
-
-            <td>{{ data.id }}</td>
             <td>{{data.nom}}</td>
+            <td></td>
             <td>{{ data.tailleStock}}</td>
+            <td></td>
             <td>{{ data.matriculeFiscal}}</td>
-            <td><a href="{{path('magasin_delete',{'id':data.id})}}"><i class="far fa-trash-alt text-danger"></i></a>
-                    <a href="{{path('magasin_update',{'id':data.id})}}"><i class="far fa-edit text-info mr-1"></i></a></td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn-blue"> Gérer vos produits </button>
+            </td>
+                        <td></td>
+            <td></td>
+            <td>
+                <button class="btn-blue"> Gérer vos offres </button>
+            </td>
+            <td>
+                <button class="btn-blue"> Consulter vos rattachements </button>
+            </td>
         </tr>
 
 {% endblock table %}
@@ -33,9 +48,38 @@
     <br>
     <br>
     {{ dump(piechart) }}
-<div id="div_chart"></div>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-    {{ gc_draw(piechart, 'div_chart') }}
-</script>
+    {{ dump(test_fct) }}
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="chart-demo">
+                        <div id="apex_line1" class="apex-charts">
+                            <div id="div_chart"></div>
+                            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                            <script type="text/javascript">
+                                {{ gc_draw(piechart, 'div_chart') }}
+                            </script>
+                        </div>
+                    </div>
+                </div><!--end card-body-->
+            </div><!--end card-->
+        </div><!--end col-->
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="chart-demo">
+                        <div id="apex_line2" class="apex-charts">
+                            <div id="div_chart"></div>
+                            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                            <script type="text/javascript">
+                                {{ gc_draw(piechart, 'div_chart') }}
+                            </script>
+                        </div>
+                    </div>
+                </div><!--end card-body-->
+            </div><!--end card-->
+        </div><!--end col-->
+    </div><!--end row-->
 {% endblock append_content %}

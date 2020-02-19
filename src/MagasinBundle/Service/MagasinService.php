@@ -43,7 +43,6 @@ class MagasinService
 
     public function calculateStockByCategory($id, $category)
     {
-        //TODO: Implémenter les catégories correctement
         $inventaire = $this->em->getRepository(Produit::class)->findBy(array("id_magasin"=>$id));
         return sizeof($inventaire);
     }
@@ -62,10 +61,15 @@ class MagasinService
 
     public function value($id)
     {
-        //TODO Faire le service value product
-        $result = 0;
+        $value = 0;
         $magasin= $this->em->getRepository(Magasin::class)->find($id);
-        return $result;
+        $products = $this->em->getRepository(Produit::class)->findBy(array("id_magasin"=>$id));
+
+        foreach($products as $p )
+        {
+            $value += $p->getQuantite()*$p->getPrix();
+        }
+        return $value;
     }
 
     public function createDefaultMagasin($id_user)
@@ -83,12 +87,44 @@ class MagasinService
         $result = array();
         foreach ($produits as $p)
         {
-            if($p->getIdCategorie()===$category)
+            $categoriesList = $p->getIdCategorie()->getValues();
+            //if($p->getIdCategorie() ===$category)
+            if (in_array($category,$categoriesList))
             {
                 array_push($result,$p);
             }
         }
         return $result;
+    }
+
+    public function bestSellers($magasin)
+    {
+        //TODO implémenter la classe vente
+        return 0;
+    }
+
+    public function calculateTurnOverByMonth($magasin)
+    {
+        //TODO implémenter la fonction de calcul du chiffre d'affaire par mois
+        return 0;
+    }
+
+    public function calculateTurnOverByYear($magasin)
+    {
+        //TODO implémenter la fonction de calcul du chiffre d'affaire par année
+        return 0;
+    }
+
+    public function calculateTurnOverForCurrentYear($magasin)
+    {
+        //TODO implémenter la fonction de calcul du chiffre d'affaire pour l'année en cours
+        return 0;
+    }
+
+    public function findAllProductsByShop($id)
+    {
+        $magasin= $this->em->getRepository(Magasin::class)->find($id);
+        return ($this->em->getRepository(Produit::class)->findBy(array('id_magasin' => $id)));
     }
 
     /*
@@ -125,12 +161,15 @@ class MagasinService
 
         $pieChartOptions = $pieChart->getOptions();
         $pieChartOptions->setTitle('Pourcentages de produits proposés par catégorie');
-        $pieChartOptions->setHeight(500);
-        $pieChartOptions->setWidth(900);
+        $pieChartOptions->setHeight(400);
+        $pieChartOptions->setWidth(700);
+        $pieChartOptions->setPieResidueSliceColor('black');
+        $pieChartOptions->setPieResidueSliceLabel('Add more data');
+        $pieChartOptions->setBackgroundColor('#151933');
         $pieChartOptions->getTitleTextStyle()->setBold(true);
         $pieChartOptions->getTitleTextStyle()->setColor('#009900');
         $pieChartOptions->getTitleTextStyle()->setItalic(false);
-        $pieChartOptions->getTitleTextStyle()->setFontName('Helvetica');
+        $pieChartOptions->getTitleTextStyle()->setFontName('Poppins');
         $pieChartOptions->getTitleTextStyle()->setFontSize('25');
 
         return $pieChart;
