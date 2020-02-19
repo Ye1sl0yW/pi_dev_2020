@@ -6,6 +6,7 @@ namespace MagasinBundle\Service;
 use CMEN\GoogleChartsBundle\GoogleCharts\Charts\PieChart;
 use Doctrine\ORM\EntityManagerInterface;
 use MagasinBundle\Entity\Magasin;
+use MagasinBundle\Entity\Offre;
 use ProduitBundle\Entity\Categorie;
 use ProduitBundle\Entity\Produit;
 use UserBundle\Entity\User;
@@ -27,6 +28,12 @@ class MagasinService
         foreach($products as $p)
         {
             $this->em->remove($p);
+        }
+
+        $offres=$this->findAllOffersByShop($id);
+        foreach($offres as $o)
+        {
+            $this->em->remove($o);
         }
 
         $this->em->remove($magasin);
@@ -130,6 +137,12 @@ class MagasinService
     {
         $magasin= $this->em->getRepository(Magasin::class)->find($id);
         return ($this->em->getRepository(Produit::class)->findBy(array('id_magasin' => $id)));
+    }
+
+    public function findAllOffersByShop($id)
+    {
+        $magasin= $this->em->getRepository(Magasin::class)->find($id);
+        return ($this->em->getRepository(Offre::class)->findBy(array('id_magasin' => $id)));
     }
 
 
