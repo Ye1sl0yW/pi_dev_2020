@@ -123,8 +123,8 @@ class Produit
 
 
     /**
-     * @ORM\ManyToOne(targetEntity="MagasinBundle\Entity\Magasin")
-     * @ORM\JoinColumn(name="id_magasin",referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="MagasinBundle\Entity\Magasin" )
+     * @ORM\JoinColumn(name="id_magasin",referencedColumnName="id" )
      */
     protected $id_magasin;
 
@@ -219,7 +219,7 @@ class Produit
 
 
     /**
-     * @ORM\ManyToMany(targetEntity="Categorie")
+     * @ORM\ManyToMany(targetEntity="Categorie" , cascade={"persist", "remove"})
      * @ORM\JoinColumn(name="id_categorie",referencedColumnName="id")
      */
     protected $id_categorie;

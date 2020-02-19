@@ -54,19 +54,24 @@
         </div>
     </div>
 
-    {%  if app.user.hasrole('ROLE_ADMIN') %}
+
     <div class="form-group row">
         <label for="example-text-input" class="col-sm-2 col-form-label text-right">{{ form_label(f.id_magasin) }}</label>
         <div class="col-sm-10">
             {{ form_widget(f.id_magasin,{'attr':{'class':'form-control'}}) }}
         </div>
     </div>
-    {% endif %}
+
     <div class="form-group row">
         <div class="col-sm-10">
             {{ form_widget(f.imageFile) }}
         </div>
     </div>
+
+
+
+
+
 
 {% endblock table %}
 
@@ -75,6 +80,8 @@
         {{ form_widget(f.Valider, {'attr':{'class':'btn btn-gradient-primary'}} ) }}
         <a href="{{ path('produit_homepage') }}"><button type="button" class="btn btn-gradient-danger">Annuler</button></a>
     </div>
+
+    {{ form_end(f) }}
 {% endblock buttons %}
 
         {% block scripts %}

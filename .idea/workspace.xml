@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a70e209a-4f11-4125-8f94-492922f070bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/details.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/details.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/products.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/products.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/dashboard/pro/dashboard-list-base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/dashboard/pro/dashboard-list-base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProduitBundle/Entity/Produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduitBundle/Entity/Produit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProduitBundle/Resources/views/Produit/form_produit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduitBundle/Resources/views/Produit/form_produit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/products/default_image.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,8 +159,8 @@
       <command value="c require vich/uploader-bundle" />
       <command value="s doctrine:schema:update --force" />
       <command value="c require cmen/google-charts-bundle" />
-      <command value="s cache:clear" />
       <command value="s generate:bundle" />
+      <command value="s cache:clear" />
     </option>
   </component>
   <component name="ServiceViewManager">
@@ -193,7 +193,7 @@
       <workItem from="1581689276177" duration="16638000" />
       <workItem from="1581777144530" duration="36466000" />
       <workItem from="1581965196573" duration="8910000" />
-      <workItem from="1582117591587" duration="21361000" />
+      <workItem from="1582117591587" duration="23864000" />
     </task>
     <servers />
   </component>
@@ -232,22 +232,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1277" y="282" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581691231702" />
-    <state width="1877" height="298" key="GridCell.Tab.0.bottom" timestamp="1582143223932">
+    <state width="1877" height="298" key="GridCell.Tab.0.bottom" timestamp="1582145166900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582143223932" />
-    <state width="1877" height="298" key="GridCell.Tab.0.center" timestamp="1582143223932">
+    <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582145166900" />
+    <state width="1877" height="298" key="GridCell.Tab.0.center" timestamp="1582145166900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582143223932" />
-    <state width="1877" height="298" key="GridCell.Tab.0.left" timestamp="1582143223932">
+    <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582145166900" />
+    <state width="1877" height="298" key="GridCell.Tab.0.left" timestamp="1582145166900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582143223932" />
-    <state width="1877" height="298" key="GridCell.Tab.0.right" timestamp="1582143223932">
+    <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582145166900" />
+    <state width="1877" height="298" key="GridCell.Tab.0.right" timestamp="1582145166900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582143223932" />
+    <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582145166900" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1581847877709">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -284,10 +284,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="1913" y="0" width="974" height="1087" maximized="true" key="dock-window-3/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581718494439" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1582120559465">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1582145166903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582120559465" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582145166903" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582143299488">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
