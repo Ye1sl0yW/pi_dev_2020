@@ -3,8 +3,10 @@
 
 namespace MagasinBundle\Service;
 
+use CMEN\GoogleChartsBundle\GoogleCharts\Charts\PieChart;
 use Doctrine\ORM\EntityManagerInterface;
 use MagasinBundle\Entity\Magasin;
+use ProduitBundle\Entity\Categorie;
 use ProduitBundle\Entity\Produit;
 use UserBundle\Entity\User;
 
@@ -67,5 +69,50 @@ class MagasinService
         $mg->setMatriculeFiscal(0);
         return $mg;
     }
+
+    public function findAllProductsByShopAndCategory($id_magasin,$category)
+    {
+        $produits = $this->em->getRepository(Produit::class)->findBy(array('id_magasin',$id_magasin));
+       $result = array();
+        foreach ($produits as $p)
+        {
+            if($p->getIdCategorie()===$category)
+            {
+                array_push($result,$p);
+            }
+        }
+        return $result;
+    }
+
+    /*
+     * Statistics Methods
+     */
+
+
+
+    public function pieChartOfNumberOfProductsByCategory($id)
+    {
+        $magasin= $this->em->getRepository(Magasin::class)->find($id);
+        $categories = $this->em->getRepository(Categorie::class)->findAll();
+        $produits = $this->em->getRepository(Produit::class)->findBy(array('id_magasin',$id));
+
+        if ($produits !== null )
+        {
+            $totalProduits = sizeof($produits);
+        }
+        else
+        {
+            $totalProduits = 0;
+        }
+
+
+
+        $pieChart = new PieChart();
+
+
+        return $pieChart;
+    }
+
+
 
 }
