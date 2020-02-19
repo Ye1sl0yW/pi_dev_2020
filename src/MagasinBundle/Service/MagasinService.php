@@ -31,8 +31,14 @@ class MagasinService
 
     public function calculateStock($id)
     {
-        $inventaire = $this->em->getRepository(Produit::class)->findBy(array("id_magasin"=>$id));
-        return sizeof($inventaire);
+        $stock = 0;
+        $products = $this->em->getRepository(Produit::class)->findBy(array("id_magasin"=>$id));
+
+        foreach($products as $p )
+        {
+            $stock += $p->getQuantite();
+        }
+        return $stock;
     }
 
     public function calculateStockByCategory($id, $category)
@@ -107,9 +113,9 @@ class MagasinService
         {
             $stat = array();
             $nomCat = $cat->getNom();
-            $er = $this->em->getRepository(Produit::class);
-            $percent = ( sizeof($this->findAllProductsByShopAndCategory($magasin,$cat)) *100 /$totalProduits );
+            //$er = $this->em->getRepository(Produit::class);
             //$percent = ($er->findAllProductsByShopAndCategory($magasin,$cat)) *100 /$totalProduits;
+            $percent = ( sizeof($this->findAllProductsByShopAndCategory($magasin,$cat)) *100 /$totalProduits );
             array_push($stat, $nomCat, $percent);
             $stat=[$nomCat,$percent];
             array_push($data, $stat);
