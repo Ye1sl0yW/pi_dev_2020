@@ -33,12 +33,13 @@
 
 										 <tr class="cart_item">
 											 <td class="product-remove">
+												 <a  href="{{ path('cart_addSup',{'id':el.produit.id}) }}" class="add_to_cart_button" title="Remove this item"><i class="fa fa-times" aria-hidden="true"></i></a>
 												 <a href="{{ path('cart_delete',{'id':el.produit.id}) }}" class="remove" title="Remove this item"><i class="fa fa-times" aria-hidden="true"></i></a>
 											 </td>
 
 											 <td class="product-thumbnail"data-title="Pro">
 
-												 <span class="woocommerce-Price-amount amount">{{ el.produit.id}}</span>
+												 <span class="woocommerce-Price-amount amount">{{ el.produit.nom}}</span>
 
 											 <td class="product-name" data-title="Name">
 												 <span class="woocommerce-Price-amount amount">{{ el.quantite}}</span>
@@ -82,20 +83,20 @@
 								 <div class="cart-collaterals">
 									 <div class="products-wrapper">
 										 <div class="cart_totals ">
-											 <h2>Cart Totals</h2>
+											 <h2>Total de votre panier</h2>
 
 											 <table cellspacing="0" class="shop_table shop_table_responsive">
 												 <tbody>
 												 <tr class="cart-subtotal">
 													 <th>Subtotal</th>
 													 <td data-title="Subtotal">
-														 <span class="woocommerce-Price-amount amount">{{ a }} $</span>
+														 <span class="woocommerce-Price-amount amount">{{ a }} TND</span>
 													 </td>
 												 </tr>
 												 <tr class="order-total">
 													 <th>Total</th>
 													 <td data-title="Total">
-														 <strong><span class="woocommerce-Price-amount amount">{{ a }} $</span></strong>
+														 <strong><span class="woocommerce-Price-amount amount">{{ a }} TND</span></strong>
 													 </td>
 												 </tr>
 												 </tbody>

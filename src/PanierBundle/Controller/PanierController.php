@@ -60,6 +60,15 @@ class PanierController extends Controller
             'elms'=>$CartWithData
         ]);
     }
+
+
+
+
+
+
+
+
+
     public function indexAction(SessionInterface  $session)
 
     {
@@ -97,33 +106,140 @@ class PanierController extends Controller
          ]);
 
     }
+
+
+
+
+
+
     public function tradeAction()
     { $produit=$this->getDoctrine()->getManager()->getRepository(Produit::class)->findAll();
         return $this->render('@Panier/Panier/trade.html.twig',array('data'=>$produit));
 
     }
 
-    public  function addAction($id,CartService $cartService){
-$cartService->add($id);
-/*$panier = $session->get('panier',[]);
+
+
+
+
+
+
+    public  function addAction($id,SessionInterface $session){
+//$cartService->add($id);
+$panier = $session->get('panier',[]);
 if (!empty($panier[$id]))
 {
     $panier[$id]++;
 }
 else
-    {
-        $panier[$id]=1;
+ {     $panier[$id]=1;
     }
-//$panier=$this->getDoctrine()->getManager()->getRepository(Panier::class)->find($id);
-//$panier[$id]=1;
-
-  $session->set('panier',$panier);
-
-//exit(VarDumper::dump($session->get('panier')));*/
+////$panier=$this->getDoctrine()->getManager()->getRepository(Panier::class)->find($id);
+////$panier[$id]=1;
+//
+ $session->set('panier',$panier);
+////unset($panier[1]);
+////exit(VarDumper::dump($session->get('panier')));
         $produit=$this->getDoctrine()->getManager()->getRepository(Produit::class)->findAll();
-       return $this->render('@Panier/Panier/trade.html.twig',array('data'=>$produit));
+      return $this->render('@Panier/Panier/trade.html.twig',array('data'=>$produit));
+//        return $this->render('@Panier/Panier/cartPage.html.twig',[
+//            'elms'=>$panier,
+//            'a'=>$total
+//        ]);
 
     }
+
+
+
+
+
+
+
+
+    public  function addSupAction($id,SessionInterface $session){
+    //    exit(VarDumper::dump($session->get('panier')));
+//$cartService->add($id);
+        $panier = $session->get('panier',[]);
+        if (!empty($panier[$id]))
+        {
+            $panier[$id]++;}
+else
+        {
+           $panier[$id]=1;
+       }
+////$panier=$this->getDoctrine()->getManager()->getRepository(Panier::class)->find($id);
+////$panier[$id]=1;
+
+      $session->set('panier',$panier);
+//unset($panier[1]);
+
+   //   $produit=$this->getDoctrine()->getManager()->getRepository(Produit::class)->findAll();
+      //  return $this->render('@Panier/Panier/trade.html.twig',array('data'=>$produit));
+//        return $this->render('@Panier/Panier/cartPage.html.twig',[
+//            'elms'=>$panier,
+//            'a'=>$total
+//        ]);
+
+
+
+
+
+
+
+
+
+
+        $panier  = $session->get('panier',[]);
+
+
+
+
+
+        /* foreach ($CartWithData as $ct)
+         {
+
+             $totalct=$ct['produit'] * $ct['quantite'];
+             $total+=$totalct;
+
+         }*/
+        //  unset( $panier[0]);
+
+
+        $CartWithData=[];
+
+        foreach ($panier as $id => $quantite){
+
+            $em = $this->getDoctrine()->getManager();
+            $productRepository = $em->getRepository('ProduitBundle:Produit');
+            $CartWithData[]=[
+                'produit'=>$productRepository->find($id),
+                'quantite'=> $quantite ,
+
+            ];
+        }
+        $total=0;
+      //  exit(VarDumper::dump($CartWithData));
+        return $this->render('@Panier/Panier/cartPage.html.twig',[
+            'elms'=>$CartWithData,
+            'a'=>$total
+        ]);
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     public function RemoveCartAction($id,SessionInterface $session)
     {
 
@@ -137,4 +253,21 @@ else
         $this->addFlash('success', 'element removed from the cart.');
         return $this->redirectToRoute('panier_cart');
     }
+}
+
+
+
+public function PDFAction(){
+
+    $this->get('knp_snappy.pdf')->generateFromHtml(
+    $this->renderView(
+        'PanierBundle:Foo:bar.html.twig',
+        array(
+            'some'  => $vars
+        )
+    ),
+    '/path/to/the/file.pdf'
+);
+
+
 }

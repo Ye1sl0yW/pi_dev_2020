@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a70e209a-4f11-4125-8f94-492922f070bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Service/Cart/CartService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_10_02_2020_18_28_c.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_15_02_2020_10_35_c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_19_02_2020_14_57_c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_10_02_2020_18_27_s.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_15_02_2020_10_35_s.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_19_02_2020_14_56_s.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pi_dev_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pi_dev_2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/template/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/template/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PanierBundle/Controller/PanierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Controller/PanierController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PanierBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/config/routing.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/CartPage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/CartPage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/trade.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/trade.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanierBundle/Service/Cart/CartService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Service/Cart/CartService.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +76,8 @@
       <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
       <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Xbk9REb6lpkHODfkpsWSAIotuL" />
@@ -82,7 +94,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/composer.phar" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
   </component>
@@ -115,13 +127,21 @@
       <command value="s doctrine:generate:form @Magasin:Offre" />
       <command value="s doctrine:generate:form MagasinBundle:Offre" />
       <command value="c dump auto load" />
-      <command value="c dump-autoload" />
       <command value="s generate:bundle" />
       <command value="s generate:controller" />
       <command value="s doctrine:generate:entity" />
       <command value="s doctrine:schema:update --force" />
       <command value="require knplabs/knp-snappy-bundle" />
+      <command value=" knplabs/knp-snappy-bundle" />
+      <command value="php bin/consoel composer require knplabs/knp-snappy-bundle" />
       <command value="composer require knplabs/knp-snappy-bundle" />
+      <command value="php bin/console composer require knplabs\knp-snappy-bundle" />
+      <command value="php bin/console composer require knplabs/knp-snappy-bundle" />
+      <command value=" composer require knplabs/knp-snappy-bundle" />
+      <command value="php bin/console c update" />
+      <command value="c dump-autoload" />
+      <command value="php bin/console composer update" />
+      <command value="composer update" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -157,6 +177,8 @@
       <workItem from="1581932358052" duration="15191000" />
       <workItem from="1582040355617" duration="18127000" />
       <workItem from="1582065488746" duration="2267000" />
+      <workItem from="1582100360913" duration="6048000" />
+      <workItem from="1582119675650" duration="7968000" />
     </task>
     <servers />
   </component>

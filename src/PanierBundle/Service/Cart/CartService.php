@@ -8,9 +8,8 @@ public function __construct(SessionInterface $session)
 {
     $this->session=$session;
 }
-
-
-    public function add(int $id){
+    public function add(int $id)
+    {
         $panier = $this->session->get('panier',[]);
         if (!empty($panier[$id]))
         {

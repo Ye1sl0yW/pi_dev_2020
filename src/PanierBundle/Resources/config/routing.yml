@@ -10,6 +10,9 @@ panier_cart:
 cart_add:
     path:     /add/{id}
     defaults: { _controller: PanierBundle:Panier:add }
+cart_addSup:
+    path:     /addSup/{id}
+    defaults: { _controller: PanierBundle:Panier:addSup }
 cart_show:
     path:     /show
     defaults: { _controller: PanierBundle:Panier:index}
