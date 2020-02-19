@@ -19,6 +19,20 @@ class MagasinService
         $this->em = $em;
     }
 
+    public function deleteShop($id)
+    {
+        $magasin=$this->em->getRepository(Magasin::class)->find($id);
+
+        $products=$this->findAllProductsByShop($id);
+        foreach($products as $p)
+        {
+            $this->em->remove($p);
+        }
+
+        $this->em->remove($magasin);
+        $this->em->flush();
+    }
+
     public function refreshMagasin($id)
     {
         $magasin= $this->em->getRepository(Magasin::class)->find($id);

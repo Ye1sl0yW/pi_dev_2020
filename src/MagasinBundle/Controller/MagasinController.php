@@ -65,10 +65,7 @@ class MagasinController extends Controller
 
     public function deleteMagasinAction($id)
     {
-        $em=$this->getDoctrine()->getManager();
-        $magasin=$this->getDoctrine()->getManager()->getRepository(Magasin::class)->find($id);
-        $em->remove($magasin);
-        $em->flush();
+        $this->get(MagasinService::class)->deleteShop($id);
         return $this->redirectToRoute("magasin_homepage");
     }
 
@@ -84,8 +81,11 @@ class MagasinController extends Controller
             $em->persist($magasin);
             $em->flush();
 
-            $id_vendeur = $magasin->getIdVendeur()->getId();
-            $this->get(MagasinService::class)->addManager($magasin->getId(),$id_vendeur);
+            if ($magasin->getIdVendeur() !== null)
+            {
+                $id_vendeur = $magasin->getIdVendeur()->getId();
+                $this->get(MagasinService::class)->addManager($magasin->getId(),$id_vendeur);
+            }
 
             return $this->redirectToRoute('magasin_homepage');
         }

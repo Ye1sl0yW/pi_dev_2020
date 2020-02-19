@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a70e209a-4f11-4125-8f94-492922f070bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/dashboard/pro/dashboard-list-base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/dashboard/pro/dashboard-list-base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProduitBundle/Entity/Produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduitBundle/Entity/Produit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProduitBundle/Resources/views/Produit/form_produit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduitBundle/Resources/views/Produit/form_produit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/uploads/images/products/default_image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Controller/MagasinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Controller/MagasinController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Entity/Magasin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Entity/Magasin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Service/MagasinService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Service/MagasinService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserBundle/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBundle/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +193,7 @@
       <workItem from="1581689276177" duration="16638000" />
       <workItem from="1581777144530" duration="36466000" />
       <workItem from="1581965196573" duration="8910000" />
-      <workItem from="1582117591587" duration="23864000" />
+      <workItem from="1582117591587" duration="25844000" />
     </task>
     <servers />
   </component>
@@ -232,22 +232,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1277" y="282" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581691231702" />
-    <state width="1877" height="298" key="GridCell.Tab.0.bottom" timestamp="1582145166900">
+    <state width="1877" height="298" key="GridCell.Tab.0.bottom" timestamp="1582146361418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582145166900" />
-    <state width="1877" height="298" key="GridCell.Tab.0.center" timestamp="1582145166900">
+    <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582146361418" />
+    <state width="1877" height="298" key="GridCell.Tab.0.center" timestamp="1582146361418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582145166900" />
-    <state width="1877" height="298" key="GridCell.Tab.0.left" timestamp="1582145166900">
+    <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582146361418" />
+    <state width="1877" height="298" key="GridCell.Tab.0.left" timestamp="1582146361418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582145166900" />
-    <state width="1877" height="298" key="GridCell.Tab.0.right" timestamp="1582145166900">
+    <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582146361418" />
+    <state width="1877" height="298" key="GridCell.Tab.0.right" timestamp="1582146361418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582145166900" />
+    <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582146361418" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1581847877709">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
