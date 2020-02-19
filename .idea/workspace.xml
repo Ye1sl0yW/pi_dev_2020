@@ -2,22 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a70e209a-4f11-4125-8f94-492922f070bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_10_02_2020_18_28_c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_15_02_2020_10_35_c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_19_02_2020_14_57_c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_10_02_2020_18_27_s.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_15_02_2020_10_35_s.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_19_02_2020_14_56_s.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pi_dev_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pi_dev_2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/SourceSansPro-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/pdf.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/template/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/template/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PanierBundle/Controller/PanierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Controller/PanierController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PanierBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/config/routing.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/CartPage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/CartPage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PanierBundle/Service/Cart/CartService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Service/Cart/CartService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/cart.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/cart.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,14 +88,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/composer.phar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\pi_dev\app\config" />
       <recent name="C:\wamp64\www\pi_dev\src\PanierBundle\Resources\views\Panier" />
+      <recent name="C:\wamp64\www\pi_dev\app\config" />
       <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\web" />
       <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\app\Resources\views" />
       <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\src\ProduitBundle\Resources\views" />
@@ -178,7 +172,7 @@
       <workItem from="1582040355617" duration="18127000" />
       <workItem from="1582065488746" duration="2267000" />
       <workItem from="1582100360913" duration="6048000" />
-      <workItem from="1582119675650" duration="7968000" />
+      <workItem from="1582119675650" duration="18498000" />
     </task>
     <servers />
   </component>

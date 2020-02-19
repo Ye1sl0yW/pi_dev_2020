@@ -10,6 +10,9 @@ panier_cart:
 cart_add:
     path:     /add/{id}
     defaults: { _controller: PanierBundle:Panier:add }
+cart_pdf:
+    path:     /pdf/{id}
+    defaults: { _controller: PanierBundle:Panier:PDF }
 cart_addSup:
     path:     /addSup/{id}
     defaults: { _controller: PanierBundle:Panier:addSup }

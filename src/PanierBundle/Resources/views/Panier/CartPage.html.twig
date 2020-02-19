@@ -33,8 +33,9 @@
 
 										 <tr class="cart_item">
 											 <td class="product-remove">
-												 <a  href="{{ path('cart_addSup',{'id':el.produit.id}) }}" class="add_to_cart_button" title="Remove this item"><i class="fa fa-times" aria-hidden="true"></i></a>
+												 <a  href="{{ path('cart_addSup',{'id':el.produit.id}) }}" class="add_to_cart_button" title="add this item"><i class="fa fa-times" aria-hidden="true"></i></a>
 												 <a href="{{ path('cart_delete',{'id':el.produit.id}) }}" class="remove" title="Remove this item"><i class="fa fa-times" aria-hidden="true"></i></a>
+												 <a href="{{ path('cart_pdf',{'id':el.produit.id}) }}" class="remove" title="Remove this item"><i class="fa fa-times" aria-hidden="true"></i></a>
 											 </td>
 
 											 <td class="product-thumbnail"data-title="Pro">

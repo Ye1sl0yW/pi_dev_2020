@@ -253,21 +253,41 @@ else
         $this->addFlash('success', 'element removed from the cart.');
         return $this->redirectToRoute('panier_cart');
     }
-}
 
 
 
-public function PDFAction(){
+    public function PDFAction($id,SessionInterface $session){
+        $panier  = $session->get('panier',[]);
+        $CartWithData=[];
 
-    $this->get('knp_snappy.pdf')->generateFromHtml(
-    $this->renderView(
-        'PanierBundle:Foo:bar.html.twig',
-        array(
-            'some'  => $vars
-        )
-    ),
-    '/path/to/the/file.pdf'
+        foreach ($panier as $id => $quantite){
+
+            $em = $this->getDoctrine()->getManager();
+            $productRepository = $em->getRepository('ProduitBundle:Produit');
+            $CartWithData[]=[
+                'produit'=>$productRepository->find($id),
+                'quantite'=> $quantite ,
+
+            ];
+        }
+        $total=0;
+        $vars= $this->renderView(
+                '@Panier/Panier/pdf.html.twig',
+               ['name'=>'omarhachicha' ,
+                  'a'=> $CartWithData]
+        );
+
+
+return new Response(
+    $this->get('knp_snappy.pdf')->getOutputFromHtml($vars),200,array(
+        'Content-type'=>'application/pdf',
+        'Content-Disposition'=>'filename="CC.pdf"'
+    )
+
 );
+    }
 
 
 }
+
+
