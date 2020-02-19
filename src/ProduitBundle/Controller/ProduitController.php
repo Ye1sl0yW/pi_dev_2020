@@ -125,7 +125,7 @@ class ProduitController extends Controller
         while (sizeof($produit)<3)
         {
             $rd = rand(1,10);
-            $item=$this->getDoctrine()->getRepository(Produit::class)->find(9);
+            $item=$this->getDoctrine()->getRepository(Produit::class)->find($rd);
             if(($item !== null)&&($item->getImageName()!==null))
             {
                 array_push($produit,$item);
