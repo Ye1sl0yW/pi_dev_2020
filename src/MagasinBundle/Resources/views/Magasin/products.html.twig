@@ -1,0 +1,73 @@
+ {% extends '/dashboard/pro/dashboard-list-base.html.twig' %}
+ {% block title %}
+ Portail produits
+ {% endblock %}
+
+{% block list_title %}Liste des produits sur Shoppy {% endblock list_title %}
+
+ {% block table %}
+
+  <thead>
+   <tr>
+    <th>Image</th>
+    <th>id</th>
+    <th>quantite</th>
+    <th>nom</th>
+    <th>description</th>
+    <th>prix</th>
+    <th>marque</th>
+    <th>Categorie</th>
+    <th>Action</th>
+   </tr>
+  </thead>
+
+   {% for elem in data  %}
+    <tr>
+
+     <td> {% if elem.imageName %}
+              {%   set image = "uploads/images/products/"~i.imageName  %}
+              <img src="{{asset(image) }}" height="50px"/>
+       {{ elem.imageName }}
+      {% endif %}</td>
+     <td>{{ elem.id }}</td>
+     <td>{{ elem.quantite}}</td>
+     <td>{{ elem.nom}}</td>
+     <td>{{ elem.description}}</td>
+     <td>{{ elem.prix}}</td>
+     <td>{{ elem.marque}}</td>
+
+     {% if (i.getIdCategorie()|length == 0 ) %}
+     <td>
+          <a href="{{ path('produit_modifier',{'id':i.id}) }}"><button class="btn-blue">Ajouter categorie</button></a>
+     </td>
+     {% else %}
+      <td>
+       <ul>
+         {% for cat in i.getIdCategorie() %}
+            <li>{{ cat.getNom() }}</li>
+        {% endfor %}
+       </ul>
+      </td>
+      {% endif %}
+
+     <td><a href={{ path('produit_supprimer',{'id':i.id}) }}><i class="far fa-trash-alt text-danger"></i></a>
+        <a href={{ path('produit_modifier',{'id':i.id}) }}><i class="far fa-edit text-info mr-1"></i></a>
+      <a href={{ "#" }}>WIP détail produit <i class="far dripicons-home text-info mr-1"></i></a>
+
+     </td>
+
+
+
+    </tr>
+{% endfor %}
+
+  </table>
+
+
+
+  {% endblock table %}
+
+
+ {% block buttons %}
+ <a href={{ path('produit_ajouter') }}><img src="{{ asset('dashboard_style/assets/images/plus.png') }}"/><a/>
+ {% endblock buttons %}

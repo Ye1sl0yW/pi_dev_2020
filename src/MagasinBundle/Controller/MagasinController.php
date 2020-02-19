@@ -93,4 +93,10 @@ class MagasinController extends Controller
 
     }
 
+    public function showProductsOfThisShopAction($id)
+    {
+        $data=$this->get(MagasinService::class)->findAllProductsByShop($id);
+        return $this->render('@Magasin/Magasin/products.html.twig',array('data'=>$data));
+    }
+
 }
