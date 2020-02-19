@@ -40,7 +40,9 @@
                 <button class="btn-blue" id="charts-toggle"> Afficher les statistiques </button>
             </td>
             <td>
-                <button class="btn-blue"> Gérer vos produits </button>
+                <a href="{{ path('magasin_products',{'id':data.id}) }}">
+                    <button class="btn-blue"> Gérer vos produits </button>
+                </a>
             </td>
             <td>
                 <button class="btn-blue"> Gérer vos offres </button>

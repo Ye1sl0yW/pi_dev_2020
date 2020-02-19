@@ -25,6 +25,6 @@ offre_update:
 magasin_details:
     path:     /details/{id}
     defaults: { _controller: MagasinBundle:Magasin:details }
-magasin_produitss:
-    path:     /produits/{id}
+magasin_products:
+    path:     /products/{id}
     defaults: { _controller: MagasinBundle:Magasin:showProductsOfThisShop }
