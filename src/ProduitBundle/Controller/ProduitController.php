@@ -26,6 +26,7 @@ class ProduitController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $produit= new Produit();
+        $produit->setImageName("default_image");
         $form = $this->createForm(ProduitType::class, $produit);
         $form->handleRequest($request);
 

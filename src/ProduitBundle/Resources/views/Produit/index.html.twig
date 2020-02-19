@@ -28,6 +28,7 @@
      <td> {% if i.imageName %}
               {%   set image = "uploads/images/products/"~i.imageName  %}
               <img src="{{asset(image) }}" height="50px"/>
+       {{ i.imageName }}
       {% endif %}</td>
      <td>{{ i.id }}</td>
      <td>{{ i.quantite}}</td>

@@ -40,6 +40,7 @@ class ProduitType extends AbstractType
                 'required'=> false,
                 'allow_delete' => true,
             ))
+            //->add('imageName')
         ->add('Valider',SubmitType::class);
     }/**
      * {@inheritdoc}

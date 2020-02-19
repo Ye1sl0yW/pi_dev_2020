@@ -47,7 +47,7 @@ class Produit
     protected $marque;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      * @var string|null
      */
     private $imageName;
@@ -246,6 +246,7 @@ class Produit
     public function __construct()
     {
         $this->id_categorie = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->updatedAt = new \DateTime();
     }
 
     /**
