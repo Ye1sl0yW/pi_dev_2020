@@ -32,9 +32,15 @@ class PointsController extends Controller
 
     public function afficherTicketAction($id)
     {
-
+        $total=0;
         $ticket = $this->getDoctrine()->getRepository(Ticket::class)->findBy(array('portfolio'=>$id));
-        return $this->render('@Points/Ticket/affichageTicket.html.twig', array('tab' => $ticket));
+        foreach (
+            $ticket as $t
+        )
+        {
+            $total+=$t->getMontant();
+        }
+        return $this->render('@Points/Ticket/affichageTicket.html.twig', array('tab' => $ticket,'total' =>$total));
     }
 
     public function supprimerTicketAction($id)

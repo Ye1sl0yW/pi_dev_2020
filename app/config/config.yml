@@ -2,15 +2,14 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
-    - { resource: "@ProduitBundle/Resources/config/services.yml" }
     - { resource: "@UserBundle/Resources/config/services.yml" }
-    - { resource: "@MagasinBundle/Resources/config/services.yml" }
+    - { resource: "@PointsBundle/Resources/config/services.yml" }
+    - { resource: "@SmsBundle/Resources/config/services.yml" }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: fr
-    app.path.product_images: /uploads/images/products
 
 framework:
     #esi: ~
@@ -74,22 +73,17 @@ sensio_framework_extra:
    router:
         annotations: false
 
-#fosuser configuration
 fos_user:
     db_driver: orm # other valid values are 'mongodb' and 'couchdb'
     firewall_name: main
     user_class: UserBundle\Entity\User
-    service:
-        mailer: fos_user.mailer.twig_swift
     from_email:
-        address: "haroun.elleuch@sprint.tn"
-        sender_name: "Haroun"
+        address: "pidev_test"
+        sender_name: "pidev"
+    service:
+         mailer: fos_user.mailer.twig_swift
 
-#Vich uploader bundle configuration
-vich_uploader:
+fos_message:
     db_driver: orm
-    mappings:
-        product_images:
-            uri_prefix:         '%app.path.product_images%'
-            upload_destination: '%kernel.project_dir%/web/%app.path.product_images%'
-            #namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+    thread_class: UserBundle\Entity\Thread
+    message_class: UserBundle\Entity\Message

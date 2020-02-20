@@ -68,6 +68,8 @@ class SecurityController extends Controller
             ? $this->tokenManager->getToken('authenticate')->getValue()
             : null;
 
+
+
         return $this->renderLogin(array(
             'last_username' => $lastUsername,
             'error' => $error,
