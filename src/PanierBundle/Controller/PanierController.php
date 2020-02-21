@@ -229,6 +229,40 @@ else
     }
 
 
+    public  function addMAction($id,SessionInterface $session){
+        $panier = $session->get('panier',[]);
+        if (!empty($panier[$id]))
+        {
+            $panier[$id]--;}
+        else
+        {
+            $panier[$id]=1;
+        }
+        $session->set('panier',$panier);
+        $panier  = $session->get('panier',[]);
+        $CartWithData=[];
+
+        foreach ($panier as $id => $quantite){
+
+            $em = $this->getDoctrine()->getManager();
+            $productRepository = $em->getRepository('ProduitBundle:Produit');
+            $CartWithData[]=[
+                'produit'=>$productRepository->find($id),
+                'quantite'=> $quantite ,
+
+            ];
+        }
+        $total=0;
+        //  exit(VarDumper::dump($CartWithData));
+        return $this->render('@Panier/Panier/cartPage.html.twig',[
+            'elms'=>$CartWithData,
+            'a'=>$total
+        ]);
+
+    }
+
+
+
 
 
 
@@ -274,7 +308,9 @@ else
         $vars= $this->renderView(
                 '@Panier/Panier/pdf.html.twig',
                ['name'=>'omarhachicha' ,
-                  'a'=> $CartWithData]
+                  'a'=> $CartWithData,
+                   'tot'=> $total
+               ]
         );
 
 

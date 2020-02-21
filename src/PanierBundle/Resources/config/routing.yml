@@ -16,6 +16,9 @@ cart_pdf:
 cart_addSup:
     path:     /addSup/{id}
     defaults: { _controller: PanierBundle:Panier:addSup }
+cart_addM:
+    path:     /addM/{id}
+    defaults: { _controller: PanierBundle:Panier:addM }
 cart_show:
     path:     /show
     defaults: { _controller: PanierBundle:Panier:index}

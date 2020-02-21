@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a70e209a-4f11-4125-8f94-492922f070bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/SourceSansPro-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/pdf.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/dashboard/pro/ecommerce-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/dashboard/pro/ecommerce-cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PanierBundle/Controller/PanierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Controller/PanierController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PanierBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/config/routing.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/CartPage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/CartPage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/cart.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/cart.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/SourceSansPro-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/web/invoice/SourceSansPro-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/invoice/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/pdf.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/pdf.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/invoice/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/trade.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/trade.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,11 +94,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\pi_dev\web\invoice" />
       <recent name="C:\wamp64\www\pi_dev\src\PanierBundle\Resources\views\Panier" />
       <recent name="C:\wamp64\www\pi_dev\app\config" />
       <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\web" />
       <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\app\Resources\views" />
-      <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\src\ProduitBundle\Resources\views" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\pi_dev\src\PanierBundle\Resources\views\Panier" />
@@ -173,6 +173,9 @@
       <workItem from="1582065488746" duration="2267000" />
       <workItem from="1582100360913" duration="6048000" />
       <workItem from="1582119675650" duration="18498000" />
+      <workItem from="1582187317284" duration="4460000" />
+      <workItem from="1582277442280" duration="598000" />
+      <workItem from="1582289067294" duration="10581000" />
     </task>
     <servers />
   </component>
