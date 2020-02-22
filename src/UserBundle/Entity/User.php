@@ -4,13 +4,15 @@
 namespace UserBundle\Entity;
 
 use Doctrine\Common\Collections\Collection;
+use Doctrine\ORM\Mapping\OneToOne;
 use FOS\UserBundle\Model\GroupInterface;
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
 
+
 /**
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="UserBundle\Repository\UserRepository")
  */
 class User extends BaseUser
 {
@@ -43,6 +45,12 @@ class User extends BaseUser
      */
     protected $tel;
 
+    /**
+     * @OneToOne(targetEntity="MagasinBundle\Entity\Magasin", inversedBy="id_vendeur", cascade={"remove"})
+     * @ORM\JoinColumn(name="id_magasin",referencedColumnName="id", nullable=true)
+     */
+    protected $id_magasin;
+
 
     public function __construct()
     {
@@ -50,19 +58,33 @@ class User extends BaseUser
         //TODO finir le user
     }
 
+
+    /*
+    * Getters and setters
+    */
+
     /**
      * @return mixed
      */
-
-
-    /*
-     * Getters and setters
-     */
-
-
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIdMagasin()
+    {
+        return $this->id_magasin;
+    }
+
+    /**
+     * @param mixed $id_magasin
+     */
+    public function setIdMagasin($id_magasin)
+    {
+        $this->id_magasin = $id_magasin;
     }
 
     /**

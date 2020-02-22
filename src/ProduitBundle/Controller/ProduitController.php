@@ -26,10 +26,11 @@ class ProduitController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $produit= new Produit();
+        $produit->setImageName("default_image.png");
         $form = $this->createForm(ProduitType::class, $produit);
         $form->handleRequest($request);
 
-        if ($form->isValid()) {
+        if ($form->isValid() and $form->isSubmitted()) {
             $em->persist($produit);
             $em->flush();
             return $this->redirectToRoute('produit_homepage');
@@ -116,5 +117,32 @@ class ProduitController extends Controller
         return $this->render('@Produit/Categorie/form_categorie.html.twig',array('f'=> $form->createView()));
 
     }
+
+    public function frontPageAction()
+    {
+        $em=$this->getDoctrine()->getManager();
+        $produit = array();
+        while (sizeof($produit)<3)
+        {
+            $rd = rand(1,100);
+            $item=$this->getDoctrine()->getRepository(Produit::class)->find($rd);
+            if(($item !== null)&&($item->getImageName()!==null))
+            {
+                array_push($produit,$item);
+            }
+
+        }
+        return $this->render('@Produit/Produit/frontPage.html.twig',array('produit'=>$produit));
+//TODO Randomize product ajouter lien detail produit
+    }
+
+    public function detailProduitAction($id)
+    {
+        $produit=$this->getDoctrine()->getManager()->getRepository(Produit::class)->find($id);
+        return $this->render('@Produit/Produit/product.html.twig',array('produit'=>$produit));
+
+    }
+
+
 
 }

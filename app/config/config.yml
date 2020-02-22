@@ -6,11 +6,13 @@ imports:
     - { resource: "@UserBundle/Resources/config/services.yml" }
     - { resource: "@MagasinBundle/Resources/config/services.yml" }
     - { resource: "@PanierBundle/Resources/config/services.yml" }
+    - { resource: "@StatisticsBundle/Resources/config/services.yml" }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: fr
+    app.path.product_images: /uploads/images/products
 
 framework:
     #esi: ~
@@ -104,3 +106,15 @@ knp_paginator:
         pagination: '@KnpPaginator/Pagination/twitter_bootstrap_v3_pagination.html.twig'     # sliding pagination controls template
         sortable: '@KnpPaginator/Pagination/sortable_link.html.twig' # sort link template
         filtration: '@KnpPaginator/Pagination/filtration.html.twig'  # filters template
+
+
+#Vich uploader bundle configuration
+vich_uploader:
+    db_driver: orm
+    mappings:
+        product_images:
+            uri_prefix:         '%app.path.product_images%'
+            upload_destination: '%kernel.project_dir%/web/%app.path.product_images%'
+            #namer:
+                #service: vich_uploader.namer_uniqid
+

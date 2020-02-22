@@ -1,0 +1,23 @@
+{% extends "@FOSUser/layout.html.twig" %}
+
+{% block body %}
+    <div class="container">
+    <div class="row">
+    <div id="contents" role="main" class="main-page col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="single page type-page status-publish hentry">
+    <div class="entry">
+    <div class="entry-content">
+    <header>
+        <h2 class="entry-title">Mon Compte</h2>
+    </header>
+
+    <div class="entry-content">
+    <div class="woocommerce">
+    <div class="col2-set row" id="customer_login">
+    <div class="col-lg-6">
+    <h2>Se connecter à Shoppy</h2>
+{% block fos_user_content %}
+    {{ include('@FOSUser/Security/login_content.html.twig') }}
+{% endblock fos_user_content %}
+
+{% endblock body %}

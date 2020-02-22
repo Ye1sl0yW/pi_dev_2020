@@ -1,4 +1,4 @@
-{% extends "/dashboard/pro/dashboard-list-base html.twig" %}
+{% extends "/dashboard/pro/dashboard-list-base.html.twig" %}
 
 {% block title %}
     Offres Shoppy
@@ -10,20 +10,26 @@
     <thead>
         <tr>
             <th>ID</th>
+            <th>Nom</th>
             <th>Taux</th>
-            <th>Durée</th>
+            <th>Début</th>
+            <th>Fin</th>
             <th>ID magasin </th>
             <th>Nom magasin </th>
+            <th>Description</th>
             <th>Actions</th>
         </tr>
     </thead>
         {% for elem in data  %}
             <tr>
                 <td>{{ elem.id }}</td>
+                <td>{{ elem.nom }}</td>
                 <td>{{elem.taux}}</td>
-                <td>{{ elem.duree}}</td>
+                <td>{{elem.dateDebut|date}}</td>
+                <td>{{elem.dateFin|date}}</td>
                 <td>{{ elem.getIdMagasin().getId()}}</td>
                 <td>{{ elem.getIdMagasin().getNom()}}</td>
+                <td>{{elem.description}}</td>
                 <td><a href="{{path('offre_delete',{'id':elem.id})}}"><i class="far fa-trash-alt text-danger"></i><a/>
                         <a href="{{path('offre_update',{'id':elem.id})}}"><i class="far fa-edit text-info mr-1"></i><a/></td>
             </tr>

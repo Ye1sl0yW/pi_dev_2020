@@ -5,6 +5,8 @@ namespace ProduitBundle\Entity;
 
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+
 
 
 /**
@@ -22,6 +24,7 @@ class Categorie
 
     /**
      * @ORM\Column(type="string")
+     * @Assert\NotBlank(message="le nom est obligatoire")
      */
     protected $nom;
 

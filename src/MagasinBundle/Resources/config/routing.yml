@@ -1,6 +1,6 @@
 magasin_homepage:
     path:     /home_mg
-    defaults: { _controller: MagasinBundle:Magasin:afficher }
+    defaults: { _controller: MagasinBundle:Magasin:show }
 magasin_ajouter:
     path:     /add_mg
     defaults: { _controller: MagasinBundle:Magasin:createMagasin }
@@ -12,7 +12,7 @@ magasin_update:
     defaults: { _controller: MagasinBundle:Magasin:updateMagasin }
 offre_homepage:
     path:     /home_offre
-    defaults: { _controller: MagasinBundle:Offre:afficher }
+    defaults: { _controller: MagasinBundle:Offre:show }
 offre_ajouter:
     path:     /add_offre
     defaults: { _controller: MagasinBundle:Offre:createOffre }
@@ -22,3 +22,12 @@ offre_delete:
 offre_update:
     path:     /update_offre/{id}
     defaults: { _controller: MagasinBundle:Offre:updateOffre }
+magasin_details:
+    path:     /details/{id}
+    defaults: { _controller: MagasinBundle:Magasin:details }
+magasin_products:
+    path:     /products/{id}
+    defaults: { _controller: MagasinBundle:Magasin:showProductsOfThisShop }
+magasin_offers:
+    path:     /offers/{id}
+    defaults: { _controller: MagasinBundle:Offre:showOffersOfThisShop }

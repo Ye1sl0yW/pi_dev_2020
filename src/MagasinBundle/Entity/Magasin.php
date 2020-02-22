@@ -4,6 +4,7 @@
 namespace MagasinBundle\Entity;
 
 use Doctrine\Common\Collections\Collection;
+use Doctrine\ORM\Mapping\OneToOne;
 use FOS\UserBundle\Model\GroupInterface;
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
@@ -31,7 +32,7 @@ class Magasin
 
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="integer", nullable=true)
      */
     private $tailleStock;
 
@@ -41,6 +42,30 @@ class Magasin
      * @ORM\Column(type="integer")
      */
     private $matriculeFiscal;
+
+    /**
+     * @OneToOne(targetEntity="UserBundle\Entity\User", mappedBy="id_magasin", cascade={"remove"})
+     * @ORM\JoinColumn(name="id_vendeur",referencedColumnName="id", nullable=true)
+     */
+    private $id_vendeur;
+
+    /**
+     * @return mixed
+     */
+    public function getIdVendeur()
+    {
+        return $this->id_vendeur;
+    }
+
+    /**
+     * @param mixed $id_vendeur
+     */
+    public function setIdVendeur($id_vendeur)
+    {
+        $this->id_vendeur = $id_vendeur;
+    }
+
+
 
     /**
      * @return mixed

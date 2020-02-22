@@ -2,6 +2,14 @@ panier:
     resource: "@PanierBundle/Resources/config/routing.yml"
     prefix:   /panier
 
+statistics:
+    resource: "@StatisticsBundle/Resources/config/routing.yml"
+    prefix:   /
+
+points:
+    resource: "@PointsBundle/Resources/config/routing.yml"
+    prefix:   /points
+
 magasin:
     resource: "@MagasinBundle/Resources/config/routing.yml"
     prefix:   /magasin
@@ -19,3 +27,4 @@ produit:
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+

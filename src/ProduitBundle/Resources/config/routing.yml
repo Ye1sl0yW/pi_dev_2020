@@ -22,4 +22,9 @@ categorie_supprimer:
 categorie_modifier:
     path:     /modif_catg{id}
     defaults: { _controller: ProduitBundle:Produit:modifierCategorie }
-
+frontPage:
+    path:     /
+    defaults: { _controller: ProduitBundle:Produit:frontPage }
+detailProduit:
+    path:     /detailProduit/{id}
+    defaults: { _controller: ProduitBundle:Produit:detailProduit }

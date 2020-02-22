@@ -27,12 +27,25 @@ class Offre
      */
     private $taux;
 
-
+    /**
+     * @ORM\Column(type="string", options={"default": "AJOUTER NOM"})
+     */
+    private $nom;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", nullable = true, options={"default": "AJOUTER DESCRIPTION"})
      */
-    private $duree;
+    private $description;
+
+    /**
+     * @ORM\Column(type="date")
+     */
+    private $dateDebut;
+
+    /**
+     * @ORM\Column(type="date")
+     */
+    private $dateFin;
 
     /**
      * @ORM\ManyToOne(targetEntity="Magasin")
@@ -68,22 +81,6 @@ class Offre
     /**
      * @return mixed
      */
-    public function getDuree()
-    {
-        return $this->duree;
-    }
-
-    /**
-     * @param mixed $duree
-     */
-    public function setDuree($duree)
-    {
-        $this->duree = $duree;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getIdMagasin()
     {
         return $this->id_magasin;
@@ -96,5 +93,71 @@ class Offre
     {
         $this->id_magasin = $id_magasin;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * @param mixed $nom
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param mixed $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDateDebut()
+    {
+        return $this->dateDebut;
+    }
+
+    /**
+     * @param mixed $dateDebut
+     */
+    public function setDateDebut($dateDebut)
+    {
+        $this->dateDebut = $dateDebut;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDateFin()
+    {
+        return $this->dateFin;
+    }
+
+    /**
+     * @param mixed $dateFin
+     */
+    public function setDateFin($dateFin)
+    {
+        $this->dateFin = $dateFin;
+    }
+
+
 
 }
