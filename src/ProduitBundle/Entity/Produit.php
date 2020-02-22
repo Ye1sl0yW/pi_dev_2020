@@ -7,6 +7,7 @@ namespace ProduitBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Httpfoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="ProduitBundle\Repository\ProduitRepository")
@@ -24,11 +25,16 @@ class Produit
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\NotBlank(message="la quantité est obligatoire")
+     * @Assert\GreaterThan(value=0,
+     * message="la quantité doit etre superieur à 0"
+     * )
      */
     protected $quantite;
 
     /**
      * @ORM\Column(type="string")
+     * @Assert\NotBlank(message="le nom est obligatoire")
      */
     protected $nom;
 
@@ -38,11 +44,16 @@ class Produit
     protected $description;
     /**
      * @ORM\Column(type="float")
+     * @Assert\NotBlank
+     * @Assert\GreaterThan(value=0,
+     * message="la prix doit etre superieur à 0"
+     * )
      */
     protected $prix;
 
     /**
      * @ORM\Column(type="string")
+     * @Assert\NotBlank
      */
     protected $marque;
 
