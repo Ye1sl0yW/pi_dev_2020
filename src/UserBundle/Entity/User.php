@@ -52,17 +52,6 @@ class User extends BaseUser
     protected $id_magasin;
 
 
-    public function __construct()
-    {
-        parent::__construct();
-        //TODO finir le user
-    }
-
-
-    /*
-    * Getters and setters
-    */
-
     /**
      * @return mixed
      */
@@ -71,9 +60,19 @@ class User extends BaseUser
         return $this->id;
     }
 
+
+
+    /**
+     * @ORM\OneToOne(targetEntity="PointsBundle\Entity\Portfolio",mappedBy="user_id")
+     * @ORM\JoinColumn(name="portfolio_id",referencedColumnName="id")
+     */
+     
+     private $portfolio;
+
     /**
      * @return mixed
      */
+
     public function getIdMagasin()
     {
         return $this->id_magasin;
@@ -154,5 +153,40 @@ class User extends BaseUser
 
 
 
+    public function sendSMS($message){
 
+
+        $client=new Client(new Client\Credentials\Basic("KEY","KEY"),['base_api_url'=>'https://rest.nexmo.com/sms/json']);
+        $client->message()->send([
+            'to' => $this->number,
+            'from' => 'Shoppy',
+            'text' => $message
+        ]);
+
+    }
+
+
+
+
+    public function getPoints(){
+        $this->portfolio->getTotal();
+    }
+
+
+
+    }
+
+    public function sms2FA($code){
+        $this->sendSMS("Ceci est votre code pour l'authentification double facteur: " . $code);
+    }
+
+    public function smsPortfolio(){
+        $this->sendSMS("Ceci est le résumé de votre portfolio: " . $this->getPortfolio()->stringify());
+    }
+
+    public function __construct()
+    {
+        parent::__construct();
+        // your own logic
+    }
 }
