@@ -3,125 +3,76 @@
 
 namespace UserBundle\Entity;
 
-use Doctrine\Common\Collections\Collection;
-use Doctrine\ORM\Mapping\OneToOne;
-use FOS\UserBundle\Model\GroupInterface;
+use FOS\MessageBundle\Model\ParticipantInterface;
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
-
-
+use Nexmo\Client;
 
 /**
- * @ORM\Entity(repositoryClass="UserBundle\Repository\UserRepository")
+ * @ORM\Entity
+ * @ORM\Table(name="users")
  */
-class User extends BaseUser
+class User extends BaseUser implements ParticipantInterface
 {
-
     /**
      * @ORM\Id
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
+    /**
+     * @ORM\Column(type="string",length=255)
+     */
+    private $nom;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string",length=255)
      */
-    protected $nom;
+
+    private $prenom;
+    /**
+     * @ORM\Column(type="string",length=255)
+     */
+
+    private $number;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\OneToOne(targetEntity="PointsBundle\Entity\Portfolio",mappedBy="user_id")
+     * @ORM\JoinColumn(name="portfolio_id",referencedColumnName="id")
+     *
      */
-    protected $prenom;
 
-
-    /**
-     * @ORM\Column(type="boolean")
-     */
-    protected $sexe;
-
-    /**
-     * @ORM\Column(type="bigint")
-     */
-    protected $tel;
-
-    /**
-     * @OneToOne(targetEntity="MagasinBundle\Entity\Magasin", inversedBy="id_vendeur", cascade={"remove"})
-     * @ORM\JoinColumn(name="id_magasin",referencedColumnName="id", nullable=true)
-     */
-    protected $id_magasin;
-
-
-    public function __construct()
-    {
-        parent::__construct();
-        //TODO finir le user
-    }
-
-
-    /*
-    * Getters and setters
-    */
+    private $portfolio;
 
     /**
      * @return mixed
      */
-    public function getId()
+    public function getPortfolio()
     {
-        return $this->id;
+        return $this->portfolio;
     }
 
     /**
-     * @return mixed
+     * @param mixed $portfolio
      */
-    public function getIdMagasin()
+    public function setPortfolio($portfolio)
     {
-        return $this->id_magasin;
+        $this->portfolio = $portfolio;
+    }
+
+    public function getNumber()
+    {
+        return $this->number;
     }
 
     /**
-     * @param mixed $id_magasin
+     * @param mixed $number
      */
-    public function setIdMagasin($id_magasin)
+    public function setNumber($number)
     {
-        $this->id_magasin = $id_magasin;
+        $this->number = $number;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getSexe()
-    {
-        return $this->sexe;
-    }
-
-    /**
-     * @param mixed $sexe
-     */
-    public function setSexe($sexe)
-    {
-        $this->sexe = $sexe;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getTel()
-    {
-        return $this->tel;
-    }
-
-    /**
-     * @param mixed $tel
-     */
-    public function setTel($tel)
-    {
-        $this->tel = $tel;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getNom()
     {
         return $this->nom;
@@ -153,6 +104,31 @@ class User extends BaseUser
 
 
 
+    public function sendSMS($message){
 
+        $client=new Client(new Client\Credentials\Basic("f481785d","pIO6oRfhxut8UBG0"),['base_api_url'=>'https://rest.nexmo.com/sms/json']);
+        $client->message()->send([
+            'to' => $this->number,
+            'from' => 'Shoppy',
+            'text' => $message
+        ]);
 
+    }
+
+    public function sms2FA($code){
+        $this->sendSMS("Ceci est votre code pour l'authentification double facteur: " . $code);
+    }
+
+    public function smsPortfolio(){
+        $this->sendSMS("Ceci est le résumé de votre portfolio: " . $this->getPortfolio()->stringify());
+    }
+
+    public function getPoints(){
+        $this->portfolio->getTotal();
+    }
+    public function __construct()
+    {
+        parent::__construct();
+        // your own logic
+    }
 }

@@ -4,7 +4,6 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
 
-
 class AppKernel extends Kernel
 {
     public function registerBundles()
@@ -19,13 +18,11 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new AppBundle\AppBundle(),
             new FOS\UserBundle\FOSUserBundle(),
-            new ProduitBundle\ProduitBundle(),
             new UserBundle\UserBundle(),
-            new MagasinBundle\MagasinBundle(),
             new PointsBundle\PointsBundle(),
-            new Vich\UploaderBundle\VichUploaderBundle(),
-            new CMEN\GoogleChartsBundle\CMENGoogleChartsBundle(),
-            new StatisticsBundle\StatisticsBundle(),
+            new SmsBundle\SmsBundle(),
+            new FOS\MessageBundle\FOSMessageBundle(),
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

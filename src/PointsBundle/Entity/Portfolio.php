@@ -19,12 +19,19 @@ class Portfolio
      */
     private $id;
     /**
-     * @ORM\ManyToOne(targetEntity="UserBundle\Entity\User")
+     * @ORM\OneToOne(targetEntity="UserBundle\Entity\User",mappedBy="portfolio")
      * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
      */
 
     private $user_id;
 
+
+
+    /**
+     * @ORM\OneToMany(targetEntity="PointsBundle\Entity\Ticket",mappedBy="portfolio")
+     * @ORM\JoinColumn(name="portfolio_id",referencedColumnName="id")
+     */
+    private $tickets;
     /**
      * @return mixed
      */
@@ -63,5 +70,10 @@ class Portfolio
 
     public function getTotal(){
 
+
+    }
+
+    public function stringify(){
+        return "ID: ".$this->getId()."Total points: ".$this->getTotal();
     }
 }

@@ -1,0 +1,7 @@
+sms_homepage:
+    path:     /
+    defaults: { _controller: SmsBundle:Default:index }
+
+sms_view:
+    path:   /view
+    defaults: {_controller: SmsBundle:Default:viewsms }

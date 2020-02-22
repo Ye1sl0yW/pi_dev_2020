@@ -1,25 +1,21 @@
-statistics:
-    resource: "@StatisticsBundle/Resources/config/routing.yml"
-    prefix:   /
+sms:
+    resource: "@SmsBundle/Resources/config/routing.yml"
+    prefix:   /sms
 
 points:
     resource: "@PointsBundle/Resources/config/routing.yml"
     prefix:   /points
-magasin:
-    resource: "@MagasinBundle/Resources/config/routing.yml"
-    prefix:   /magasin
 
-fos_user:
-    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 user:
     resource: "@UserBundle/Resources/config/routing.yml"
-    prefix:   /user
-
-produit:
-    resource: "@ProduitBundle/Resources/config/routing.yml"
-    prefix:   /produit
+    prefix:   /
 
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 
+fos_message:
+    resource: "@FOSMessageBundle/Resources/config/routing.xml"
+    prefix: /message
