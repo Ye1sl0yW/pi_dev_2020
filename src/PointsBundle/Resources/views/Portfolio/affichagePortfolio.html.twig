@@ -1,3 +1,11 @@
+{% extends "/dashboard/pro/dashboard-list-base html.twig" %}
+
+{% block title %}
+    Magasins Shoppy
+{% endblock title %}
+
+{% block list_title %}Liste des Portofolios{% endblock list_title %}
+{% block table %}
 {% if tab == NULL %}
     <h3>Pas de Portfolios</h3>
 {% else %}
@@ -21,3 +29,7 @@
 {% endif %}
 
 <a href="{{ path('portfolios_ajouter')}}"><button>Ajout portfolio</button></a>
+{% endblock table %}
+
+
+

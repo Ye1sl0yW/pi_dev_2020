@@ -19,20 +19,19 @@ class Portfolio
      */
     private $id;
     /**
-<<<<<<< HEAD
-     * @ORM\ManyToOne(targetEntity="UserBundle\Entity\User")
-=======
-<<<<<<< HEAD
      * @ORM\OneToOne(targetEntity="UserBundle\Entity\User",mappedBy="portfolio")
-=======
-     * @ORM\ManyToOne(targetEntity="UserBundle\Entity\User",inversedBy="portfolio")
->>>>>>> d74ea45382a4fa4cbca7df1939a897ff94131167
->>>>>>> ye1s
      * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
      */
 
     private $user_id;
 
+
+
+    /**
+     * @ORM\OneToMany(targetEntity="PointsBundle\Entity\Ticket",mappedBy="portfolio")
+     * @ORM\JoinColumn(name="portfolio_id",referencedColumnName="id")
+     */
+    private $tickets;
     /**
      * @return mixed
      */
@@ -70,6 +69,7 @@ class Portfolio
 
 
     public function getTotal(){
+
 
     }
 
