@@ -30,7 +30,7 @@ class ProduitController extends Controller
         $form = $this->createForm(ProduitType::class, $produit);
         $form->handleRequest($request);
 
-        if ($form->isValid()) {
+        if ($form->isValid() and $form->isSubmitted()) {
             $em->persist($produit);
             $em->flush();
             return $this->redirectToRoute('produit_homepage');
@@ -124,7 +124,7 @@ class ProduitController extends Controller
         $produit = array();
         while (sizeof($produit)<3)
         {
-            $rd = rand(1,10);
+            $rd = rand(1,100);
             $item=$this->getDoctrine()->getRepository(Produit::class)->find($rd);
             if(($item !== null)&&($item->getImageName()!==null))
             {

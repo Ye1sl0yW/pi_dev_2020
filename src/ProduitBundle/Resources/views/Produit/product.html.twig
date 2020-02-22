@@ -34,17 +34,16 @@
 										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 clear_xs">
 											<div class="slider_img_productd">
 												<!-- woocommerce_show_product_images -->
-												<div id="product_img_01" class="product-images loading" data-rtl="false">
+												<div id="product_img_01"  data-rtl="false">
 													<div class="product-images-container clearfix thumbnail-bottom">
 														<!-- Image Slider -->
 														<div class="slider product-responsive">
 															<div class="item-img-slider">
 																<div class="images">
-																	<a href="../../../../../web/images/1903/49.jpg " data-rel="prettyPhoto[product-gallery]" class="zoom">
-																		{% if produit.imageName %}
-																			{%   set image = "uploads/images/products/"~produit.imageName  %}
-																		<img width="600" height="600" src="{{ asset(image) }}"  class="attachment-shop_single size-shop_single" alt="" srcset="{{ asset(image) }}" sizes="(max-width: 600px) 100vw, 600px">
-																		{% endif %}
+																	<a href="{{ asset('uploads/images/products/'~produit.imageName)}}" data-rel="prettyPhoto[product-gallery]" class="zoom">
+
+																		<img width="400" height="400" src="{{ asset('uploads/images/products/'~produit.imageName)}}"
+																		class="attachment-shop_single size-shop_single" alt="" srcset="{{ asset('uploads/images/products/'~produit.imageName) }}" sizes="(max-width: 600px) 100vw, 600px">
 																	</a>
 																</div>
 															</div>
@@ -52,7 +51,7 @@
 															<div class="item-img-slider">
 																<div class="images">
 																	<a href="../../../../../web/images/1903/48.jpg " data-rel="prettyPhoto[product-gallery]" class="zoom">
-																		<img width="600" height="600" src="../../../../../web/images/1903/48.jpg" class="attachment-shop_single size-shop_single" alt="" srcset="../../../../../web/images/1903/48.jpg 600w, images/1903/48-150x150.jpg 150w, images/1903/48-300x300.jpg 300w, images/1903/48-180x180.jpg 180w" sizes="(max-width: 600px) 100vw, 600px">
+																		<img width="600" height="600" src="{{"#"}}" class="attachment-shop_single size-shop_single" alt="" srcset="{{"#"}}" sizes="(max-width: 600px) 100vw, 600px">
 																	</a>
 																</div>
 															</div>
@@ -89,7 +88,7 @@
 																</div>
 															</div>
 														</div>
-														
+
 														<!-- Thumbnail Slider -->
 														<div class="slider product-responsive-thumbnail" id="product_thumbnail_247">
 															<div class="item-thumbnail-product">
@@ -135,7 +134,14 @@
 										
 										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 clear_xs">
 											<div class="content_product_detail">
-												<h1 class="product_title entry-title">Nom Produit</h1>
+												<h1 class="product_title entry-title">
+
+													{% block nomProduit %}
+													{% if produit.nom %}
+														Nom du Produit : {{ produit.nom }}
+													{% endif %}
+													{% endblock nomProduit %}
+												</h1>
 												
 												<div class="reviews-content">
 													<div class="star"></div>
@@ -143,22 +149,40 @@
 												</div>
 												
 												<div>
-													<p class="price"><span class="woocommerce-Price-amount amount">{% block prix %}Prix ici{% endblock prix %}TND</span></p>
+													<p class="price"><span class="woocommerce-Price-amount amount">
+															{% block prix %}
+															{% if produit.prix %}
+																Prix : {{ produit.prix }}
+															{% endif %}
+															{% endblock prix %}TND</span></p>
 												</div>
 												
 												<div class="product-info clearfix">
 													<div class="product-stock pull-left out-stock">
 														<span>{% block quantite %}
-																quantité en stock
+																{% if produit.quantite %}
+																Quantité restante : {{ produit.quantite }}
+															{% endif %}
 														{% endblock quantite %}</span>
 													</div>
 												</div>
 												
 												<div class="description" itemprop="description">
-													<p>{% block description %}Description ici. {% endblock description %}</p>
+													<p>{% block description %}
+															{% if produit.description %}
+																Description : {{ produit.description }}
+															{% endif %}
+														{% endblock description %}</p>
 												</div>
 												
-												<p class="stock out-of-stock">{% block quantite_bool %}Stock boolean{% endblock quantite_bool %}</p>
+												<p class="stock out-of-stock">
+													{% block quantite_bool %}
+														{% if produit.quantite > 0 %}
+														Stock  : Disponible
+															{% else %}
+															Non disponible
+													{% endif %}
+													{% endblock quantite_bool %}</p>
 												
 												<div class="social-share">
 													<div class="title-share">Share</div>
@@ -776,307 +800,7 @@
 									</div>
 								</div>
 								
-								<div class="vc_row vc_inner vc_row-fluid footer-bottom">
-									<div class="item-res vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4 vc_col-xs-12">
-										<div class="vc_column-inner ">
-											<div class="wpb_wrapper">
-												<div class="wpb_text_column wpb_content_element ">
-													<div class="wpb_wrapper">
-														<div class="ya-logo">
-															<a href="../../../../../app/Resources/views/template/home_page_1.html.twig">
-																<img src="../../../../../web/images/icons/logo-footer.png" alt="logo" />
-															</a>
-														</div>
-													</div>
-												</div>
-												
-												<div class=" wpb_content_element ">
-													<div class="wpb_wrapper">
-														<div class="infomation">
-															<p>
-																Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-															</p>
-															
-															<div class="info-support">
-																<ul>
-																   <li>No 1123, Marmora Road, Glasgow, D04 89GR.</li>
-																   <li>(801) 2345 - 6788 / (801) 2345 - 6789</li>
-																   <li><a href="mailto:contact@etrostore.com">support@etrostore.com</a></li>
-																</ul>
-															</div>
-															
-															<div class="store">
-																<a href="#">
-																	<img src="../../../../../web/images/1903/app-store.png" alt="store" title="store" />
-																</a>
-																
-																<a href="#">
-																	<img src="../../../../../web/images/1903/google-store.png" alt="store" title="store" />
-																</a>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								 
-									<div class="item-res vc_column_container vc_col-sm-6 vc_col-lg-2 vc_col-md-2 vc_col-xs-12">
-										<div class="vc_column-inner ">
-											<div class="wpb_wrapper">
-												<div class="vc_wp_custommenu wpb_content_element">
-													<div class="widget widget_nav_menu">
-														<h2 class="widgettitle">Support</h2>
-														
-														<ul id="menu-support" class="menu">
-															<li class="menu-product-support">
-																<a class="item-link" href="#">
-																	<span class="menu-title">Product Support</span>
-																</a>
-															</li>
-															
-															<li class="menu-pc-setup-support-services">
-																<a class="item-link" href="#">
-																	<span class="menu-title">PC Setup & Support Services</span>
-																</a>
-															</li>
-															
-															<li class="menu-extended-service-plans">
-																<a class="item-link" href="#">
-																	<span class="menu-title">Extended Service Plans</span>
-																</a>
-															</li>
-															
-															<li class="menu-community">
-																<a class="item-link" href="#">
-																	<span class="menu-title">Community</span>
-																</a>
-															</li>
-															
-															<li class="menu-product-manuals">
-																<a class="item-link" href="#">
-																	<span class="menu-title">Product Manuals</span>
-																</a>
-															</li>
-															
-															<li class="menu-product-registration">
-																<a class="item-link" href="#">
-																	<span class="menu-title">Product Registration</span>
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								  
-									<div class="item-res vc_column_container vc_col-sm-6 vc_col-lg-2 vc_col-md-2 vc_col-xs-12">
-										<div class="vc_column-inner ">
-											<div class="wpb_wrapper">
-												<div class="vc_wp_custommenu wpb_content_element">
-													<div class="widget widget_nav_menu">
-														<h2 class="widgettitle">Your Links</h2>
-														
-														<ul id="menu-your-links" class="menu">
-															<li class="menu-my-account">
-																<a class="item-link" href="../../../../../app/Resources/views/template/my_account.html">
-																	<span class="menu-title">My Account</span>
-																</a>
-															</li>
-															
-															<li class="menu-order-tracking">
-																<a class="item-link" href="#">
-																	<span class="menu-title">Order Tracking</span>
-																</a>
-															</li>
-															
-															<li class="menu-watch-list">
-																<a class="item-link" href="#">
-																	<span class="menu-title">Watch List</span>
-																</a>
-															</li>
-															
-															<li class="menu-customer-service">
-																<a class="item-link" href="#">
-																	<span class="menu-title">Customer Service</span>
-																</a>
-															</li>
-															
-															<li class="menu-returns-exchanges">
-																<a class="item-link" href="#">
-																	<span class="menu-title">Returns / Exchanges</span>
-																</a>
-															</li>
-															
-															<li class="menu-faqs">
-																<a class="item-link" href="#">
-																	<span class="menu-title">FAQs</span>
-																</a>
-															</li>
-															
-															<li class="menu-financing">
-																<a class="item-link" href="#">
-																	<span class="menu-title">Financing</span>
-																</a>
-															</li>
-															
-															<li class="menu-card">
-																<a class="item-link" href="#">
-																	<span class="menu-title">Card</span>
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								   
-									<div class="item-res vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4 vc_col-xs-12">
-										<div class="vc_column-inner ">
-											<div class="wpb_wrapper">
-												<div class=" wpb_content_element ">
-													<div class="wpb_wrapper">
-														<div class="sp-map">
-															<div class="title">
-																<h2>find a store</h2>
-															</div>
-															
-															<img src="../../../../../web/images/1903/map.jpg" alt="map" title="map" />
-															
-															<a href="#" class="link-map">Store locator</a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-						
-								<div class="vc_wp_custommenu wpb_content_element wrap-cus">
-									<div class="widget widget_nav_menu">
-										<ul id="menu-infomation" class="menu">
-											<li class="menu-about-us">
-												<a class="item-link" href="../../../../../app/Resources/views/template/about_us.html">
-													<span class="menu-title">About Us</span>
-												</a>
-											</li>
-											
-											<li class="menu-customer-service">
-												<a class="item-link" href="#">
-													<span class="menu-title">Customer Service</span>
-												</a>
-											</li>
-											
-											<li class="menu-privacy-policy">
-												<a class="item-link" href="#">
-													<span class="menu-title">Privacy Policy</span>
-												</a>
-											</li>
-											
-											<li class="menu-site-map">
-												<a class="item-link" href="#">
-													<span class="menu-title">Site Map</span>
-												</a>
-											</li>
-											
-											<li class="menu-orders-and-returns">
-												<a class="item-link" href="#">
-													<span class="menu-title">Orders and Returns</span>
-												</a>
-											</li>
-											
-											<li class="menu-contact-us">
-												<a class="item-link" href="../../../../../app/Resources/views/template/contact_us.html">
-													<span class="menu-title">Contact Us</span>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="vc_row-full-width vc_clearfix"></div>
-			</div>
-			
-			<div class="footer-copyright style1">
-				<div class="container">
-					<!-- Copyright text -->
-					<div class="copyright-text pull-left">
-						<p>Etro Store - Premium Multipurpose HTML5/CSS3 Theme Designed by <a href="http://www.smartaddons.com">SmartAddons.Com</a>.</p>
-					</div>
-					
-					<div class="sidebar-copyright pull-right">
-						<div class="widget-1 widget-first widget text-4 widget_text">
-							<div class="widget-inner">
-								<div class="textwidget">
-									<div class="payment">
-										<a href="#">
-											<img src="../../../../../web/images/1903/paypal.png" alt="payment" title="payment" />
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
 
-	<!-- DIALOGS -->
-
-   <div class="modal fade" id="login_form" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog block-popup-login">
-			<a href="javascript:void(0)" title="Close" class="close close-login" data-dismiss="modal">Close</a>
-
-			<div class="tt_popup_login">
-				<strong>Sign in Or Register</strong>
-			</div>
-
-			<div class="block-content">
-				<div class="col-reg registered-account">
-					<div class="email-input">
-						<input type="text" class="form-control input-text username" name="username" id="username" placeholder="Username" />
-					</div>
-
-					<div class="pass-input">
-						<input class="form-control input-text password" type="password" placeholder="Password" name="password" id="password" />
-					</div>
-
-					<div class="ft-link-p">
-						<a href="../../../../../app/Resources/views/template/lost_password.html" title="Forgot your password">Forgot your password?</a>
-					</div>
-
-					<div class="actions">
-						<div class="submit-login">
-							<input type="submit" class="button btn-submit-login" name="login" value="Login" />
-						</div>
-					</div>
-				</div>
-
-				<div class="col-reg login-customer">
-					<h2>NEW HERE?</h2>
-
-					<p class="note-reg">Registration is free and easy!</p>
-
-					<ul class="list-log">
-						<li>Faster checkout</li>
-
-						<li>Save multiple shipping addresses</li>
-
-						<li>View and track orders and more</li>
-					</ul>
-
-					<a href="../../../../../app/Resources/views/template/create_account.html" title="Register" class="btn-reg-popup">Create an account</a>
-				</div>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
 	{% endblock body %}
 
 
