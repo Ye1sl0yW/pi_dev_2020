@@ -19,7 +19,11 @@ class Portfolio
      */
     private $id;
     /**
+<<<<<<< HEAD
      * @ORM\OneToOne(targetEntity="UserBundle\Entity\User",mappedBy="portfolio")
+=======
+     * @ORM\ManyToOne(targetEntity="UserBundle\Entity\User",inversedBy="portfolio")
+>>>>>>> d74ea45382a4fa4cbca7df1939a897ff94131167
      * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
      */
 
@@ -71,6 +75,10 @@ class Portfolio
     public function getTotal(){
 
 
+    }
+
+    public function stringify(){
+        return "ID: ".$this->getId()."Total points: ".$this->getTotal();
     }
 
     public function stringify(){

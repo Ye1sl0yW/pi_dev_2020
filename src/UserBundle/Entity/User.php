@@ -35,11 +35,22 @@ class User extends BaseUser implements ParticipantInterface
      */
 
     private $number;
+<<<<<<< HEAD
 
     /**
      * @ORM\OneToOne(targetEntity="PointsBundle\Entity\Portfolio",mappedBy="user_id")
      * @ORM\JoinColumn(name="portfolio_id",referencedColumnName="id")
      *
+=======
+
+    /**
+     * @return mixed
+     */
+
+    /**
+     * @ORM\OneToMany(targetEntity="PointsBundle\Entity\Portfolio", mappedBy="user_id")
+     * @ORM\JoinColumn(name="portfolio_id",referencedColumnName="id")
+>>>>>>> d74ea45382a4fa4cbca7df1939a897ff94131167
      */
 
     private $portfolio;
@@ -105,6 +116,7 @@ class User extends BaseUser implements ParticipantInterface
 
 
     public function sendSMS($message){
+<<<<<<< HEAD
 
         $client=new Client(new Client\Credentials\Basic("f481785d","pIO6oRfhxut8UBG0"),['base_api_url'=>'https://rest.nexmo.com/sms/json']);
         $client->message()->send([
@@ -126,6 +138,26 @@ class User extends BaseUser implements ParticipantInterface
     public function getPoints(){
         $this->portfolio->getTotal();
     }
+=======
+
+        $client=new Client(new Client\Credentials\Basic("f481785d","pIO6oRfhxut8UBG0"),['base_api_url'=>'https://rest.nexmo.com/sms/json']);
+        $client->message()->send([
+            'to' => $this->number,
+            'from' => 'Shoppy',
+            'text' => $message
+        ]);
+
+    }
+
+    public function sms2FA($code){
+        $this->sendSMS("Ceci est votre code pour l'authentification double facteur: " . $code);
+    }
+
+    public function smsPortfolio(){
+        $this->sendSMS("Ceci est le résumé de votre portfolio: " . $this->getPortfolio()->stringify());
+    }
+
+>>>>>>> d74ea45382a4fa4cbca7df1939a897ff94131167
     public function __construct()
     {
         parent::__construct();
