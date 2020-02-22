@@ -1,0 +1,171 @@
+{% extends '/template/base.html.twig' %}
+ {% block title %}
+	shoppy
+ {% endblock %}
+
+ {% block body %}
+<br>
+	 <div class="col-lg-12">
+		 <div class="card">
+			 <div class="card-body">
+				 <h4 class="header-title mt-0">Votre panier</h4>
+				 <p class="mb-4 text-muted">meilleur panier de shoppy </p>
+				 <div class="table-responsive shopping-cart">
+					 <form action="" method="post">
+						 {% if elms | length > 0 %}
+					 <table class="table mb-0">
+
+						 <thead>
+						 <tr>
+							 <th>Produit</th>
+							 <th>Prix</th>
+							 <th>Quantite</th>
+							 <th>Total</th>
+							 <th>Action</th>
+						 </tr>
+						 </thead>
+						 <tbody>
+
+						 {% for el in elms  %}
+						 {% if el.produit is not empty  %}
+						 <tr>
+							 <td>
+								 <img src="../assets/images/products/img-5.png" alt="" height="52">
+								 <p class="d-inline-block align-middle mb-0">
+									 <a href="" class="d-inline-block align-middle mb-0 product-name">{{ el.produit.nom}}</a>
+									 <br>
+									 <span class="text-muted font-13">{{ el.produit.description}}</span>
+								 </p>
+							 </td>
+							 <td>{{ el.produit.prix}}</td>
+
+
+
+							 <td class="product-quantity" data-title="Quantity">
+								 <div > <a  href="{{ path('cart_addM',{'id':el.produit.id}) }}" > <input type="button" value="-" class="minus"><i  aria-hidden="true"></i></a>
+									 <input type="number" step="1" min="0" max="" name="" value="{{ el.quantite}}" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+									 <a  href="{{ path('cart_addSup',{'id':el.produit.id}) }}" > <input type="button" value="+" class="plus"><i  aria-hidden="true"></i></a>
+								 </div>
+							 </td>
+
+							 <td>{{ el.produit.prix* el.quantite}}</td>
+
+
+							 <td class="button-items">
+								 <a  href="{{ path('cart_addSup',{'id':el.produit.id}) }}" class="add_to_cart_button" title="add this item"><i class="fa fa-plus" aria-hidden="true"></i></a>
+								 <a href="{{ path('cart_delete',{'id':el.produit.id}) }}" class="remove" title="Remove this item"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+								 <a href="{{ path('cart_pdf',{'id':el.produit.id}) }}" class="remove" title="Remove this item"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+							 </td>
+
+
+						 </tr>
+
+
+
+							 <tr>
+							 <td colspan="6" class="actions">
+
+								 {% set a=a+el.quantite*el.produit.prix %}
+							 </td>
+						 </tr>
+						 {% endif %}
+						 {% endfor %}
+						 </tbody>
+					 </table>
+					 {% else %}
+						 <p>Surprise, c'est vide !</p>
+						 {% endif %}
+					 </form>
+				 </div>
+				 <div class="col-md-12">
+
+				<a href={{ path('panier_trade') }}>	 <button class="btn btn-gradient-primary" type="button" id="button-addon2">Continuez vos achats
+					</button></a>
+				 </div>
+
+
+				 <div class="col-md-12">
+
+					 <a href={{ path('panier_trade') }}>	 <button class="btn btn-gradient-primary" type="button" id="button-addon2">confirmerc vos achats
+						 </button></a>
+				 </div>
+
+
+
+				 <br>
+				 <div class="row justify-content-center">
+					 <div class="col-md-6 align-self-center">
+						 <div class="text-center cart-promo">
+							 <img src="../assets/images/logo-sm.png" alt="" height="50" class="mb-2">
+							 <h4 class="title-text">Vous avez un code promo?</h4>
+							 <p class="text-muted font-13">Si vous avez une promotion, vous pouvez bénéficier d'une remise!</p>
+							 <div class="col-md-offset-3 align-self-center ">
+								 <input type="text" class="form-control" placeholder="Use Promocode" aria-describedby="button-addon2">
+								 <div class="input-group-append">
+									 <button class="btn btn-gradient-primary" type="button" id="button-addon2">Postuler</button>
+								 </div>
+							 </div>
+
+
+						 </div>
+
+					 </div><!--end col-->
+					 <div class="col-md-6">
+						 <div class="total-payment">
+							 <h4 class="header-title"></h4>
+							 <table class="table">
+								 <tbody>
+								 <tr>
+									 <td class="payment-title">Subtotal</td>
+									 <td>$496.00</td>
+								 </tr>
+								 <tr>
+									 <td class="payment-title">Expédition</td>
+									 <td>
+										 <ul class="list-unstyled mb-0">
+											 <li>
+												 <div class="radio radio-info">
+													 <input type="radio" name="radio" id="radio_1" value="option_1" checked>
+													 <label for="radio_1">
+														 Shipping Charge : $5.00
+													 </label>
+												 </div>
+											 </li>
+											 <li>
+												 <div class="radio radio-info">
+													 <input type="radio" name="radio" id="radio_2" value="option_2">
+													 <label for="radio_2">
+														 Express Shipping Charge : $10.00
+													 </label>
+												 </div>
+											 </li>
+											 <li>
+												 <a href="" class="font-weight-bold">Change Address</a>
+											 </li>
+										 </ul>
+									 </td>
+								 </tr>
+								 <tr>
+									 <td class="payment-title">Promo Code</td>
+									 <td>-$10.00</td>
+								 </tr>
+								 <tr>
+									 <td class="payment-title">Total</td>
+									 <td class="text-dark">{{ a }}TND</td>
+								 </tr>
+
+
+
+								 </tbody>
+
+							 </table>
+							 <div>
+								 {{ knp_pagination_render(pagination) }}
+							 </div>
+						 </div>
+					 </div><!--end col-->
+				 </div><!--end row-->
+			 </div><!--end card-->
+		 </div><!--end card-body-->
+	 </div>
+ {% endblock body %}

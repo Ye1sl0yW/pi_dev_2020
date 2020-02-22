@@ -1,0 +1,62 @@
+{#{% extends '/dashboard/pro/dashboard-list-base.html.twig' %}#}
+{% extends '/template/base.html.twig' %}
+ {% block title %}
+     Portail produits
+ {% endblock %}
+
+ {% block body %}
+
+     <h2>Liste des Produits</h2>
+     <table border="1">
+         <tr>
+
+             <th>nom</th>
+             <th>description</th>
+             <th>prix</th>
+             <th>marque</th>
+             <th>Categorie</th>
+             <th>ajout panier</th>
+             <th>acheter </th>
+             <th>panier</th>
+
+         </tr>
+         {% for i in data  %}
+             <tr>
+
+
+                 <td>{{ i.nom}}</td>
+                 <td>{{ i.description}}</td>
+                 <td>{{ i.prix}}</td>
+                 <td>{{ i.marque}}</td>
+                 <td>{{ i.id}}</td>
+
+
+
+
+
+                 <td><a  href={{ path('cart_add',{'id':i.id}) }}><button>ajout au panier</button></a></td>
+                 <td><a><button>buy now</button></a></td>
+                 <td><a  href={{ path('cart_show') }}><button>panier</button></a></td>
+
+
+
+
+             </tr>
+         {% endfor %}
+
+     </table>
+
+
+
+
+     <div class="navigation">
+         {{ knp_pagination_render(pagination) }}
+     </div>
+
+ {% endblock body %}
+
+
+
+
+
+
