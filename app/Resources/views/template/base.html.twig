@@ -35,10 +35,7 @@
     {% endblock %}
 </head>
 
-{% block page_class %}
 <body class="page home-style1">
-{% endblock page_class %}
-
 {% block header %}
 	<div class="body-wrapper theme-clearfix">
 		<header id="header" class="header header-style1">
@@ -46,6 +43,55 @@
 				<div class="container">
 					<div class="rows">
 						<!-- SIDEBAR TOP MENU -->
+						<div class="pull-left top1">
+							<div class="widget pull-left">
+								<div class="widget-inner">
+									<div class="call-us"><span>Call Us Now: </span>0123-444-666654123</div>
+								</div>
+							</div>
+							
+							<div class="widget pull-left">
+								<div class="widget-inner">
+									<div id="lang_sel">
+										<ul class="nav">
+											<li>
+												<a class="lang_sel_sel">
+													<img class="iclflag" title="English" alt="en" src="{{ asset('images/icons/en.png') }}" width="18" height="12" /> English
+												</a>
+												<ul>
+													<li>
+														<a href="#">
+															<img class="iclflag" title="English" alt="en" src="{{ asset('images/icons/en.png') }}" width="18" height="12" /> English
+														</a>
+													</li>
+													
+													<li>
+														<a href="#">
+															<img class="iclflag" title="Arabic" alt="ar" src="{{ asset('images/icons/ar.png') }}" width="18" height="12" /> Arabic
+														</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div class="widget widget_currency_converter pull-left">
+								<div class="widget-inner">
+									<ul class="currency_w">
+										<li>
+											<a href="#" class="">USD</a>
+											<ul class="currency_switcher">
+												<li><a href="#" class="reset default active">USD</a></li>
+												<li><a href="#">EUR</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
 						<div class="pull-right">
 							<div class="sidebar-account pull-left">
 								<div class="account-title">My account</div>
@@ -112,7 +158,7 @@
 						<!-- LOGO -->
 						<div class="etrostore-logo pull-left">
 							<a href="home_page_1.html.twig">
-								<img src="{{ asset('dashboard_style/assets/images/favicon.png') }}"  alt="Shoppy" style="width: 12%">
+								<img src="{{ asset('images/icons/logo-orange.png') }}" alt="Shoopy">
 							</a>
 						</div>
 						
@@ -1805,7 +1851,7 @@
 				</div>
 			</div>
 		</div>
-
+		
 		<div class="container">
 			<div class="row">
 				<div id="contents" role="main" class="main-page  col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -1821,7 +1867,6 @@
 														<div class="vc_column-inner ">
 															<div class="wpb_wrapper">
 																<div class="vc_wp_custommenu wpb_content_element wrap-title">
-																	{% block side_bar_categories %}
 																	<div class="mega-left-title">
 																		<strong>Categories</strong>
 																	</div>
@@ -2551,7 +2596,6 @@
 																			</li>
 																		</ul>
 																	</div>
-																	{% endblock side_bar_categories %}
 																</div>
 															</div>
 														</div>
@@ -2561,7 +2605,6 @@
 														<div class="vc_column-inner">
 															<div class="wpb_wrapper">
 																<!-- OWL SLIDER -->
-																{% block big_carousel %}
 																<div class="wpb_revslider_element wpb_content_element no-margin">
 																	<div class="vc_column-inner ">
 																		<div class="wpb_wrapper">
@@ -2584,8 +2627,6 @@
 																		</div>
 																	</div>
 																</div>
-																{% endblock big_carousel %}
-
 																<!-- OWL LIGHT SLIDER -->
 																
 																<div class=" wpb_content_element ">
@@ -5701,7 +5742,28 @@
 				<div class="vc_row-full-width vc_clearfix"></div>
 			</div>
 			
-
+			<div class="footer-copyright style1">
+				<div class="container">
+					<!-- Copyright text -->
+					<div class="copyright-text pull-left">
+						<p>Etro Store - Premium Multipurpose HTML5/CSS3 Theme - Designed by <a href="http://www.smartaddons.com">SmartAddons.Com</a>.</p>
+					</div>
+					
+					<div class="sidebar-copyright pull-right">
+						<div class="widget text-4 widget_text">
+							<div class="widget-inner">
+								<div class="">
+									<div class="payment">
+										<a href="#">
+											<img src="{{ asset('images/1903/paypal.png') }}" alt="payment" title="payment" />
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</div>
    

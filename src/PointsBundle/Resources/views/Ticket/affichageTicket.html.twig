@@ -1,3 +1,10 @@
+{% extends "/dashboard/pro/dashboard-list-base html.twig" %}
+{% block title %}
+    Magasins Shoppy
+{% endblock title %}
+{% block list_title %}Liste des Tickets{% endblock list_title %}
+{% block table %}
+
 {% if tab == NULL %}
     <h3>Pas de Tickets</h3>
 {% else %}
@@ -20,5 +27,9 @@
         {% endfor %}
     </table>
 {% endif %}
-<a href="{{ path('ticket_ajout')}}"><button>Ajout ticket</button></a>
+    <h1>TOTAL : {{ total }} points</h1>
+    <h1>TOTAL : {{ total / 200 }} DT</h1>
+
+    <a href="{{ path('ticket_ajout')}}"><button>Ajout ticket</button></a>
+{% endblock table %}
 
