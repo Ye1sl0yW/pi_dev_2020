@@ -2,8 +2,11 @@
 
 namespace PanierBundle\Controller;
 
+use Knp\Component\Pager\Paginator;
+use PanierBundle\PanierBundle;
 use PanierBundle\Service\Cart\CartService;
 use ProduitBundle\Entity\Produit;
+use ProduitBundle\ProduitBundle;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
@@ -69,7 +72,7 @@ class PanierController extends Controller
 
 
 
-    public function indexAction(SessionInterface  $session)
+    public function indexAction(SessionInterface  $session ,Request $request)
 
     {
         $em = $this->getDoctrine()->getManager();
@@ -100,9 +103,19 @@ class PanierController extends Controller
     //  unset( $panier[0]);
 
    //  exit(VarDumper::dump($CartWithData));
+
+        $paginator=$this->get('knp_paginator');
+       // dump(get_class($paginator));
+       $result= $paginator->paginate(
+            $CartWithData,
+            $request->query->getInt('page',1),
+            $request->query->getInt('limit',5)
+
+        );
          return $this->render('@Panier/Panier/cartPage.html.twig',[
              'elms'=>$CartWithData,
-             'a'=>$total
+             'a'=>$total,
+             'pagination'=>$result
          ]);
 
     }
@@ -112,9 +125,22 @@ class PanierController extends Controller
 
 
 
-    public function tradeAction()
-    { $produit=$this->getDoctrine()->getManager()->getRepository(Produit::class)->findAll();
-        return $this->render('@Panier/Panier/trade.html.twig',array('data'=>$produit));
+    public function tradeAction(Request $request)
+    {
+        $em=$this->getDoctrine()->getManager();
+        $produit=$em->getRepository( 'ProduitBundle:Produit')->findAll();
+        /**
+         * @var $paginator Paginator
+         */
+        $paginator=$this->get('knp_paginator');
+
+        $result= $paginator->paginate(
+            $produit,
+            $request->query->getInt('page',1),
+            $request->query->getInt('limit',5)
+
+        );
+        return $this->render('@Panier/Panier/trade.html.twig',array('data'=>$produit, 'pagination'=>$result));
 
     }
 

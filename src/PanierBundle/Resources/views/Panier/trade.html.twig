@@ -1,4 +1,5 @@
-{% extends '/template/base.html.twig' %}
+{#{% extends '/dashboard/pro/dashboard-list-base.html.twig' %}#}
+{#{% extends '/template/base.html.twig' %}#}
  {% block title %}
      Portail produits
  {% endblock %}
@@ -48,7 +49,9 @@
 
 
 
-
+     <div class="navigation">
+         {{ knp_pagination_render(pagination) }}
+     </div>
 
  {% endblock body %}
 

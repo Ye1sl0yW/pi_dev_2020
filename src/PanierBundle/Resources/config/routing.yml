@@ -2,7 +2,7 @@ panier_homepage:
     path:     /
     defaults: { _controller: PanierBundle:Default:index }
 panier_trade:
-    path:     /trade
+    path:     /trade/
     defaults: { _controller: PanierBundle:Panier:trade }
 panier_cart:
     path:     /cart
@@ -20,7 +20,7 @@ cart_addM:
     path:     /addM/{id}
     defaults: { _controller: PanierBundle:Panier:addM }
 cart_show:
-    path:     /show
+    path:     /show/
     defaults: { _controller: PanierBundle:Panier:index}
 cartPage_show:
     path:     /showPage
