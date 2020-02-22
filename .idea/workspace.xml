@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a70e209a-4f11-4125-8f94-492922f070bc" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Offre/offers.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/uploads/images/products/default_image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Controller/MagasinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Controller/MagasinController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Controller/OffreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Controller/OffreController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/details.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/details.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/products.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Resources/views/Magasin/products.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Service/MagasinService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Service/MagasinService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProduitBundle/Entity/Produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduitBundle/Entity/Produit.php" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/web/uploads/images/products/ebay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/uploads/images/products/fb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/uploads/images/products/horloge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/uploads/images/products/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/uploads/images/products/images.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/uploads/images/products/panier.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/uploads/images/products/youtube.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_14_02_2020_15_40_c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_14_02_2020_15_40_c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_16_02_2020_12_49_c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_16_02_2020_12_49_c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_18_02_2020_16_41_c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_18_02_2020_16_41_c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_14_02_2020_15_40_s.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_14_02_2020_15_40_s.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_16_02_2020_12_49_s.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_16_02_2020_12_49_s.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_18_02_2020_16_41_s.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_18_02_2020_16_41_s.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pi_dev_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pi_dev_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/symfony_requirements" beforeDir="false" afterPath="$PROJECT_DIR$/bin/symfony_requirements" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProduitBundle/Controller/ProduitController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduitBundle/Controller/ProduitController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProduitBundle/Entity/Categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduitBundle/Entity/Categorie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProduitBundle/Entity/Produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduitBundle/Entity/Produit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProduitBundle/Resources/views/Produit/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduitBundle/Resources/views/Produit/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProduitBundle/Resources/views/Produit/product.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduitBundle/Resources/views/Produit/product.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Command/ActivateUserCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Command/ActivateUserCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Command/ChangePasswordCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Command/ChangePasswordCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Command/CreateUserCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Command/CreateUserCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Command/DeactivateUserCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Command/DeactivateUserCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Command/DemoteUserCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Command/DemoteUserCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Command/PromoteUserCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Command/PromoteUserCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Command/RoleCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Command/RoleCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/ChangePasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/ChangePasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/GroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/GroupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/ResettingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/ResettingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/DependencyInjection/Compiler/CheckForMailerPass.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/DependencyInjection/Compiler/CheckForMailerPass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/DependencyInjection/Compiler/CheckForSessionPass.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/DependencyInjection/Compiler/CheckForSessionPass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/DependencyInjection/Compiler/InjectRememberMeServicesPass.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/DependencyInjection/Compiler/InjectRememberMeServicesPass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/DependencyInjection/Compiler/InjectUserCheckerPass.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/DependencyInjection/Compiler/InjectUserCheckerPass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/DependencyInjection/Compiler/ValidationPass.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/DependencyInjection/Compiler/ValidationPass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/DependencyInjection/Configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/DependencyInjection/Configuration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/DependencyInjection/FOSUserExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/DependencyInjection/FOSUserExtension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Doctrine/CouchDB/UserListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Doctrine/CouchDB/UserListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Doctrine/GroupManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Doctrine/GroupManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Doctrine/UserListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Doctrine/UserListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Doctrine/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Doctrine/UserManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Event/FilterGroupResponseEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Event/FilterGroupResponseEvent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Event/FilterUserResponseEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Event/FilterUserResponseEvent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Event/FormEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Event/FormEvent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Event/GetResponseGroupEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Event/GetResponseGroupEvent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Event/GetResponseNullableUserEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Event/GetResponseNullableUserEvent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Event/GetResponseUserEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Event/GetResponseUserEvent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Event/GroupEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Event/GroupEvent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Event/UserEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Event/UserEvent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/EventListener/AuthenticationListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/EventListener/AuthenticationListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/EventListener/EmailConfirmationListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/EventListener/EmailConfirmationListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/EventListener/FlashListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/EventListener/FlashListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/EventListener/LastLoginListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/EventListener/LastLoginListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/EventListener/ResettingListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/EventListener/ResettingListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOSUserBundle.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOSUserBundle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOSUserEvents.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOSUserEvents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/DataTransformer/UserToUsernameTransformer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/DataTransformer/UserToUsernameTransformer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Factory/FactoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Factory/FactoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Factory/FormFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Factory/FormFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/ChangePasswordFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/ChangePasswordFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/GroupFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/GroupFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/ProfileFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/ProfileFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/RegistrationFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/RegistrationFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/ResettingFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/ResettingFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/UsernameFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/UsernameFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Mailer/Mailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Mailer/Mailer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Mailer/MailerInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Mailer/MailerInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Mailer/NoopMailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Mailer/NoopMailer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Mailer/TwigSwiftMailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Mailer/TwigSwiftMailer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/Group.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/Group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/GroupInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/GroupInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/GroupManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/GroupManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/GroupManagerInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/GroupManagerInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/GroupableInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/GroupableInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/UserInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/UserInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/UserManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/UserManagerInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/UserManagerInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/change_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/change_password.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/commands.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/commands.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping/Group.couchdb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping/Group.couchdb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping/Group.mongodb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping/Group.mongodb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping/Group.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping/Group.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping/User.couchdb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping/User.couchdb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping/User.mongodb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping/User.mongodb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping/User.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping/User.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine_group.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine_group.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/email_confirmation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/email_confirmation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/flash_notifications.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/flash_notifications.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/group.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/group.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/listeners.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/listeners.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/mailer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/mailer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/registration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/resetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/resetting.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/all.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/all.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/change_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/change_password.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/group.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/group.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/registration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/resetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/resetting.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/security.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/security.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/storage-validation/couchdb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/storage-validation/couchdb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/storage-validation/mongodb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/storage-validation/mongodb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/storage-validation/orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/storage-validation/orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/username_form_type.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/username_form_type.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/util.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/util.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/validation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/validation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/validator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/validator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/adding_invitation_registration.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/adding_invitation_registration.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/canonicalizer.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/canonicalizer.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/command_line_tools.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/command_line_tools.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/configuration_reference.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/configuration_reference.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/controller_events.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/controller_events.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/custom_storage_layer.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/custom_storage_layer.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/doctrine.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/doctrine.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/emails.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/emails.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/form_type.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/form_type.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/groups.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/groups.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/logging_by_username_or_email.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/logging_by_username_or_email.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/overriding_forms.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/overriding_forms.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/overriding_templates.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/overriding_templates.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/overriding_validation.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/overriding_validation.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/routing.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/routing.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/user_manager.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/user_manager.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.af.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.af.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ar.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ar.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.bg.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.bg.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.bn.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.bn.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.bn_BD.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.bn_BD.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ca.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ca.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.cs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.cs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.da.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.da.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.de.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.de.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.el.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.el.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.en.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.eo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.eo.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.es.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.es.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.et.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.et.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.eu.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.eu.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fa.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fa.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fi.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fi.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fr.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fr.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.gl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.gl.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.he.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.he.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.hr.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.hr.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.hu.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.hu.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.id.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.id.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.it.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.it.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ja.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ja.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ky.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ky.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lb.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lb.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lt.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lt.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lv.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lv.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.nb.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.nb.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.nl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.nl.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pl.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pt.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pt.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pt_BR.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pt_BR.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ro.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ro.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ru.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ru.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sk.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sk.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sl.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sr_Latn.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sr_Latn.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sv.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sv.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.th.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.th.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.tr.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.tr.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.uk.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.uk.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.vi.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.vi.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.zh_CN.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.zh_CN.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ar.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ar.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.bg.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.bg.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.bn.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.bn.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.bn_BD.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.bn_BD.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ca.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ca.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.cs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.cs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.da.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.da.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.de.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.de.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.el.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.el.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.en.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.eo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.eo.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.es.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.es.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.eu.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.eu.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fa.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fa.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fi.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fi.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fr.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fr.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.he.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.he.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.hr.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.hr.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.hu.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.hu.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.id.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.id.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.it.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.it.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ja.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ja.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ky.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ky.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.lt.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.lt.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.lv.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.lv.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.nb.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.nb.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.nl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.nl.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pl.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pt.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pt.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pt_BR.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pt_BR.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ro.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ro.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ru.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ru.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sk.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sk.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sl.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sr_Latn.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sr_Latn.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sv.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sv.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.th.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.th.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.tr.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.tr.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.uk.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.uk.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.vi.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.vi.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.zh_CN.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.zh_CN.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/ChangePassword/change_password.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/ChangePassword/change_password.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/ChangePassword/change_password_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/ChangePassword/change_password_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Group/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Group/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Group/edit_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Group/edit_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Group/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Group/list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Group/list_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Group/list_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Group/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Group/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Group/new_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Group/new_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Group/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Group/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Group/show_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Group/show_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Profile/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Profile/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Profile/edit_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Profile/edit_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Profile/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Profile/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Profile/show_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Profile/show_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/check_email.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/check_email.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/confirmed.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/confirmed.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/email.txt.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/email.txt.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/register_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/register_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Resetting/check_email.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Resetting/check_email.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Resetting/email.txt.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Resetting/email.txt.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Resetting/request.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Resetting/request.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Resetting/request_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Resetting/request_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Resetting/reset.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Resetting/reset.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Resetting/reset_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Resetting/reset_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/layout.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Security/EmailUserProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Security/EmailUserProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Security/LoginManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Security/LoginManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Security/LoginManagerInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Security/LoginManagerInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Security/UserProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Security/UserProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/CanonicalFieldsUpdater.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/CanonicalFieldsUpdater.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/Canonicalizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/Canonicalizer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/CanonicalizerInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/CanonicalizerInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/PasswordUpdater.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/PasswordUpdater.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/PasswordUpdaterInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/PasswordUpdaterInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/TokenGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/TokenGenerator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/TokenGeneratorInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/TokenGeneratorInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/UserManipulator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/UserManipulator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Validator/Initializer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Validator/Initializer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/README.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/AdvancedMetadataFactoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/AdvancedMetadataFactoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Cache/CacheInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Cache/CacheInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Cache/DoctrineCacheAdapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Cache/DoctrineCacheAdapter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Cache/FileCache.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Cache/FileCache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Cache/PsrCacheAdapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Cache/PsrCacheAdapter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/ClassHierarchyMetadata.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/ClassHierarchyMetadata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/ClassMetadata.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/ClassMetadata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/AbstractFileDriver.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/AbstractFileDriver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/AdvancedDriverInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/AdvancedDriverInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/AdvancedFileLocatorInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/AdvancedFileLocatorInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/DriverChain.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/DriverChain.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/DriverInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/DriverInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/FileLocator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/FileLocator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/FileLocatorInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/FileLocatorInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/LazyLoadingDriver.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Driver/LazyLoadingDriver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/MergeableClassMetadata.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/MergeableClassMetadata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/MergeableInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/MergeableInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/MetadataFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/MetadataFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/MetadataFactoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/MetadataFactoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/MethodMetadata.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/MethodMetadata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/NullMetadata.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/NullMetadata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/PropertyMetadata.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/PropertyMetadata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Version.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/src/Metadata/Version.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Cache/DoctrineCacheAdapterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Cache/DoctrineCacheAdapterTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Cache/FileCacheTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Cache/FileCacheTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Cache/PsrCacheAdapterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Cache/PsrCacheAdapterTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/ClassMetadataTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/ClassMetadataTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/AbstractFileDriverTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/AbstractFileDriverTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/DriverChainTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/DriverChainTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/FileLocatorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/FileLocatorTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/A/A.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/A/A.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/B/B.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/B/B.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/C/SubDir/C.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/C/SubDir/C.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/D/D.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/D/D.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/T/T.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Driver/Fixture/T/T.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/ComplexHierarchy/BaseClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/ComplexHierarchy/BaseClass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/ComplexHierarchy/InterfaceA.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/ComplexHierarchy/InterfaceA.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/ComplexHierarchy/InterfaceB.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/ComplexHierarchy/InterfaceB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/ComplexHierarchy/SubClassA.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/ComplexHierarchy/SubClassA.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/ComplexHierarchy/SubClassB.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/ComplexHierarchy/SubClassB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/TestObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/TestObject.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/TestParent.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/Fixtures/TestParent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/MergeableClassMetadataTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/MergeableClassMetadataTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/MetadataFactoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/MetadataFactoryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/MethodMetadataTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/MethodMetadataTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/PropertyMetadataTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/Metadata/Tests/PropertyMetadataTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jms/metadata/tests/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jms/metadata/tests/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Adapter/AdapterInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Adapter/AdapterInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Adapter/ODM/MongoDB/MongoDBAdapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Adapter/ODM/MongoDB/MongoDBAdapter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Adapter/ORM/DoctrineORMAdapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Adapter/ORM/DoctrineORMAdapter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Adapter/PHPCR/PHPCRAdapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Adapter/PHPCR/PHPCRAdapter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Adapter/Propel/PropelORMAdapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Adapter/Propel/PropelORMAdapter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Command/MappingDebugClassCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Command/MappingDebugClassCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Command/MappingDebugCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Command/MappingDebugCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Command/MappingListClassesCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Command/MappingListClassesCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/DependencyInjection/Compiler/RegisterPropelModelsPass.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/DependencyInjection/Compiler/RegisterPropelModelsPass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/DependencyInjection/Configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/DependencyInjection/Configuration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/DependencyInjection/VichUploaderExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/DependencyInjection/VichUploaderExtension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Event/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Event/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Event/Events.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Event/Events.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Doctrine/BaseListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Doctrine/BaseListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Doctrine/CleanListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Doctrine/CleanListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Doctrine/InjectListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Doctrine/InjectListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Doctrine/RemoveListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Doctrine/RemoveListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Doctrine/UploadListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Doctrine/UploadListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Propel/BaseListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Propel/BaseListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Propel/CleanListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Propel/CleanListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Propel/InjectListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Propel/InjectListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Propel/RemoveListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Propel/RemoveListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Propel/UploadListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/EventListener/Propel/UploadListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Exception/MappingNotFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Exception/MappingNotFoundException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Exception/NameGenerationException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Exception/NameGenerationException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Exception/NoFileFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Exception/NoFileFoundException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Exception/NotUploadableException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Exception/NotUploadableException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Form/DataTransformer/FileTransformer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Form/DataTransformer/FileTransformer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Form/Type/VichFileType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Form/Type/VichFileType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Form/Type/VichImageType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Form/Type/VichImageType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Handler/AbstractHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Handler/AbstractHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Handler/DownloadHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Handler/DownloadHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Handler/UploadHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Handler/UploadHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Injector/FileInjector.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Injector/FileInjector.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Injector/FileInjectorInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Injector/FileInjectorInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Mapping/Annotation/Uploadable.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Mapping/Annotation/Uploadable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Mapping/Annotation/UploadableField.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Mapping/Annotation/UploadableField.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Mapping/PropertyMapping.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Mapping/PropertyMapping.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Mapping/PropertyMappingFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Mapping/PropertyMappingFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/ClassMetadata.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/ClassMetadata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/AbstractFileDriver.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/AbstractFileDriver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/AnnotationDriver.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/AnnotationDriver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/ChainDriver.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/ChainDriver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/FileLocator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/FileLocator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/XmlDriver.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/XmlDriver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/YamlDriver.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/Driver/YamlDriver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/MetadataReader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Metadata/MetadataReader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/ConfigurableInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/ConfigurableInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/DirectoryNamerInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/DirectoryNamerInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/HashNamer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/HashNamer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/NamerInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/NamerInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/OrignameNamer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/OrignameNamer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/Polyfill/FileExtensionTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/Polyfill/FileExtensionTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/PropertyNamer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/PropertyNamer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/SubdirDirectoryNamer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/SubdirDirectoryNamer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/UniqidNamer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Naming/UniqidNamer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/adapter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/adapter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/factory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/factory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/flysystem.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/flysystem.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/form.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/gaufrette.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/gaufrette.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/handler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/handler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/injector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/injector.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/listener.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/listener.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/namer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/namer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/storage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/storage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/templating.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/templating.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/twig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/config/twig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.ar.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.ar.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.de.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.de.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.en.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.es.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.es.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.fr.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.fr.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.hu.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.hu.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.it.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.it.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.pl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.pl.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.pt.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.pt.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.ru.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.ru.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.sl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.sl.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.tr.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.tr.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.uk.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.uk.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/views/Form/fields.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Resources/views/Form/fields.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/AbstractStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/AbstractStorage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/FileSystemStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/FileSystemStorage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/FlysystemStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/FlysystemStorage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/GaufretteStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/GaufretteStorage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/StorageInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/StorageInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Templating/Helper/UploaderHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Templating/Helper/UploaderHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Twig/Extension/UploaderExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Twig/Extension/UploaderExtension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Util/ClassUtils.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Util/ClassUtils.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Util/Transliterator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/Util/Transliterator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/VichUploaderBundle.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/VichUploaderBundle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vich/uploader-bundle/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vich/uploader-bundle/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/products/black-and-white-thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/products/default_image.png" beforeDir="false" />
+>>>>>>> d8a9d6960eac8395ce5f61d95c592f7f20e5d61e
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="378c06df-54ff-4530-a8e4-040e24327dc9" />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - shoppy@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - shoppy@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="shoppy: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+<<<<<<< HEAD
+      <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
+      <path value="$PROJECT_DIR$/vendor/pagerfanta/pagerfanta" />
+      <path value="$PROJECT_DIR$/vendor/cmen/google-charts-bundle" />
+=======
+      <path value="$PROJECT_DIR$/vendor/pagerfanta/pagerfanta" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
+>>>>>>> d8a9d6960eac8395ce5f61d95c592f7f20e5d61e
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1Xbk9REb6lpkHODfkpsWSAIotuL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/uploads/images/products" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ProduitBundle/Resources/views/Produit" />
+>>>>>>> d8a9d6960eac8395ce5f61d95c592f7f20e5d61e
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
+      <recent name="D:\wamp64\www\pi_dev_2020\web\uploads\images" />
+      <recent name="D:\wamp64\www\pi_dev_2020\web" />
+      <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\web" />
+      <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\app\Resources\views" />
+      <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\src\ProduitBundle\Resources\views" />
+=======
+      <recent name="C:\xampp\htdocs\pi_dev_2020\web\uploads\images\products" />
+      <recent name="C:\xampp\htdocs\pi_dev_2020\src\ProduitBundle\Resources\views\Produit" />
+      <recent name="C:\xampp\htdocs\pi_dev_2020\web" />
+      <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\web" />
+      <recent name="D:\Utilitaires\wamp64\www\pi_dev_2\app\Resources\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\pi_dev_2020\src\ProduitBundle\Resources\views\Produit" />
+      <recent name="C:\xampp\htdocs\pi_dev_2020\app\Resources\views\template" />
+      <recent name="D:\wamp64\www\pi_dev_2020\app\config" />
+      <recent name="D:\wamp64\www\pi_dev_2020\src\MagasinBundle\Form" />
+      <recent name="D:\wamp64\www\pi_dev_2020\src\MagasinBundle\Resources\views\Magasin" />
+>>>>>>> d8a9d6960eac8395ce5f61d95c592f7f20e5d61e
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\pi_dev_2020\web\uploads\images\products" />
+      <recent name="D:\wamp64\www\pi_dev_2020\src\MagasinBundle\Resources\views\Offre" />
+      <recent name="D:\wamp64\www\pi_dev_2020\src\MagasinBundle\Resources\views\Magasin" />
+      <recent name="D:\wamp64\www\pi_dev_2020\src\ProduitBundle\Repository" />
+      <recent name="D:\wamp64\www\pi_dev_2020\app\config" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="$ composer require friendsofsymfony/user-bundle &quot;~2.0&quot; " />
+      <command value="c dump-autoload" />
+      <command value="composer require friendsofsymfony/user-bundle &quot;~2.0&quot;" />
+      <command value="s doctrine:generate:form" />
+      <command value="s doctrine:generate:form Magasin:Magasin" />
+      <command value="s doctrine:generate:form @Magasin:Magasin" />
+      <command value="s doctrine:generate:form MagasinBundle:Magasin" />
+      <command value="s doctrine:generate:form @Magasin:Offre" />
+      <command value="s doctrine:generate:form MagasinBundle:Offre" />
+      <command value="php bin/console debug:autowiring" />
+      <command value="protected" />
+      <command value="doctrin crez" />
+      <command value="s doctrine:database:create" />
+      <command value="s doctrine:schema:create" />
+      <command value="s doctrine:generate:entities MagasinBundle:Magasin" />
+      <command value="s doctrine:generate:entities UserBundle:User" />
+      <command value="c require vich/uploader-bundle dev-master" />
+      <command value="c require vich/uploader-bundle" />
+      <command value="s doctrine:schema:update --force" />
+      <command value="c require cmen/google-charts-bundle" />
+      <command value="s generate:bundle" />
+      <command value="s cache:clear" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a70e209a-4f11-4125-8f94-492922f070bc" name="Default Changelist" comment="" />
+      <created>1581322029112</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581322029112</updated>
+      <workItem from="1581322256044" duration="12601000" />
+      <workItem from="1581354011800" duration="531000" />
+      <workItem from="1581354560019" duration="394000" />
+      <workItem from="1581354965081" duration="5902000" />
+      <workItem from="1581436981196" duration="14144000" />
+      <workItem from="1581689276177" duration="16638000" />
+      <workItem from="1581777144530" duration="36466000" />
+<<<<<<< HEAD
+      <workItem from="1581965196573" duration="8910000" />
+      <workItem from="1582117591587" duration="27694000" />
+=======
+      <workItem from="1581965196573" duration="7305000" />
+      <workItem from="1582048395696" duration="28067000" />
+>>>>>>> d8a9d6960eac8395ce5f61d95c592f7f20e5d61e
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="971" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581847868488">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="971" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581847868488" />
+    <state x="693" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581972656620">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="693" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581972656620" />
+    <state x="753" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1581791176036">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581791176036" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582139926629">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582139926629" />
+    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582148508174">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582148508174" />
+    <state x="684" y="399" key="ComposerCompositePathDialog" timestamp="1581691217532">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="684" y="399" key="ComposerCompositePathDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581691217532" />
+    <state x="1277" y="282" key="FileChooserDialogImpl" timestamp="1581691231702">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1277" y="282" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581691231702" />
+    <state width="1877" height="298" key="GridCell.Tab.0.bottom" timestamp="1582148875040">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582148875040" />
+    <state width="1877" height="298" key="GridCell.Tab.0.center" timestamp="1582148875040">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582148875040" />
+    <state width="1877" height="298" key="GridCell.Tab.0.left" timestamp="1582148875040">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582148875040" />
+    <state width="1877" height="298" key="GridCell.Tab.0.right" timestamp="1582148875040">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582148875040" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1581847877709">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581847877709" />
+    <state x="739" y="335" key="NewPhpClassDialog" timestamp="1582128647188">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="335" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582128647188" />
+    <state x="729" y="176" key="SettingsEditor" timestamp="1581691237514">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="729" y="176" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581691237514" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1581788178887">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581788178887" />
+    <state x="802" y="423" key="SymfonyPathDialog" timestamp="1581691232583">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="802" y="423" key="SymfonyPathDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581691232583" />
+    <state x="661" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1581354020845">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581354020845" />
+    <state x="1920" y="0" width="1498" height="1025" maximized="true" key="dock-window-1" timestamp="1581703810625">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1920" y="0" width="1498" height="1025" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581703810625" />
+    <state x="1920" y="0" width="1498" height="1025" maximized="true" key="dock-window-2" timestamp="1581703810625">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1920" y="0" width="1498" height="1025" maximized="true" key="dock-window-2/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581703810625" />
+    <state x="1913" y="0" width="974" height="1087" maximized="true" key="dock-window-3" timestamp="1581718494439">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1913" y="0" width="974" height="1087" maximized="true" key="dock-window-3/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581718494439" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1582148835641">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582148835641" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582149574827">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582149574827" />
+  </component>
+</project>

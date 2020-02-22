@@ -1,0 +1,30 @@
+produit_homepage:
+    path:     /home
+    defaults: { _controller: ProduitBundle:Produit:afficher }
+produit_ajouter:
+    path:     /add_pd
+    defaults: { _controller: ProduitBundle:Produit:AjouterProduit }
+produit_supprimer:
+    path:     /supp_pd{id}
+    defaults: { _controller: ProduitBundle:Produit:SupprimerProduit }
+produit_modifier:
+    path:     /modif_pd{id}
+    defaults: { _controller: ProduitBundle:Produit:modifierProduit }
+categorie_homepage:
+    path:     /afficherCatg
+    defaults: { _controller: ProduitBundle:Produit:afficherCategorie }
+categorie_ajouter:
+    path:     /ajouterCatg
+    defaults: { _controller: ProduitBundle:Produit:AjouterCategorie }
+categorie_supprimer:
+    path:     /supp_catg{id}
+    defaults: { _controller: ProduitBundle:Produit:SupprimerCategorie }
+categorie_modifier:
+    path:     /modif_catg{id}
+    defaults: { _controller: ProduitBundle:Produit:modifierCategorie }
+frontPage:
+    path:     /
+    defaults: { _controller: ProduitBundle:Produit:frontPage }
+detailProduit:
+    path:     /detailProduit/{id}
+    defaults: { _controller: ProduitBundle:Produit:detailProduit }

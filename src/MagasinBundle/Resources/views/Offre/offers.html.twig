@@ -1,0 +1,38 @@
+{% extends "/dashboard/pro/dashboard-list-base.html.twig" %}
+
+{% block title %}
+    Offres Shoppy
+{% endblock title %}
+
+{% block list_title %}Liste des offres des magasins partenaires{% endblock list_title %}
+
+{% block table %}
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Taux</th>
+            <th>Début</th>
+            <th>Fin</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+        {% for elem in data  %}
+            <tr>
+                <td>{{ elem.id }}</td>
+                <td>{{ elem.nom }}</td>
+                <td>{{elem.taux}}</td>
+                <td>{{elem.dateDebut|date}}</td>
+                <td>{{elem.dateFin|date}}</td>
+                <td>{{elem.description}}</td>
+                <td><a href="{{path('offre_delete',{'id':elem.id})}}"><i class="far fa-trash-alt text-danger"></i></a>
+                        <a href="{{path('offre_update',{'id':elem.id})}}"><i class="far fa-edit text-info mr-1"></i></a></td>
+            </tr>
+        {% endfor %}
+
+{% endblock table %}
+
+{% block buttons %}
+<a href={{ path('offre_ajouter') }}><img src="{{ asset('dashboard_style/assets/images/plus.png') }}"><a/>
+{% endblock buttons %}
