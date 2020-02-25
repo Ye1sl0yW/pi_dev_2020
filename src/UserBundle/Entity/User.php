@@ -31,11 +31,19 @@ class User extends BaseUser
      */
 
     private $prenom;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+
+    private $sexe;
+
+
     /**
      * @ORM\Column(type="string",length=255)
      */
 
-    private $number;
+    private $tel;
 
     /**
      * @ORM\OneToOne(targetEntity="PointsBundle\Entity\Portfolio",mappedBy="user_id")
@@ -59,19 +67,6 @@ class User extends BaseUser
     public function setPortfolio($portfolio)
     {
         $this->portfolio = $portfolio;
-    }
-
-    public function getNumber()
-    {
-        return $this->number;
-    }
-
-    /**
-     * @param mixed $number
-     */
-    public function setNumber($number)
-    {
-        $this->number = $number;
     }
 
     public function getNom()
@@ -107,9 +102,9 @@ class User extends BaseUser
 
     public function sendSMS($message){
 
-        $client=new Client(new Client\Credentials\Basic("f481785d","pIO6oRfhxut8UBG0"),['base_api_url'=>'https://rest.nexmo.com/sms/json']);
+        $client=new Client(new Client\Credentials\Basic("AAAA","AAAAA"),['base_api_url'=>'https://rest.nexmo.com/sms/json']);
         $client->message()->send([
-            'to' => $this->number,
+            'to' => $this->tel,
             'from' => 'Shoppy',
             'text' => $message
         ]);
@@ -132,4 +127,55 @@ class User extends BaseUser
         parent::__construct();
         // your own logic
     }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSexe()
+    {
+        return $this->sexe;
+    }
+
+    /**
+     * @param mixed $sexe
+     */
+    public function setSexe($sexe)
+    {
+        $this->sexe = $sexe;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTel()
+    {
+        return $this->tel;
+    }
+
+    /**
+     * @param mixed $tel
+     */
+    public function setTel($tel)
+    {
+        $this->tel = $tel;
+    }
+
+
+
 }
