@@ -33,7 +33,7 @@ class AppKernel extends Kernel
             new SmsBundle\SmsBundle(),
             new SAVBundle\SAVBundle(),
             new \Gregwar\CaptchaBundle\GregwarCaptchaBundle(),
-
+            new NotesBundle\NotesBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

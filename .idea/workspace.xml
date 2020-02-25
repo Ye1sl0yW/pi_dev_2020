@@ -1519,7 +1519,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Resources/views/dashboard/pro" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
   </component>
@@ -1567,6 +1567,7 @@
       <workItem from="1582378300513" duration="964000" />
       <workItem from="1582633446064" duration="7052000" />
       <workItem from="1582641680442" duration="1732000" />
+      <workItem from="1582660013879" duration="1019000" />
     </task>
     <servers />
   </component>
