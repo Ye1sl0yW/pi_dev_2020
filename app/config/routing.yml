@@ -2,6 +2,9 @@ panier:
     resource: "@PanierBundle/Resources/config/routing.yml"
     prefix:   /panier
 
+sms:
+    resource: "@SmsBundle/Resources/config/routing.yml"
+    prefix:   /sms
 
 points:
     resource: "@PointsBundle/Resources/config/routing.yml"
