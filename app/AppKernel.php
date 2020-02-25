@@ -29,6 +29,10 @@ class AppKernel extends Kernel
             new Vich\UploaderBundle\VichUploaderBundle(),
             new CMEN\GoogleChartsBundle\CMENGoogleChartsBundle(),
             new StatisticsBundle\StatisticsBundle(),
+                        new FOS\MessageBundle\FOSMessageBundle(),
+                                    new SmsBundle\SmsBundle(),
+
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
