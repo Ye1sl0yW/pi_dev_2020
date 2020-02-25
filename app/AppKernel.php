@@ -29,7 +29,7 @@ class AppKernel extends Kernel
             new PointsBundle\PointsBundle(),
             new Vich\UploaderBundle\VichUploaderBundle(),
             new CMEN\GoogleChartsBundle\CMENGoogleChartsBundle(),
-            //new FOS\MessageBundle\FOSMessageBundle(),
+            new FOS\MessageBundle\FOSMessageBundle(),
             new SmsBundle\SmsBundle(),
 
 
