@@ -2,9 +2,6 @@ panier:
     resource: "@PanierBundle/Resources/config/routing.yml"
     prefix:   /panier
 
-statistics:
-    resource: "@StatisticsBundle/Resources/config/routing.yml"
-    prefix:   /
 
 points:
     resource: "@PointsBundle/Resources/config/routing.yml"

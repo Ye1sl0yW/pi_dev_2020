@@ -3,7 +3,7 @@
 
 namespace UserBundle\Entity;
 
-use FOS\MessageBundle\Model\ParticipantInterface;
+//use FOS\MessageBundle\Model\ParticipantInterface;
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 use Nexmo\Client;
@@ -12,7 +12,8 @@ use Nexmo\Client;
  * @ORM\Entity
  * @ORM\Table(name="users")
  */
-class User extends BaseUser implements ParticipantInterface
+class User extends BaseUser
+    //implements ParticipantInterface
 {
     /**
      * @ORM\Id

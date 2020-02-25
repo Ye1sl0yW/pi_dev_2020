@@ -5,6 +5,7 @@ use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
 
 
+
 class AppKernel extends Kernel
 {
     public function registerBundles()
@@ -28,9 +29,8 @@ class AppKernel extends Kernel
             new PointsBundle\PointsBundle(),
             new Vich\UploaderBundle\VichUploaderBundle(),
             new CMEN\GoogleChartsBundle\CMENGoogleChartsBundle(),
-            new StatisticsBundle\StatisticsBundle(),
-                        new FOS\MessageBundle\FOSMessageBundle(),
-                                    new SmsBundle\SmsBundle(),
+            //new FOS\MessageBundle\FOSMessageBundle(),
+            new SmsBundle\SmsBundle(),
 
 
         ];
