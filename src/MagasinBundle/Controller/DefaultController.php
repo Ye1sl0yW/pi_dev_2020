@@ -11,3 +11,4 @@ class DefaultController extends Controller
         return $this->render('MagasinBundle:Default:index.html.twig');
     }
 }
+

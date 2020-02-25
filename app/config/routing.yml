@@ -31,3 +31,7 @@ app:
 fos_message:
     resource: "@FOSMessageBundle/Resources/config/routing.xml"
     prefix: /message
+
+sav:
+    resource: "@SAVBundle/Resources/config/routing.yml"
+    prefix:   /sav

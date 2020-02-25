@@ -1,0 +1,78 @@
+
+{% extends "/dashboard/pro/dashboard-list-base.html.twig" %}
+
+{% block title %}
+    Offres Shoppy
+{% endblock title %}
+
+{% block list_title %}Liste des offres des magasins partenaires{% endblock list_title %}
+
+{% block table %}
+
+
+
+ <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+
+        <thead>
+
+        <tr>
+                <td>ID</td>
+                <td>Type de Reclamation</td>
+                <td>Nom client</td>
+                <td>Email</td>
+                <td>Contenue</td>
+                <td>Date de reclamation</td>
+                <td>Actions</td>
+        </tr>
+
+        </thead>
+        <tbody >
+        <tr>
+    {% for f in f  %}
+            <td>{{f.id}}</td>
+            <td>{{f.type}}</td>
+            <td>{{f.nomClient}}</td>
+            <td>{{f.email}}</td>
+            <td>{{f.contenu}}</td>
+            <td>{{f.date|date}}</td>
+
+
+
+            <td>
+                <a href="{{path('sav_Delete_Reclamation',{'id':f.id})}}">
+                    <i class="far fa-trash-alt text-danger"></i>
+                            </a>
+                            <a href="{{path('sav_Edit_Reclamation',{'id':f.id})}}">
+                            <i class="far fa-edit text-info mr-1"></i>
+                            </a>
+                <a href="{{path('sav_Add_Reponse',{'id':f.id})}}">
+                    <i class="far fa-edit text-info mr-1"></i>
+                </a>
+                <a href="{{path('sav_Show_Reponse',{'id':f.id})}}">
+                    <i class="far fa-edit text-info mr-1"></i>
+                </a>
+            </td>
+        </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+
+{% endblock table %}
+{% block buttons %}
+<a href={{ path('sav_Add_Reclamation') }}>
+    <img src="{{ asset('dashboard_style/assets/images/plus.png') }}"><a/>
+{% endblock buttons %}
+    {% block scripts %}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#search").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myTable div").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+{% endblock %}

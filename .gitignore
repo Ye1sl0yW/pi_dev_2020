@@ -29,3 +29,4 @@
 /vendor/twig
 /vendor/autoload.php
 /web/bundles/
+/src/UserBundle/Entity

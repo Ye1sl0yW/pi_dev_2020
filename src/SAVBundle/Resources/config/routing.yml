@@ -1,0 +1,30 @@
+sav_homepage:
+    path:     /
+    defaults: { _controller: SAVBundle:Default:index }
+
+sav_Add_Reclamation:
+    path:     /add/reclamation
+    defaults: { _controller: SAVBundle:reclamation:createRec }
+sav_Show_Reclamation:
+    path:     /show/reclamation
+    defaults: { _controller: SAVBundle:reclamation:show }
+sav_Edit_Reclamation:
+    path:     /edit/reclamation/{id}
+    defaults: { _controller: SAVBundle:reclamation:updateRec }
+sav_Delete_Reclamation:
+    path:     /delete/reclamation/{id}
+    defaults: { _controller: SAVBundle:reclamation:deleteRec }
+
+
+sav_Add_Reponse:
+    path:     /add/reponse/{id}
+    defaults: { _controller: SAVBundle:reponse:createRep }
+sav_Show_Reponse:
+    path:     /show/reponse/{id}
+    defaults: { _controller: SAVBundle:reponse:show }
+sav_Edit_Reponse:
+    path:     /edit/reponse/{id}
+    defaults: { _controller: SAVBundle:reponse:updateRep }
+sav_Delete_Reponse:
+    path:     /delete/reponse/{id}
+    defaults: { _controller: SAVBundle:reponse:deleteRep }

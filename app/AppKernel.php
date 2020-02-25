@@ -31,7 +31,8 @@ class AppKernel extends Kernel
             new CMEN\GoogleChartsBundle\CMENGoogleChartsBundle(),
             new FOS\MessageBundle\FOSMessageBundle(),
             new SmsBundle\SmsBundle(),
-
+            new SAVBundle\SAVBundle(),
+            new \Gregwar\CaptchaBundle\GregwarCaptchaBundle(),
 
         ];
 

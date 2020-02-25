@@ -20,6 +20,7 @@
         "doctrine/orm": "^2.5",
         "friendsofsymfony/message-bundle": "^2.0",
         "friendsofsymfony/user-bundle": "~2.0",
+        "gregwar/captcha-bundle": "^2.0",
         "incenteev/composer-parameter-handler": "^2.0",
         "knplabs/knp-paginator-bundle": "^3.0",
         "knplabs/knp-snappy-bundle": "^1.5",

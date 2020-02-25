@@ -6,6 +6,8 @@ imports:
     - { resource: "@UserBundle/Resources/config/services.yml" }
     - { resource: "@MagasinBundle/Resources/config/services.yml" }
     - { resource: "@PanierBundle/Resources/config/services.yml" }
+    - { resource: "@SAVBundle/Resources/config/services.yml" }
+
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
@@ -120,3 +122,4 @@ fos_message:
     thread_class: UserBundle\Entity\Thread
     message_class: UserBundle\Entity\Message
 
+gregwar_captcha: ~
