@@ -1,4 +1,5 @@
-{% extends "/dashboard/pro/dashboard-list-base.html.twig" %}
+{# extends "/dashboard/pro/dashboard-list-base.html.twig" #}
+{% extends "/template/base.html.twig" %}
 
 {% block title %}
     Ajouter ou modifier une reclamation
@@ -7,7 +8,7 @@
 {% block list_title %}
     Ajouter ou modifier une Reclamation
 {% endblock list_title %}
-
+{% block body %}
 {% block table %}
 
     {{ form_start(f) }}
@@ -60,12 +61,13 @@
 {% endblock table %}
 
     {% block buttons %}
-        <div >
 
-            <input type="submit" class="btn btn-outline-success">
+            <div class="form-group row">
+                {{ form_widget(f.ajouter,{'attr':{'class':'btn'}}) }}
+
+
             <input type="reset" class="btn btn-danger">
-
-        </div>
+            </div>
 
         {{form_end(f)}}
     {% endblock buttons %}
@@ -81,3 +83,4 @@
      <script src="{{ asset('dashboard_style/assets/pages/jquery.forms-advanced.js') }}"></script>
 
  {% endblock add_scripts %}
+{% endblock body %}
