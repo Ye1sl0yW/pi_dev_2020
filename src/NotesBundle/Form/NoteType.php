@@ -13,7 +13,7 @@ class NoteType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('type')->add('value')->add('user_id')->add('produit_id')->add('magasin_id');
+        $builder->add('value')->add('text');
     }/**
      * {@inheritdoc}
      */
