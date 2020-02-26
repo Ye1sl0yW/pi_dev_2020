@@ -7,9 +7,13 @@ use CMEN\GoogleChartsBundle\GoogleCharts\Charts\PieChart;
 use Doctrine\ORM\EntityManagerInterface;
 use MagasinBundle\Entity\Magasin;
 use MagasinBundle\Entity\Offre;
+use MagasinBundle\Form\MagasinType;
 use ProduitBundle\Entity\Categorie;
 use ProduitBundle\Entity\Produit;
 use UserBundle\Entity\User;
+
+use Symfony\Component\HttpFoundation\Request;
+
 
 class MagasinService
 {
@@ -18,6 +22,11 @@ class MagasinService
     public function __construct( EntityManagerInterface $em)
     {
         $this->em = $em;
+    }
+
+    public function getAllShops()
+    {
+        return ($this->em->getRepository(Magasin::class)->findAll());
     }
 
     public function deleteShop($id)
@@ -169,9 +178,6 @@ class MagasinService
         //TODO implémenter la fonction de calcul du chiffre d'affaire pour l'année en cours
         return 0;
     }
-
-
-
 
 
     /*

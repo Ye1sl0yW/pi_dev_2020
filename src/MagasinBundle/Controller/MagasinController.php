@@ -22,19 +22,15 @@ class MagasinController extends Controller
 
     public function showAction()
     {
-        $var=$this->getDoctrine()->getManager()->getRepository(Magasin::class)->findAll();
-        return $this->render('@Magasin/Magasin/index.html.twig',array('data'=>$var));
+        return $this->render('@Magasin/Magasin/index.html.twig',array('data'=>$this->get(MagasinService::class)->getAllShops()));
     }
 
     public function detailsAction($id)
     {
-        $ms = $this->get(MagasinService::class);
-        $magasin = $ms->refreshMagasin($id);
-        $pieChart = $ms->pieChartOfNumberOfProductsByCategory($id);
-        $pieChartArticles = $ms->pieChartOfNumberOfArticlesByCategory($id);
-
-
-        return $this->render('@Magasin/Magasin/details.html.twig',array('data'=>$magasin,'piechart'=>$pieChart,'piechart2'=>$pieChartArticles));
+        return $this->render('@Magasin/Magasin/details.html.twig',array(
+            'data'=>$this->get(MagasinService::class)->refreshMagasin($id),
+            'piechart'=>$this->get(MagasinService::class)->pieChartOfNumberOfProductsByCategory($id),
+            'piechart2'=>$this->get(MagasinService::class)->pieChartOfNumberOfArticlesByCategory($id)));
     }
 
     public function createMagasinAction(Request $request)
@@ -60,7 +56,6 @@ class MagasinController extends Controller
             return $this->redirectToRoute('magasin_homepage');
         }
         return $this->render('@Magasin/Magasin/form_magasin.html.twig',array('f' => $form->createView()));
-
     }
 
     public function deleteMagasinAction($id)
@@ -90,12 +85,10 @@ class MagasinController extends Controller
             return $this->redirectToRoute('magasin_homepage');
         }
         return $this->render('@Magasin/Magasin/form_magasin.html.twig',array('f' => $form->createView()));
-
     }
 
     public function showProductsOfThisShopAction($id)
     {
-        $data=$this->get(MagasinService::class)->findAllProductsByShop($id);
-        return $this->render('@Magasin/Magasin/products.html.twig',array('data'=>$data));
+        return $this->render('@Magasin/Magasin/products.html.twig',array('data'=>$this->get(MagasinService::class)->findAllProductsByShop($id)));
     }
 }
