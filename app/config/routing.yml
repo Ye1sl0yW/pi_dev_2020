@@ -1,6 +1,6 @@
 notes:
     resource: "@NotesBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /notes
 
 panier:
     resource: "@PanierBundle/Resources/config/routing.yml"
