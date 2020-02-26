@@ -27,6 +27,8 @@ use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
+use UserBundle\Entity\User;
+use PointsBundle\Entity\Portfolio;
 
 /**
  * Controller managing the registration.
