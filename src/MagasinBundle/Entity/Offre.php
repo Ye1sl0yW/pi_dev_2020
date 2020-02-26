@@ -7,7 +7,7 @@ use Doctrine\Common\Collections\Collection;
 use FOS\UserBundle\Model\GroupInterface;
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
-
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity
@@ -24,6 +24,9 @@ class Offre
 
     /**
      * @ORM\Column(type="float")
+     * @Assert\NotBlank(message="Le taux est obligatoire !")
+     * @Assert\GreaterThanOrEqual(value=0 , message="Le taux doit être positif! ")
+     * @Assert\LessThanOrEqual(value=1, message="Le taux doit être inférieur à 100%")
      */
     private $taux;
 
@@ -39,11 +42,13 @@ class Offre
 
     /**
      * @ORM\Column(type="date")
+     * @Assert\GreaterThanOrEqual("today")
      */
     private $dateDebut;
 
     /**
      * @ORM\Column(type="date")
+     * @Assert\GreaterThanOrEqual(propertyPath="dateDebut")
      */
     private $dateFin;
 
