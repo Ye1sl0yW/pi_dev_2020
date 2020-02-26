@@ -122,19 +122,34 @@ class ProduitController extends Controller
     public function frontPageAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $produit = array();
-        while (sizeof($produit) < 7) {
-            $rd = rand(1, 100);
 
-            $item = $this->getDoctrine()->getRepository(Produit::class)->find($rd);
-            if (($item !== null) && ($item->getImageName() !== null) && (in_array($item, $produit)) == false) {
+        $nbProduits = sizeof($em->getRepository(Produit::class)->findAll());
+        $max = 7;
+        if ($nbProduits < $max)
+        {
+            $max = $nbProduits+10;
+        }
+
+        $produit = array();
+        while (sizeof($produit) < $max) {
+            //$rd = rand(1, 100);
+            $rd = rand(1, $nbProduits);
+
+            $item = $em->getRepository(Produit::class)->find($rd);
+            if (($item !== null) && ($item->getImageName() !== null) && (in_array($item, $produit)) == false)
+            {
                 array_push($produit, $item);
             }
 
         }
-        $cat = $this->getDoctrine()->getRepository(Categorie::class)->findAll();
-        return $this->render('@Produit/Produit/frontPage.html.twig', array('produit' => $produit, 'categories' => $cat));
-//TODO Randomize product ajouter lien detail produit
+        $cat = $em->getRepository(Categorie::class)->findAll();
+        return $this->render('@Produit/Produit/frontPage.html.twig', array(
+            'produit' => $produit,
+            'categories' => $cat,
+            'L' => -1,
+            'PM' => -1
+            ));
+
     }
 
 

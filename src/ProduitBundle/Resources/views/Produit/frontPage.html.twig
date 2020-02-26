@@ -193,10 +193,10 @@
         </div>
     </div>
     </div>
-
+                                                    {% if ( (L>=0)and(PM >=0)) %}
                                                         <h2>{{ L }} produits ont été trouvés dans cette catégorie</h2>
                                                         <h2>{{ PM }}TND est le prix moyen des produits de cette catégorie</h2>
-
+                                                    {% endif %}
                                                     <h2>Recherche par Prix :</h2>
                                                     <input type="text" value="" name="prixmin" placeholder="Entrer le prix minimal">
                                                     <input type="text" value="" name="prixmax" placeholder="Entrer le prix maximal">
