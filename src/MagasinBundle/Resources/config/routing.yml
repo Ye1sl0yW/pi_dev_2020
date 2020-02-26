@@ -1,33 +1,33 @@
 magasin_homepage:
-    path:     /buyer/home_mg
+    path:     /seller/home_mg
     defaults: { _controller: MagasinBundle:Magasin:show }
 magasin_ajouter:
-    path:     /buyer/add_mg
+    path:     /admin/add_mg
     defaults: { _controller: MagasinBundle:Magasin:createMagasin }
 magasin_delete:
-    path:     /buyer/delete_mg/{id}
+    path:     /admin/delete_mg/{id}
     defaults: { _controller: MagasinBundle:Magasin:deleteMagasin }
 magasin_update:
-    path:     /buyer/update_mg/{id}
+    path:     /admin/update_mg/{id}
     defaults: { _controller: MagasinBundle:Magasin:updateMagasin }
 offre_homepage:
-    path:     /buyer/home_offre
+    path:     /admin/home_offre
     defaults: { _controller: MagasinBundle:Offre:show }
 offre_ajouter:
-    path:     /buyer/add_offre
+    path:     /seller/add_offre
     defaults: { _controller: MagasinBundle:Offre:createOffre }
 offre_delete:
-    path:     /buyer/delete_offre/{id}
+    path:     /seller/delete_offre/{id}
     defaults: { _controller: MagasinBundle:Offre:deleteOffre }
 offre_update:
-    path:     /buyer/update_offre/{id}
+    path:     /seller/update_offre/{id}
     defaults: { _controller: MagasinBundle:Offre:updateOffre }
 magasin_details:
-    path:     /buyer/details/{id}
+    path:     /seller/details/{id}
     defaults: { _controller: MagasinBundle:Magasin:details }
 magasin_products:
-    path:     /buyer/products/{id}
+    path:     /seller/products/{id}
     defaults: { _controller: MagasinBundle:Magasin:showProductsOfThisShop }
 magasin_offers:
-    path:     /buyer/offers/{id}
+    path:     /seller/offers/{id}
     defaults: { _controller: MagasinBundle:Offre:showOffersOfThisShop }
