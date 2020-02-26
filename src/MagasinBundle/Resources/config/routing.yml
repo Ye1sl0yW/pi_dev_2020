@@ -1,5 +1,5 @@
 magasin_homepage:
-    path:     /seller/home_mg
+    path:     /admin/home_mg
     defaults: { _controller: MagasinBundle:Magasin:show }
 magasin_ajouter:
     path:     /admin/add_mg

@@ -16,7 +16,7 @@ points:
 
 magasin:
     resource: "@MagasinBundle/Resources/config/routing.yml"
-    prefix:   /magasin
+    prefix:   /
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
