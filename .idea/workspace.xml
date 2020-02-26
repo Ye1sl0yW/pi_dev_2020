@@ -2,19 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e749a6d9-efc1-4ff2-973f-da5d2c5fa0eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_25_02_2020_13_27_c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_25_02_2020_15_42_c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_25_02_2020_13_59_s.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_25_02_2020_15_43_s.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pi_dev_2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pi_dev_2020.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Entity/Commande.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Entity/LigneCmd.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Form/CommandeType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Repository/CommandeRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Repository/LigneCmdRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/Creation.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/order.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_25_02_2020_20_49_c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_26_02_2020_15_56_c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_25_02_2020_21_05_s.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_26_02_2020_16_12_s.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/symfony_requirements" beforeDir="false" afterPath="$PROJECT_DIR$/bin/symfony_requirements" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MagasinBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagasinBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanierBundle/Controller/PanierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Controller/PanierController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanierBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/CartPage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/CartPage.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/trade.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanierBundle/Resources/views/Panier/trade.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/cmen/google-charts-bundle/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/cmen/google-charts-bundle/.github/workflows/ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/cmen/google-charts-bundle/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/cmen/google-charts-bundle/.gitignore" afterDir="false" />
@@ -695,6 +697,68 @@
       <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/UserManipulator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/UserManipulator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Validator/Initializer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Validator/Initializer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Controller/CaptchaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Controller/CaptchaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/DependencyInjection/Configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/DependencyInjection/Configuration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/DependencyInjection/GregwarCaptchaExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/DependencyInjection/GregwarCaptchaExtension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Generator/CaptchaGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Generator/CaptchaGenerator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Generator/ImageFileHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Generator/ImageFileHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/GregwarCaptchaBundle.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/GregwarCaptchaBundle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/config/routing/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/config/routing/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/config/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/config/services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.ar.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.ar.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.bg.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.bg.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.cs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.cs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.de.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.de.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.en.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.fr.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.fr.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.it.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.it.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.nl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.nl.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.pl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.pl.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.pt_BR.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.pt_BR.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.ro.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.ro.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.tr.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.tr.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.zh_CN.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/gregwar_captcha.zh_CN.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.ar.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.ar.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.bg.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.bg.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.cs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.cs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.de.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.de.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.en.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.es.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.es.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.fr.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.fr.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.it.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.it.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.nl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.nl.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.pl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.pl.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.pt_BR.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.pt_BR.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.ro.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.ro.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.ru.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.ru.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.tr.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.tr.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.zh_CN.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/translations/validators.zh_CN.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/views/captcha.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Resources/views/captcha.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Type/CaptchaType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Type/CaptchaType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Validator/CaptchaValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/Validator/CaptchaValidator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha-bundle/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/demo/demo.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/demo/demo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/demo/fingerprint.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/demo/fingerprint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/demo/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/demo/form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/demo/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/demo/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/demo/inline.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/demo/inline.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/demo/ocr.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/demo/ocr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/demo/output.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/demo/output.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/demo/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/demo/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/src/Gregwar/Captcha/CaptchaBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/src/Gregwar/Captcha/CaptchaBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/src/Gregwar/Captcha/CaptchaBuilderInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/src/Gregwar/Captcha/CaptchaBuilderInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/src/Gregwar/Captcha/ImageFileHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/src/Gregwar/Captcha/ImageFileHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/src/Gregwar/Captcha/PhraseBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/src/Gregwar/Captcha/PhraseBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/src/Gregwar/Captcha/PhraseBuilderInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/src/Gregwar/Captcha/PhraseBuilderInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gregwar/captcha/tests/CaptchaBuilderTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gregwar/captcha/tests/CaptchaBuilderTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/.php_cs" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/.php_cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/Dockerfile" afterDir="false" />
@@ -1519,12 +1583,16 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\pi_dev_2020\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\pi_dev_2020\src" />
       <recent name="D:\Utilitaires\wamp64\www\pi_dev_2020\app\Resources\views\dashboard\pro" />
     </key>
   </component>
@@ -1535,11 +1603,11 @@
       <command value="c clear-cache" />
       <command value="c require friendsofsymfony/message-bundle" />
       <command value="s cache:clear" />
+      <command value="c require nexmo/client" />
+      <command value="c require gregwar/captcha-bundle" />
+      <command value="s doctrine:schema:update --force" />
       <command value="s doctrine:database:create" />
       <command value="s doctrine:schema:create" />
-      <command value="c require nexmo/client" />
-      <command value="s doctrine:schema:update --force" />
-      <command value="c require gregwar/captcha-bundle" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -1568,6 +1636,7 @@
       <workItem from="1582633446064" duration="7052000" />
       <workItem from="1582641680442" duration="1732000" />
       <workItem from="1582660013879" duration="1019000" />
+      <workItem from="1582728861970" duration="1990000" />
     </task>
     <servers />
   </component>

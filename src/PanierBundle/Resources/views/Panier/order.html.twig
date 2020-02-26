@@ -1,0 +1,106 @@
+{% extends '/template/base.html.twig' %}
+ {% block title %}
+     shoppy
+ {% endblock %}
+
+ {% block body %}
+     <br> <br>
+     <h2 align="center">Bonjour Mr/Mme     &nbsp; {{  app.user.prenom }}    &nbsp;{{ app.user.nom }}</h2>
+<br>
+     <h2 align="center">Votre Commande Shoppy</h2>    <br>
+     <div class="row">
+         <div class="col-75">
+             <div class="container">
+                 <form method="post"action="Creation">
+
+                     <div class="row">
+                         <div class="col-50">
+                             <h3>adresse de livraison</h3>
+                             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                             <input type="text"  id="fname" name="firstname" placeholder="{{ app.user.nom }}&nbsp;&nbsp;{{ app.user.prenom }}" disabled>
+                             <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                             <input type="text" id="email" name="email" placeholder="{{ app.user.email}}" disabled>
+                             <label for="adr"><i class="fa fa-address-card-o"></i>Adresse</label>
+                             <input type="text" id="adr" name="adr" placeholder="542 W. 15th Street">
+                             <label for="city"><i class="fa fa-institution"></i> ville</label>
+                             <input type="text" id="city" name="city" placeholder="New York">
+
+                             <div class="row">
+                                 <div class="col-50">
+                                     &nbsp;&nbsp;&nbsp;   <label for="state">statue</label>
+                                     <input type="text" id="state" name="state" placeholder="NY">
+                                 </div>
+                                 <div class="col-50">
+                                     &nbsp;&nbsp;&nbsp;     <label for="zip">Zip</label>
+                                     <input type="text" id="zip" name="zip" placeholder="10001">
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="col-50">
+                             <h3>Paiement</h3>
+                             <label for="fname">cartes accepteés : </label> </br> </br>
+                             <div class="icon-container">
+                                 <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                 <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                 <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                 <i class="fa fa-cc-discover" style="color:orange;"></i>
+                             </div>
+                             </br> </br>
+                             <label for="cname">Name on Card</label>
+                             <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                             <label for="ccnum">Credit card number</label>
+                             <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                             <label for="expmonth">Exp Month</label>
+                             <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                             <div class="row">
+                                 <div class="col-50">
+                                     &nbsp;&nbsp;&nbsp;   <label for="expyear">Exp Year</label>
+                                     <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                 </div>
+                                 <div class="col-50">
+                                     &nbsp;&nbsp;&nbsp;    <label for="cvv">CVV</label>
+                                     <input type="text" id="cvv" name="cvv" placeholder="352">
+                                 </div>
+                             </div>
+                         </div>
+
+     <div class="col-25">
+     <div class="container"> {% for el in panier  %}
+     {% if el.produit is not empty  %}
+         {% set a=a+el.quantite*el.produit.prix %}
+
+         <h4>Ligne Panier <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b> :</b></span></h4>
+         <p><a href="#"> {{ el.produit.nom}}&nbsp;{{ el.produit.description}}  : </a> <span class="price"> {{ el.produit.prix}}TND&nbsp;* {{ el.quantite}}piéces : {{ el.produit.prix*el.quantite}} TND</span></p>
+         {{ el.magasin.getMatriculeFiscal() }}&nbsp;
+         <input type="qte" id="qte" name="qte" value="{{el.quantite}}" style="visibility: hidden">
+         <input type="totL" id="totL" name="totL" value="{{el.produit.prix*el.quantite}}" style="visibility: hidden">
+         <input type="idProd" id="idProd" name="idProd" value="{{el.produit.id}}" style="visibility: hidden">
+         <input type="idAch" id="idAch" name="idAch" value=" &nbsp; {{  app.user.id }}" style="visibility: hidden">
+
+     {% endif %}
+         {% endfor %}
+     </div>
+
+         <hr>
+         <p>Total  :   <span class="price" style="color:black"><b>{{ a }}   TND&nbsp;</b></span></p>
+         <input type="total" id="total" name="total" value="{{ a }} " style="visibility: hidden">
+         </br></br>
+
+         <label>
+             <input type="checkbox" checked="checked" name="sameadr">Adresse de livraison identique à la facturation&nbsp;
+         </label>
+         <td><a><button>confirmer</button></a></td>
+
+
+</br></br></br></br>
+     </div>
+         </div>
+
+                 </form>
+             </div>
+         </div>
+
+     </div>
+
+ {% endblock body %}

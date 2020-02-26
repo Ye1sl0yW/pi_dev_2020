@@ -10,6 +10,15 @@ panier_cart:
 cart_add:
     path:     /add/{id}
     defaults: { _controller: PanierBundle:Panier:add }
+cart_order:
+    path:     /order
+    defaults: { _controller: PanierBundle:Panier:Order }
+cart_orderCreate:
+    path:     /Createorder
+    defaults: { _controller: PanierBundle:Panier:CreateOrder }
+cart_Creation:
+    path:     /Creation
+    defaults: { _controller: PanierBundle:Panier:CreateOrder }
 cart_pdf:
     path:     /pdf/{id}
     defaults: { _controller: PanierBundle:Panier:PDF }
@@ -28,3 +37,9 @@ cartPage_show:
 cart_delete:
      path:     /delete_cart/{id}
      defaults: { _controller: PanierBundle:Panier:RemoveCart }
+call:
+    path:     /call
+    defaults: { _controller: PanierBundle:Panier:call }
+findLC:
+    path:     /findLC/{id}
+    defaults: { _controller: PanierBundle:Panier:findLC }

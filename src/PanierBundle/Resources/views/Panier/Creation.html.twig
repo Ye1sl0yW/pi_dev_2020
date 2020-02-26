@@ -1,0 +1,64 @@
+{% extends '/template/base.html.twig' %}
+ {% block title %}
+     shoppy
+ {% endblock %}
+
+ {% block body %}
+
+
+achat effectué  avec successe de user  {{ cmds.id.id}} {{ cmds.id.nom}} {{ cmds.id.prenom}}
+
+
+
+     {% if cmds | length > 0 %}
+         <table border="1"width="70%" class="table mb-0">
+
+             <thead>
+             <tr>
+                 <th>id cmd</th>
+                 <th>total</th>
+                <th>qte total</th>
+                 <th>date</th>
+                 <th>ACTIONS</th>
+             </tr>
+             </thead>
+             <tbody>
+
+             {% for el in cmds.c  %}
+
+                     <tr>
+                         <td>
+
+                             <p class="d-inline-block align-middle mb-0">
+                                 <a href="" class="d-inline-block align-middle mb-0 product-name">{{ el.id}}</a>
+                                 <br>
+
+                             </p>
+                         </td>
+
+                         <td>
+
+
+                                 <br>
+                                 <span class="text-muted font-13">{{ el.total}}</span>
+                         </td>
+
+                         <td>
+
+
+                             <br>
+                         <span class="text-muted font-13">{{ el.getQteTot()}}</span>                         </td>
+                         <td>  {{ el.DateCreation|date('Y-m-d')}}</td>
+                         <td><a  href={{ path('findLC',{'id':el.id}) }}><button>LIGNE CMD</button></a></td>
+
+                     </tr>
+
+             {% endfor %}
+     {% endif %}
+
+             </tbody>
+         </table>
+
+
+
+ {% endblock body %}

@@ -38,8 +38,12 @@
                  <td><a><button>buy now</button></a></td>
                  <td><a  href={{ path('cart_show') }}><button>panier</button></a></td>
 
-
-
+                 <td><a  href={{ path('cart_order') }}><button>panier</button></a></td>
+                 {% for message in app.flashes('alert') %}
+                     <div class="flash-alert">
+                        <h3> {{ message }}</h3>
+                     </div>
+                 {% endfor %}
 
              </tr>
          {% endfor %}
@@ -48,10 +52,12 @@
 
 
 
+{#
 
      <div class="navigation">
          {{ knp_pagination_render(pagination) }}
      </div>
+#}
 
  {% endblock body %}
 
