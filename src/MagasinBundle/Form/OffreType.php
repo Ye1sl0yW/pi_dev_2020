@@ -32,7 +32,7 @@ class OffreType extends AbstractType
                 'choice_label'=>'id',
                 'multiple'=>false
             ))
-            ->add('Valider',SubmitType::class);;
+            ->add('Valider',SubmitType::class);
     }/**
      * {@inheritdoc}
  *

@@ -3,6 +3,7 @@
 
 namespace UserBundle\Entity;
 
+use Doctrine\ORM\Mapping\OneToOne;
 use FOS\MessageBundle\Model\ParticipantInterface;
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
@@ -52,6 +53,31 @@ class User extends BaseUser
      */
 
     private $portfolio;
+
+    /**
+     * @OneToOne(targetEntity="MagasinBundle\Entity\Magasin", inversedBy="id_vendeur", cascade={"remove"})
+     * @ORM\JoinColumn(name="id_magasin",referencedColumnName="id", nullable=true)
+     */
+    protected $id_magasin;
+
+    /**
+     * @return mixed
+     */
+    public function getIdMagasin()
+    {
+        return $this->id_magasin;
+    }
+
+    /**
+     * @param mixed $id_magasin
+     */
+    public function setIdMagasin($id_magasin)
+    {
+        $this->id_magasin = $id_magasin;
+    }
+
+
+
 
     /**
      * @return mixed
