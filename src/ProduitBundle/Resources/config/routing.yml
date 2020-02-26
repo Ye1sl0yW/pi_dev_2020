@@ -28,3 +28,12 @@ frontPage:
 detailProduit:
     path:     /detailProduit/{id}
     defaults: { _controller: ProduitBundle:Produit:detailProduit }
+findAllProductsAndCategory:
+    path:     /findAllProductsAndCategory/{category}
+    defaults: { _controller: ProduitBundle:Produit:findAllProductsAndCategory }
+CalculateMoyenprice:
+  path:     /CalculateMoyenprice/{category}
+  defaults: { _controller: ProduitBundle:Produit:CalculateMoyenprice }
+searchbyprice:
+    path:     /searchbyprice
+    defaults: { _controller: ProduitBundle:Produit:searchbyprice }

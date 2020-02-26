@@ -35,16 +35,14 @@
      <td>{{ i.description}}</td>
      <td>{{ i.prix}}</td>
      <td>{{ i.marque}}</td>
-     <td>{{ i.id}}</td>
-     <td><a href={{ path('produit_supprimer',{'id':i.id}) }}><button>supprimer</button></a></td>
-        <td><a href={{ path('produit_modifier',{'id':i.id}) }}><button>modifier</button></a></td>
-     <td>{{ i.getIdMagasin().getId()}}</td>
-     {% if (i.getIdCategorie()|length == 0 ) %}
      <td>
-          <a href="{{ path('produit_modifier',{'id':i.id}) }}"><button class="btn-blue">Ajouter categorie</button></a>
-     </td>
+      {% if  i.getIdMagasin() %}
+      {{ i.getIdMagasin().getId()}}</td>
+     {% endif %}
+     <td>
+      {% if (i.getIdCategorie()|length == 0 ) %}
+      <a href="{{ path('produit_modifier',{'id':i.id}) }}"><button class="btn-blue">Ajouter categorie</button></a>
      {% else %}
-      <td>
        <ul>
          {% for cat in i.getIdCategorie() %}
             <li>{{ cat.getNom() }}</li>
@@ -55,19 +53,16 @@
 
      <td><a href={{ path('produit_supprimer',{'id':i.id}) }}><i class="far fa-trash-alt text-danger"></i></a>
         <a href={{ path('produit_modifier',{'id':i.id}) }}><i class="far fa-edit text-info mr-1"></i></a>
-      <a href={{ path('detailProduit',{'id':i.id}) }}>WIP détail produit <i class="far dripicons-home text-info mr-1"></i></a>
+      <a href={{ path('detailProduit',{'id':i.id}) }}>détail <i class="far dripicons-home text-info mr-1"></i></a>
 
      </td>
+
 
 
     </tr>
 {% endfor %}
 
   </table>
-<<<<<<< HEAD
-  <a href={{ path('produit_ajouter') }}><button>ajouter</button></a>
-=======
->>>>>>> 37296944a7132e55ad6a019f4e552fc3368fb17a
 
 
 

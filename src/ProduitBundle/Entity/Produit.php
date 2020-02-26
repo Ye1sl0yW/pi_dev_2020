@@ -26,8 +26,8 @@ class Produit
     /**
      * @ORM\Column(type="integer")
      * @Assert\NotBlank(message="la quantité est obligatoire")
-     * @Assert\GreaterThan(value=0,
-     * message="la quantité doit etre superieur à 0"
+     * @Assert\GreaterThan(value=-1,
+     * message="la quantité doit etre superieur à -1"
      * )
      */
     protected $quantite;

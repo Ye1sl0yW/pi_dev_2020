@@ -166,7 +166,9 @@
 														{% endblock quantite %}</span>
 													</div>
 												</div>
-												
+
+
+
 												<div class="description" itemprop="description">
 													<p>{% block description %}
 															{% if produit.description %}
@@ -180,8 +182,11 @@
 														{% if produit.quantite > 0 %}
 														Stock  : Disponible
 															{% else %}
-															Non disponible
-													{% endif %}
+														Stock : Epuisé
+																<img width="50" height="50" src={{ asset("uploads/images/products/stockepuise.png") }}>
+
+
+														{% endif %}
 													{% endblock quantite_bool %}</p>
 												
 												<div class="social-share">
@@ -192,9 +197,15 @@
 														<a href="https://plus.google.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-google-plus"></i></a>
 														<a href="#"><i class="fa fa-dribbble"></i></a>
 														<a href="#"><i class="fa fa-instagram"></i></a>
+
+
+
+
 													</div>
 												</div>
 											</div>
+											<a href="#"><button>Ajouter au panier</button></a>
+
 										</div>
 									</div>
 								</div>
