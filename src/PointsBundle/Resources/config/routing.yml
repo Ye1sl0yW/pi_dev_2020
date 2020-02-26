@@ -31,3 +31,7 @@ portfolio_supprimer:
 portfolio_modifier:
     path: /modportfol{id}
     defaults: {_controller: PointsBundle:Portfolio:modifierPortfolio}
+
+user_points:
+    path: /mypoints
+    defaults: {_controller: PointsBundle:Portfolio:myPoints}
