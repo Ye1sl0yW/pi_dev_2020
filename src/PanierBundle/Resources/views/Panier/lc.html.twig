@@ -1,15 +1,14 @@
 {#{% extends '/dashboard/pro/dashboard-list-base.html.twig' %}#}
 {% extends '/template/base.html.twig' %}
  {% block title %}
-     s
+     shoppy
  {% endblock %}
 
  {% block body %}
 
 
 
-<br><br><br>
-     
+<br><br><br> &nbsp;&nbsp;   les lignes commandes correspendants au commande numero : {{ id}}
 
      {% if lcs | length > 0 %}
          <table border="1"width="70%" class="table mb-0">
@@ -24,7 +23,6 @@
          </tr>
          </thead>
          <tbody>
-
          {% for el in lcs.oussema  %}
 
              <tr>
@@ -53,8 +51,11 @@
 
 
              </tr>
+             </br></br></br>
 
          {% endfor %}
+
+
      {% endif %}
 
      </tbody>

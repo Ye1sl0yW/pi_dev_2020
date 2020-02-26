@@ -46,3 +46,6 @@ findLC:
 findC:
     path:     /findC/{id}
     defaults: { _controller: PanierBundle:Panier:HistoryCmd }
+test:
+    path:     /test
+    defaults: { _controller: PanierBundle:Panier:test }

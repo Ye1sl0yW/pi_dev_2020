@@ -1,9 +1,6 @@
 
 
 
-
-
-
 {% block title %}
     aaaaaaa
 {% endblock %}
@@ -12,15 +9,15 @@
 
 
 
-<header class="clearfix">
+<header class="clearfix" style="border: 1px">
     <div id="logo">
         <img src="{{ asset('invoice/logo.png') }}">
     </div>
     <div id="company">
-        <h2 class="name">Company Name</h2>
-        <div>455 Foggy Heights, AZ 85004, US</div>
-        <div>(602) 519-0450</div>
-        <div><a href="mailto:company@example.com">company@example.com</a></div>
+        <h2 class="name">Shoppy name</h2>
+        <div>esprit ariana chotrana 2</div>
+        <div>(+216) 99999999</div>
+        <div><a href="mailto:company@example.com">shoppy@esprit.tn</a></div>
     </div>
     </div>
 </header>
@@ -48,15 +45,14 @@
         </tr>
         </thead>
         <tbody>
-        {% for el in a  %}
-        {% if el.produit is not empty  %}
+
             <tr>
 
 
-                 <td>{{ el.produit.nom}}</td>
-               <td>{{ el.quantite}}</td>
-                    <td>{{ el.produit.prix}}</td>
-                <td>{{ el.quantite*el.produit.prix}}</td>
+                 <td>{{ a.id }}</td>
+               <td>{{ a.id }}</td>
+                    <td>{{ a.id}}</td>
+                <td>{{ a.id }}</td>
 
 
 
@@ -69,13 +65,5 @@
 
     </table>
 
-                <td>{% set tot=tot+el.quantite*el.produit.prix %} </td>
-
-
-        {% endif %}
-
-        {% endfor %}<br> total : <br>
-     {{ tot }}    TND
+                <td></td>
     {% endblock body %}
-</body>
-</html>

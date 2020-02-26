@@ -507,7 +507,7 @@ public function HistoryCmdAction($id){
         $lcs=[
             'oussema'=>$lcRepository->findBy(['id_cmd' =>$order->getId()])
         ];
-        return $this->render('@Panier/Panier/lc.html.twig',array('lcs'=>$lcs));
+        return $this->render('@Panier/Panier/lc.html.twig',array('lcs'=>$lcs,'id'=>$id));
     }
 
 
@@ -516,25 +516,16 @@ public function HistoryCmdAction($id){
 
 
     public function PDFAction($id,SessionInterface $session){
-        $panier  = $session->get('panier',[]);
-        $CartWithData=[];
-
-        foreach ($panier as $id => $quantite){
 
             $em = $this->getDoctrine()->getManager();
-            $productRepository = $em->getRepository('ProduitBundle:Produit');
-            $CartWithData[]=[
-                'produit'=>$productRepository->find($id),
-                'quantite'=> $quantite ,
-
-            ];
-        }
-        $total=0;
+            $cmdRepository = $em->getRepository('PanierBundle:Commande');
+        $order= $cmdRepository->find($id);
+$b=$order->getIdAcheteur();
         $vars= $this->renderView(
                 '@Panier/Panier/pdf.html.twig',
                ['name'=>'omarhachicha' ,
-                  'a'=> $CartWithData,
-                   'tot'=> $total
+                  'a'=> $order,
+                   'b'=> $b
                ]
         );
 
@@ -545,17 +536,13 @@ return new Response(
         'Content-Disposition'=>'filename="CC.pdf"'
     )
 
-);
-    }
+); }
+public function testAction()
+{
+    return $this->render('@Panier/Panier/pages-invoice.html.twig');
 
 
-
-
-
-
-
-
-
+}
 
 
     public function callAction()
