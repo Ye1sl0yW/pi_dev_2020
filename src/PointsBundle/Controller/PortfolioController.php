@@ -82,7 +82,7 @@ class PortfolioController extends Controller
         {
             $total+=$t->getMontant();
         }
-        return $this->render('@Points/Ticket/affichageTicket.html.twig', array('tab' => $tickets,'total'=>$total));
+        return $this->render('@Points/Ticket/affichageTicketUser.html.twig', array('tab' => $tickets,'total'=>$total));
     }
 
 
