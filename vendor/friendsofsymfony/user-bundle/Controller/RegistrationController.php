@@ -75,7 +75,8 @@ class RegistrationController extends Controller
             if ($form->isValid()) {
                 $event = new FormEvent($form, $request);
                 $this->eventDispatcher->dispatch(FOSUserEvents::REGISTRATION_SUCCESS, $event);
-
+                $user->setPortfolio(new Portfolio());
+                //$user->sendSMS('test');
                 $this->userManager->updateUser($user);
 
                 if (null === $response = $event->getResponse()) {
