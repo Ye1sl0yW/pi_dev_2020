@@ -9,7 +9,7 @@ security:
         ROLE_ACHETEUR:       ROLE_ACHETEUR
         ROLE_VENDEUR:       [ROLE_VENDEUR, ROLE_ACHETEUR]
         ROLE_ADMIN:       [ROLE_ADMIN, ROLE_VENDEUR, ROLE_ACHETEUR]
-        ROLE_SUPER_ADMIN:       [ROLE_ADMIN, ROLE_VENDEUR, ROLE_ACHETEUR]
+        ROLE_SUPER_ADMIN:       [ROLE_ADMIN]
 
     providers:
         fos_userbundle:
