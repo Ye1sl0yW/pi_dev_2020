@@ -8,6 +8,9 @@ use PointsBundle\Entity\Portfolio;
 use PointsBundle\Form\PortfolioType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\VarDumper\VarDumper;
+use UserBundle\Entity\User;
+use PointsBundle\Entity\Ticket;
 
 class PortfolioController extends Controller
 {
@@ -62,6 +65,24 @@ class PortfolioController extends Controller
         $em->flush();
         return $this->redirectToRoute("portfolios_afficher");
 
+    }
+
+
+    public function myPointsAction(){
+
+        $user=$this->getDoctrine()->getRepository('UserBundle:User')->find($this->get('security.token_storage')->getToken()->getUser());
+
+        $portfolio=$this->getDoctrine()->getRepository(Portfolio::class)->findBy(['id' =>$user->getPortfolio()])[0];
+
+        $tickets=$this->getDoctrine()->getRepository(Ticket::class)->findBy(['portfolio' =>$portfolio->getId()]);
+        $total=0;
+        foreach (
+            $tickets as $t
+        )
+        {
+            $total+=$t->getMontant();
+        }
+        return $this->render('@Points/Ticket/affichageTicketUser.html.twig', array('tab' => $tickets,'total'=>$total));
     }
 
 

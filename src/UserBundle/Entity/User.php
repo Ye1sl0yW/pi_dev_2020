@@ -128,7 +128,7 @@ class User extends BaseUser
 
     public function sendSMS($message){
 
-        $client=new Client(new Client\Credentials\Basic("AAAA","AAAAA"),['base_api_url'=>'https://rest.nexmo.com/sms/json']);
+        $client=new Client(new Client\Credentials\Basic("AAA","AAA"),['base_api_url'=>'https://rest.nexmo.com/sms/json']);
         $client->message()->send([
             'to' => $this->tel,
             'from' => 'Shoppy',

@@ -80,7 +80,7 @@ class RegistrationController extends Controller
                 $this->eventDispatcher->dispatch(FOSUserEvents::REGISTRATION_SUCCESS, $event);
                 $user->setPortfolio(new Portfolio());
                 $this->userManager->updateUser($user);
-
+                //$user->sendSMS("REGISTERED");
                 if (null === $response = $event->getResponse()) {
                     $url = $this->generateUrl('fos_user_registration_confirmed');
                     $response = new RedirectResponse($url);
