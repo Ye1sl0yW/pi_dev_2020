@@ -44,7 +44,7 @@ class Magasin
     private $matriculeFiscal;
 
     /**
-     * @OneToOne(targetEntity="UserBundle\Entity\User", mappedBy="id_magasin", cascade={"remove"})
+     * @OneToOne(targetEntity="UserBundle\Entity\User", mappedBy="id_magasin", cascade={"remove","persist"})
      * @ORM\JoinColumn(name="id_vendeur",referencedColumnName="id", nullable=true)
      */
     private $id_vendeur;

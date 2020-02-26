@@ -105,8 +105,14 @@ class MagasinService
     public function createDefaultMagasin($id_user)
     {
         $mg = new Magasin();
+        $mg->setIdVendeur($id_user);
+        $mg->setNom("Magasin");
         $mg->setTailleStock(0);
         $mg->setMatriculeFiscal(0);
+
+        $this->em->persist($mg);
+        $this->em->flush();
+
         return $mg;
     }
 
