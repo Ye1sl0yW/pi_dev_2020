@@ -86,7 +86,7 @@ class MagasinService
     public function addManager($id_maggasin, $id_vendeur)
     {
         $magasin= $this->em->getRepository(Magasin::class)->find($id_maggasin);
-        if($id_vendeur != null)
+        if($id_vendeur !== null)
         {
             $vendeur =  $this->em->getRepository(User::class)->find($id_vendeur);
             $vendeur->setIdMagasin($magasin);
