@@ -55,7 +55,7 @@ class User extends BaseUser
     private $portfolio;
 
     /**
-     * @OneToOne(targetEntity="MagasinBundle\Entity\Magasin", inversedBy="id_vendeur", cascade={"remove"})
+     * @OneToOne(targetEntity="MagasinBundle\Entity\Magasin", inversedBy="id_vendeur", cascade={"remove","persist"})
      * @ORM\JoinColumn(name="id_magasin",referencedColumnName="id", nullable=true)
      */
     protected $id_magasin;

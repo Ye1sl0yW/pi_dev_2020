@@ -45,6 +45,12 @@ class MagasinService
             $this->em->remove($o);
         }
 
+        $vendeur=$this->em->getRepository(User::class)->find($magasin);
+        if($vendeur !== null )
+        {
+            $this->em->remove($vendeur);
+        }
+
         $this->em->remove($magasin);
         $this->em->flush();
     }
