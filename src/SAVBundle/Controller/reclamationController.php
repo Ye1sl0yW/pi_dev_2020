@@ -22,6 +22,12 @@ class reclamationController extends Controller
         return $this->render('@SAV/reclamation/show.html.twig',array('f'=>$var));
     }
 
+    public function showFrontAction()
+    {
+        $var=$this->getDoctrine()->getManager()->getRepository(rec::class)->findAll();
+        return $this->render('@SAV/reclamation/home.html.twig',array('f'=>$var));
+    }
+
 
     public function createRecAction(Request $request)
     {
@@ -38,7 +44,7 @@ class reclamationController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($reclamation);
             $em->flush();
-            return $this->redirectToRoute('sav_Show_Reclamation');
+            return $this->redirectToRoute('sav_home_Reclamation');
 
 
 
@@ -85,6 +91,14 @@ class reclamationController extends Controller
         }
         return $this->render('@SAV/reclamation/add.html.twig',array('f' => $form->createView()));
 
+    }
+    public function rechercheReclamationAction(Request $request)
+    {
+        if($request->isMethod("POST"))
+        {
+            $reclamation = $this->getDoctrine()->getRepository(rec::class)->findBy(array('type' =>$request->get("typereclamation")));
+        return $this->render('@SAV/reclamation/home.html.twig',array('f' => $reclamation));
+        }
     }
 
 }

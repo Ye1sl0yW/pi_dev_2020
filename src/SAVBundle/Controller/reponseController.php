@@ -20,6 +20,11 @@ class reponseController extends Controller
         $var=$this->getDoctrine()->getManager()->getRepository(rep::class)->findBy(array('rec'=>$id));
         return $this->render('@SAV/reponse/show.html.twig',array('f'=>$var));
     }
+    public function showFrontAction($id)
+    {
+        $var=$this->getDoctrine()->getManager()->getRepository(rep::class)->findBy(array('rec'=>$id));
+        return $this->render('@SAV/reponse/showFront.html.twig',array('f'=>$var));
+    }
 
 
     public function createRepAction($id,Request $request)

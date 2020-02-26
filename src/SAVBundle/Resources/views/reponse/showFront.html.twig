@@ -1,0 +1,45 @@
+
+{% extends "/template/base.html.twig" %}
+
+{% block title %}
+    Offres Shoppy
+{% endblock title %}
+
+{% block list_title %}Liste des offres des magasins partenaires{% endblock list_title %}
+
+{% block body %}
+
+    <table>
+    <tr>
+        <th>ID</th>
+        <th>Nom responsable</th>
+        <th>Contenu de la reponse</th>
+        <th>Date de la reponse</th>
+
+
+        <th>Actions</th>
+    </tr>
+    </thead>
+    {% for f in f  %}
+        <tr>
+            <td>{{ f.id }}</td>
+            <td>{{ f.nomResponsable }}</td>
+            <td>{{f.repo}}</td>
+            <td>{{f.dateRep|date}}</td>
+            <td>
+                <a href="{{path('sav_Delete_Reponse',{'id':f.id})}}">
+                    <i class="far fa-trash-alt text-danger"></i>
+                    <a/>
+                    <a href="{{path('sav_Edit_Reponse',{'id':f.id})}}">
+                        <i class="far fa-edit text-info mr-1"></i>
+                        <a/>
+            </td>
+        </tr>
+    {% endfor %}
+        </table>
+
+
+{% endblock body %}
+{% block buttons %}
+
+{% endblock buttons %}

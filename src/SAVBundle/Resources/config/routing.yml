@@ -14,7 +14,9 @@ sav_Edit_Reclamation:
 sav_Delete_Reclamation:
     path:     /delete/reclamation/{id}
     defaults: { _controller: SAVBundle:reclamation:deleteRec }
-
+sav_Find_Reclamation:
+    path:     /find
+    defaults: { _controller: SAVBundle:reclamation:rechercheReclamation }
 
 sav_Add_Reponse:
     path:     /add/reponse/{id}
@@ -28,3 +30,16 @@ sav_Edit_Reponse:
 sav_Delete_Reponse:
     path:     /delete/reponse/{id}
     defaults: { _controller: SAVBundle:reponse:deleteRep }
+
+
+
+
+
+
+
+sav_home_Reclamation:
+    path:     /showFront/reclamation
+    defaults: { _controller: SAVBundle:reclamation:showFront }
+sav_ShowFront_Reponse:
+    path:     /showFront/reponse/{id}
+    defaults: { _controller: SAVBundle:reponse:showFront }

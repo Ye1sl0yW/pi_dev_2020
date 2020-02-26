@@ -3,6 +3,8 @@
 namespace SAVBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+
 
 /**
  * rep
@@ -25,6 +27,7 @@ class rep
      * @var string
      *
      * @ORM\Column(name="nomResponsable", type="string", length=255)
+     * @Assert\NotBlank
      */
     private $nomResponsable;
 
@@ -32,6 +35,8 @@ class rep
      * @var string
      *
      * @ORM\Column(name="repo", type="string", length=255)
+     * @Assert\NotBlank
+     * @Assert\Length(min=5)
      */
     private $repo;
     /**
@@ -43,6 +48,7 @@ class rep
 
     /**
      * @return \DateTime
+     * @Assert\GreaterThanOrEqual("today")
      */
     public function getDateRep()
     {

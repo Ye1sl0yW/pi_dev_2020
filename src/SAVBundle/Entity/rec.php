@@ -3,6 +3,7 @@
 namespace SAVBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * rec
@@ -25,6 +26,7 @@ class rec
      * @var string
      *
      * @ORM\Column(name="type", type="string", length=255)
+     *
      */
     private $type;
 
@@ -32,6 +34,7 @@ class rec
      * @var string
      *
      * @ORM\Column(name="nomClient", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $nomClient;
 
@@ -39,6 +42,8 @@ class rec
      * @var string
      *
      * @ORM\Column(name="email", type="string", length=255)
+     *@Assert\Email(message="format email")
+     * @Assert\NotBlank
      */
     private $email;
 
@@ -46,6 +51,8 @@ class rec
      * @var string
      *
      * @ORM\Column(name="contenu", type="string", length=255)
+     * @Assert\NotBlank
+     * @Assert\Length(min=10)
      */
     private $contenu;
 
@@ -53,6 +60,7 @@ class rec
      * @var \DateTime
      *
      * @ORM\Column(name="date", type="date")
+     * @Assert\GreaterThanOrEqual("today")
      */
     private $date;
 
