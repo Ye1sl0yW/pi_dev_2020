@@ -1,0 +1,65 @@
+{#{% extends '/dashboard/pro/dashboard-list-base.html.twig' %}#}
+{% extends '/template/base.html.twig' %}
+ {% block title %}
+     s
+ {% endblock %}
+
+ {% block body %}
+
+
+
+<br><br><br>
+     
+
+     {% if lcs | length > 0 %}
+         <table border="1"width="70%" class="table mb-0">
+
+         <thead>
+         <tr>
+             <th>num ligne cmd</th>
+             <th>total ligne</th>
+             <th>id produit correspendant</th>
+             <th>qte</th>
+
+         </tr>
+         </thead>
+         <tbody>
+
+         {% for el in lcs.oussema  %}
+
+             <tr>
+                 <td>
+
+                     <p class="d-inline-block align-middle mb-0">
+                         <a href="" class="d-inline-block align-middle mb-0 product-name">{{ el.id}}</a>
+                         <br>
+
+                     </p>
+                 </td>
+
+                 <td>
+
+
+                     <br>
+                     <span class="text-muted font-13">{{ el.totalLigne}}</span>
+                 </td>
+
+                 <td>
+
+
+                     <br>
+                     <span class="text-muted font-13">{{ el.getIdProduit().getId()}}</span>                         </td>
+                 <td>  {{ el.qte}}</td>
+
+
+             </tr>
+
+         {% endfor %}
+     {% endif %}
+
+     </tbody>
+     </table>
+
+
+
+ {% endblock body %}

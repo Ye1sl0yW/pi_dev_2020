@@ -43,3 +43,6 @@ call:
 findLC:
     path:     /findLC/{id}
     defaults: { _controller: PanierBundle:Panier:findLC }
+findC:
+    path:     /findC/{id}
+    defaults: { _controller: PanierBundle:Panier:HistoryCmd }

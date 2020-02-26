@@ -49,7 +49,8 @@ achat effectué  avec successe de user  {{ cmds.id.id}} {{ cmds.id.nom}} {{ cmds
                              <br>
                          <span class="text-muted font-13">{{ el.getQteTot()}}</span>                         </td>
                          <td>  {{ el.DateCreation|date('Y-m-d')}}</td>
-                         <td><a  href={{ path('findLC',{'id':el.id}) }}><button>LIGNE CMD</button></a></td>
+                         <td><a  href={{ path('findLC',{'id':el.id}) }}><button>LIGNE CMD</button></a>
+                             <a><button>Note</button></a></td>
 
                      </tr>
 

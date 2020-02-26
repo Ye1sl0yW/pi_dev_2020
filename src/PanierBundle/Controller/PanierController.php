@@ -454,7 +454,7 @@ $lc->setTotalLigne($CartWithData['quantite']* $p->getPrix());
             }*/
 
         $session->clear();
-        $cmdRepository = $em->getRepository('PanierBundle:Commande');
+      /*  $cmdRepository = $em->getRepository('PanierBundle:Commande');
         $cmds=[
             'c'=>$cmdRepository->findBy(['id_Acheteur' =>$order->getIdAcheteur()]),
             'id'=>$order->getIdAcheteur()
@@ -465,14 +465,53 @@ $lc->setTotalLigne($CartWithData['quantite']* $p->getPrix());
         $lcs=[
             'oussema'=>$lcRepository->findBy(['id_cmd' =>$order->getId()])
         ];
-        
+        */
        // exit(VarDumper::dump($lcs));
        //exit(VarDumper::dump($cmds));
 
-        return $this->render('@Panier/Panier/Creation.html.twig',array('cmds'=>$cmds,'lcs'=>$lcs));
-
+        return $this->render('@Panier/Panier/Success.html.twig',array('order'=>$order));
+/*empty($lcs);
+empty($cmds);*/
 
     }
+
+
+public function HistoryCmdAction($id){
+
+    $em=$this->getDoctrine()->getManager();
+    $cmdRepository = $em->getRepository('PanierBundle:Commande');
+    $order= $cmdRepository->find($id);
+   // exit(VarDumper::dump($order));
+    $cmds=[
+        'c'=>$cmdRepository->findBy(['id_Acheteur' =>$order->getIdAcheteur()]),
+        'id'=>$order->getIdAcheteur()
+    ];
+
+    $lcRepository = $em->getRepository('PanierBundle:LigneCmd');
+
+    $lcs=[
+        'oussema'=>$lcRepository->findBy(['id_cmd' =>$order->getId()])
+    ];
+    return $this->render('@Panier/Panier/Creation.html.twig',array('cmds'=>$cmds,'lcs'=>$lcs));
+}
+
+
+    public function findLCAction($id){
+
+        $em=$this->getDoctrine()->getManager();
+        $cmdRepository = $em->getRepository('PanierBundle:Commande');
+        $order= $cmdRepository->find($id);
+
+        $lcRepository = $em->getRepository('PanierBundle:LigneCmd');
+
+        $lcs=[
+            'oussema'=>$lcRepository->findBy(['id_cmd' =>$order->getId()])
+        ];
+        return $this->render('@Panier/Panier/lc.html.twig',array('lcs'=>$lcs));
+    }
+
+
+
 
 
 
@@ -512,6 +551,13 @@ return new Response(
 
 
 
+
+
+
+
+
+
+
     public function callAction()
     {
         //returns an instance of Vresh\TwilioBundle\Service\TwilioWrapper
@@ -528,9 +574,10 @@ return new Response(
 
         return new Response($message->sid);
     }
-    public function findLCAction($id){
 
-    }
+
+
+
 
 }
 

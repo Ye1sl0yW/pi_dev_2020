@@ -1,0 +1,13 @@
+{% extends '/template/base.html.twig' %}
+ {% block title %}
+     Portail produits
+ {% endblock %}
+
+ {% block body %}
+succes achat avec success
+{{ order.id }}
+     <td><a  href={{ path('findC',{'id':order.id}) }}><button>find liste commandes</button></a></td>
+     <td><a ><button>note</button></a></td>
+
+ {% endblock body %}
+
