@@ -7,8 +7,9 @@ security:
 
     role_hierarchy:
         ROLE_ACHETEUR:       ROLE_ACHETEUR
-        ROLE_VENDEUR:       ROLE_VENDEUR
-        ROLE_SUPER_ADMIN: ROLE_ADMIN
+        ROLE_VENDEUR:       [ROLE_VENDEUR, ROLE_ACHETEUR]
+        ROLE_ADMIN:       [ROLE_ADMIN, ROLE_VENDEUR, ROLE_ACHETEUR]
+        ROLE_SUPER_ADMIN:       [ROLE_ADMIN, ROLE_VENDEUR, ROLE_ACHETEUR]
 
     providers:
         fos_userbundle:
@@ -30,6 +31,6 @@ security:
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/, role: ROLE_ADMIN }
-        - { path: ^/seller/, role: ROLE_VENDEUR }
+        - { path: ^/seller/, role: ROLE_VENDEUR}
         - { path: ^/buyer/, role: ROLE_ACHETEUR }
 
