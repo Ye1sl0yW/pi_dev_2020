@@ -10,14 +10,15 @@
     <h3>Bienvenue à la page de gestion de {{ data.nom }}</h3>
     <h5>Détails du magasin:</h5>
 
-    <table>
+    <table >
     <thead>
     <tr>
         <th>Nom</th>
         <th></th>
         <th>Taille du stock</th>
-        <th></th>
-        <th>matricule fiscal</th>
+        <th>Offres en cours</th>
+        <th>Offres planifiées</th>
+        <th>Matricule fiscal</th>
     </tr>
     </thead>
 
@@ -25,7 +26,8 @@
             <td>{{data.nom}}</td>
             <td></td>
             <td>{{ data.tailleStock}}</td>
-            <td></td>
+            <td>{{ offres }}</td>
+            <td>{{ offres_futures }}</td>
             <td>{{ data.matriculeFiscal}}</td>
         </tr>
         </table>

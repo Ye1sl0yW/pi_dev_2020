@@ -191,6 +191,38 @@ class MagasinService
         return 0;
     }
 
+    public function getNumberOfCurrentOffersByShop($shop_id)
+    {
+        $shop = $this->em->getRepository(Magasin::class)->find($shop_id);
+        $date = date('Y-m-d H:i:s');
+        $count = 0;
+        $offres = $this->em->getRepository(Offre::class)->findBy(array('id_magasin'=>$shop));
+        foreach($offres as $o)
+        {
+            if(($o->getDateDebut()< $date) && ($o->getDateFin()> $date   ))
+            {
+                $count++;
+            }
+        }
+        return $count;
+    }
+
+    public function getNumberOfOncomingOffersByShop($shop_id)
+    {
+        $shop = $this->em->getRepository(Magasin::class)->find($shop_id);
+        $date = date('Y-m-d H:i:s');
+        $count = 0;
+        $offres = $this->em->getRepository(Offre::class)->findBy(array('id_magasin'=>$shop));
+        foreach($offres as $o)
+        {
+            if($o->getDateDebut()> $date)
+            {
+                $count++;
+            }
+        }
+        return $count;
+    }
+
 
     /*
      * Statistics Methods

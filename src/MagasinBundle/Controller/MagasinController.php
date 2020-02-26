@@ -28,6 +28,8 @@ class MagasinController extends Controller
     public function detailsAction($id)
     {
         return $this->render('@Magasin/Magasin/details.html.twig',array(
+            'offres'=>$this->get(MagasinService::class)->getNumberOfCurrentOffersByShop($id),
+            'offres_futures'=>$this->get(MagasinService::class)->getNumberOfOncomingOffersByShop($id),
             'data'=>$this->get(MagasinService::class)->refreshMagasin($id),
             'piechart'=>$this->get(MagasinService::class)->pieChartOfNumberOfProductsByCategory($id),
             'piechart2'=>$this->get(MagasinService::class)->pieChartOfNumberOfArticlesByCategory($id)));
