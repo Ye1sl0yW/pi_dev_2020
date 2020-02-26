@@ -39,7 +39,7 @@ class reponseController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($reclamation);
             $em->flush();
-            return $this->redirectToRoute('sav_Show_Reponse');
+            return $this->redirectToRoute('sav_Show_Reponse',array('id'=>$id));
 
 
 
@@ -53,7 +53,7 @@ class reponseController extends Controller
         $reclamation=$this->getDoctrine()->getManager()->getRepository(rep::class)->find($id);
         $em->remove($reclamation);
         $em->flush();
-        return $this->redirectToRoute("sav_Show_Reponse");
+        return $this->redirectToRoute("sav_Show_Reponse",array('id'=>$id));
     }
 
 
