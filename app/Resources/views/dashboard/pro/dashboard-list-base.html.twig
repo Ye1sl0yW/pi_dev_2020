@@ -207,35 +207,21 @@
                                 <li class="nav-item"><a class="nav-link" href="#"><i class="dripicons-document"></i>Reports</a></li>
                             </ul>
                         </div><!-- end Analytic -->
-                        
-                        <div id="MetricaProject" class="main-icon-menu-pane">
-                            <div class="title-box">
-                                <h6 class="menu-title">Projects</h6>
-                            </div>
-                            <ul class="nav">
-                                <li class="nav-item"><a class="nav-link" href="../projects/projects-index.html"><i class="dripicons-view-thumb"></i>Dashboard</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../projects/projects-clients.html"><i class="dripicons-user-id"></i>Clients</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../projects/projects-calendar.html"><i class="dripicons-calendar"></i>Calendar</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../projects/projects-team.html"><i class="dripicons-trophy"></i>Team</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../projects/projects-project.html"><i class="dripicons-jewel"></i>Project</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../projects/projects-task.html"><i class="dripicons-checklist"></i>Task</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../projects/projects-kanban-board.html"><i class="dripicons-move"></i>Kanban Board</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../projects/projects-invoice.html"><i class="dripicons-document"></i>Invoice</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../projects/projects-chat.html"><i class="dripicons-conversation"></i>Chat</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../projects/projects-users.html"><i class="dripicons-user-group"></i>Users</a></li>
-                            </ul>
-                        </div><!-- end  Project-->
+
+
                         <div id="MetricaEcommerce" class="main-icon-menu-pane">
                             <div class="title-box">
                                 <h6 class="menu-title">Ecommerce</h6>
                             </div>
                             <ul class="nav">
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="dripicons-device-desktop"></i>WIP - Dashboard</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{path('produit_homepage')}}"><i class="dripicons-view-apps"></i>Liste des produits</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{ path('categorie_homepage') }}"><i class="dripicons-list"></i>Liste des catégories</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{ path('magasin_homepage') }}"><i class="dripicons-list"></i>Liste des magasins</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{ path('offre_homepage') }}"><i class="dripicons-list"></i>Liste des offres</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ path('sav_Show_Reclamation') }}"><i class="dripicons-list"></i>Liste des reclamations</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ path('portfolios_afficher') }}"><i class="dripicons-list"></i>Liste des portfolios</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i class="dripicons-list"></i>Messagerie OUSSAMA</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i class="dripicons-list"></i>notes OUSSAMA</a></li>
+
 
                             </ul>
                         </div><!-- end Ecommerce -->
@@ -244,13 +230,11 @@
                                 <h6 class="menu-title">CRM</h6>
                             </div>
                             <ul class="nav">
-                                <li class="nav-item"><a class="nav-link" href="../crm/crm-index.html"><i class="dripicons-monitor"></i>Dashboard</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../crm/crm-contacts.html"><i class="dripicons-user-id"></i>Contacts</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../crm/crm-opportunities.html"><i class="dripicons-lightbulb"></i>Opportunities</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../crm/crm-leads.html"><i class="dripicons-toggles"></i>Leads</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../crm/crm-customers.html"><i class="dripicons-user-group"></i>Customers</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ path('sav_Show_Reclamation') }}"><i class="dripicons-list"></i>Liste des reclamations</a></li>
                             </ul>
                         </div><!-- end CRM -->
+
+
                         <div id="MetricaOthers" class="main-icon-menu-pane">
                             <div class="title-box">
                                 <h6 class="menu-title">Others</h6>
@@ -381,12 +365,10 @@
                                 <h6 class="menu-title">Authentication</h6>
                             </div>
                             <ul class="nav">
-                                <li class="nav-item"><a class="nav-link" href="../authentication/auth-login.html"><i class="dripicons-enter"></i>Log in</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../authentication/auth-register.html"><i class="dripicons-pencil"></i>Register</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../authentication/auth-recover-pw.html"><i class="dripicons-clockwise"></i>Recover Password</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../authentication/auth-lock-screen.html"><i class="dripicons-lock"></i>Lock Screen</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../authentication/auth-404.html"><i class="dripicons-warning"></i>Error 404</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../authentication/auth-500.html"><i class="dripicons-wrong"></i>Error 500</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{path('fos_user_security_login')}}"><i class="dripicons-enter"></i>Log in</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{path('fos_user_security_logout')}}"><i class="dripicons-enter"></i>Log out</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ path('fos_user_registration_register') }}"><i class="dripicons-pencil"></i>Register</a></li>
+
                             </ul>
                         </div><!-- end Authentication-->
                     </div><!--end menu-body-->
