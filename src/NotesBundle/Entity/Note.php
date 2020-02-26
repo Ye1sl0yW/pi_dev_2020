@@ -21,7 +21,7 @@ class Note
     private $id;
     /**
      * @ORM\ManyToOne(targetEntity="UserBundle\Entity\User")
-     * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
+     * @ORM\JoinColumn(name="user_id",referencedColumnName="id",nullable=true)
      */
     private $user_id;
     /**
@@ -30,12 +30,12 @@ class Note
     private $type;
     /**
      * @ORM\ManyToOne(targetEntity="ProduitBundle\Entity\Produit")
-     * @ORM\JoinColumn(name="produit_id",referencedColumnName="id")
+     * @ORM\JoinColumn(name="produit_id",referencedColumnName="id",nullable=true)
      */
     private $produit_id;
     /**
      * @ORM\ManyToOne(targetEntity="MagasinBundle\Entity\Magasin")
-     * @ORM\JoinColumn(name="magasin_id",referencedColumnName="id")
+     * @ORM\JoinColumn(name="magasin_id",referencedColumnName="id",nullable=true)
      */
     private $magasin_id;
     /**

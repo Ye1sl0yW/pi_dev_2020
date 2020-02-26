@@ -1,3 +1,6 @@
 notes_homepage:
     path:     /
     defaults: { _controller: NotesBundle:Default:index }
+ajout_note_produit:
+    path:   /produit/{id}
+    defaults: { _controller: NotesBundle:Notes:ajoutNoteProduit }
