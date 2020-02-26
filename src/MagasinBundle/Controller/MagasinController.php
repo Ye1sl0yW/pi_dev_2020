@@ -84,7 +84,7 @@ class MagasinController extends Controller
 
             return $this->redirectToRoute('magasin_homepage');
         }
-        return $this->render('@Magasin/Magasin/form_magasin.html.twig',array('f' => $form->createView()));
+        return $this->render('@Magasin/Magasin/form_magasin_update.html.twig',array('f' => $form->createView() ,'elem' => $magasin));
     }
 
     public function showProductsOfThisShopAction($id)
