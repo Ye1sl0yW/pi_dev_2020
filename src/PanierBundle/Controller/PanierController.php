@@ -519,13 +519,24 @@ public function HistoryCmdAction($id){
 
             $em = $this->getDoctrine()->getManager();
             $cmdRepository = $em->getRepository('PanierBundle:Commande');
+        $cmdR = $em->getRepository('UserBundle:User');
+
+        $lcRepository = $em->getRepository('PanierBundle:LigneCmd');
+
+
+
+
+
         $order= $cmdRepository->find($id);
 $b=$order->getIdAcheteur();
+        $c= $cmdR->find($b);
         $vars= $this->renderView(
                 '@Panier/Panier/pdf.html.twig',
                ['name'=>'omarhachicha' ,
                   'a'=> $order,
-                   'b'=> $b
+                   'b'=> $b,
+                   'c'=>$c,
+                   'lcs'=>$lcRepository->findBy(['id_cmd' =>$order->getId()])
                ]
         );
 

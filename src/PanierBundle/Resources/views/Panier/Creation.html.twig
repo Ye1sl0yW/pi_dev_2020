@@ -48,7 +48,7 @@ achat effectué  avec successe de user  {{ cmds.id.id}} {{ cmds.id.nom}} {{ cmds
 
                              <br>
                          <span class="text-muted font-13">{{ el.getQteTot()}}</span>                         </td>
-                         <td>  {{ el.DateCreation|date('Y-m-d')}}</td>
+                         <td>  {{ el.DateCreation|date('Y-m-d H:i:s')}}</td>
                          <td><a  href={{ path('findLC',{'id':el.id}) }}><button>LIGNE CMD</button></a>
                              <a href="{{ path('cart_pdf',{'id':el.id}) }}" class="remove" title="Remove this item"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
                              <a><button>Note</button></a></td>
