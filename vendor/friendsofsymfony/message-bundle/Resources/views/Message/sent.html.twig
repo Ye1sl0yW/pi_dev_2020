@@ -1,5 +1,5 @@
 {% extends '@FOSMessage/layout.html.twig' %}
-
+{% block table %}
 {% block fos_message_content %}
 
 <h2>{% trans from 'FOSMessageBundle' %}sent{% endtrans %}</h2>
@@ -7,3 +7,4 @@
 {% include '@FOSMessage/Message/threads_list.html.twig' with {'threads': threads} %}
 
 {% endblock %}
+{% endblock table %}

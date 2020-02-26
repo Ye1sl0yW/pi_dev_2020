@@ -1,21 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset={{ _charset }}" />
-        <title>{% trans from 'FOSMessageBundle' %}messenger{% endtrans %}</title>
-    </head>
+{% extends "/dashboard/pro/dashboard-list-base.html.twig" %}
 
-    <body>
+{% block title %}
+    Magasins Shoppy
+{% endblock title %}
 
-        <h1>{% trans from 'FOSMessageBundle' %}messenger{% endtrans %}</h1>
-
-        <ul>
+{% block list_title %}Messagerie{% endblock list_title %}
+{% block table %}{% endblock table %}
+{% block buttons %}
+<ul>
             <li><a href="{{ url('fos_message_inbox') }}">{% trans from 'FOSMessageBundle' %}inbox{% endtrans %}</a></li>
             <li><a href="{{ url('fos_message_sent') }}">{% trans from 'FOSMessageBundle' %}sent{% endtrans %}</a></li>
             <li><a href="{{ url('fos_message_deleted') }}">{% trans from 'FOSMessageBundle' %}deleted{% endtrans %}</a></li>
         </ul>
+{% endblock buttons %}
 
-        {% block fos_message_content %}{% endblock %}
 
-    </body>
-</html>
+
+
