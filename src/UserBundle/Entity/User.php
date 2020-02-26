@@ -46,7 +46,7 @@ class User extends BaseUser
     private $tel;
 
     /**
-     * @ORM\OneToOne(targetEntity="PointsBundle\Entity\Portfolio",mappedBy="user_id")
+     * @ORM\OneToOne(targetEntity="PointsBundle\Entity\Portfolio",mappedBy="user_id",cascade={"persist"})
      * @ORM\JoinColumn(name="portfolio_id",referencedColumnName="id")
      *
      */
