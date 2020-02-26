@@ -28,7 +28,7 @@ class Portfolio
 
 
     /**
-     * @ORM\OneToMany(targetEntity="PointsBundle\Entity\Ticket",mappedBy="portfolio")
+     * @ORM\OneToMany(targetEntity="PointsBundle\Entity\Ticket",mappedBy="portfolio",cascade={"remove","persist"})
      * @ORM\JoinColumn(name="portfolio_id",referencedColumnName="id")
      */
     private $tickets;
