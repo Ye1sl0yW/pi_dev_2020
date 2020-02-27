@@ -1,0 +1,17 @@
+{% extends "/dashboard/pro/dashboard-list-base.html.twig" %}
+{% block title %}
+    Magasins Shoppy
+{% endblock title %}
+{% block list_title %}Notes du Magasin{% endblock list_title %}
+{% block table %}
+
+{% if tab == NULL %}
+    <h3>Pas de Notes</h3>
+{% else %}
+
+
+    <h1>Moyenne :  {{ total  }} / 100 </h1>
+
+    {% endif %}
+{% endblock table %}
+

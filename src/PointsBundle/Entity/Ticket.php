@@ -28,8 +28,8 @@ class Ticket
     private $date_exp;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Portfolio")
-     * @ORM\JoinColumn(name="portfolio_id",referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="Portfolio",cascade={"ALL"})
+     * @ORM\JoinColumn(name="portfolio_id",referencedColumnName="id",onDelete="CASCADE")
      */
 
     private $portfolio;

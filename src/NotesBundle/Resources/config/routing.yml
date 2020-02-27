@@ -1,6 +1,13 @@
 notes_homepage:
-    path:     /
+    path:     /index
     defaults: { _controller: NotesBundle:Default:index }
 ajout_note_produit:
     path:   /produit/{id}
     defaults: { _controller: NotesBundle:Notes:ajoutNoteProduit }
+ajout_magasin_produit:
+    path:   /magasin/{id}
+    defaults: { _controller: NotesBundle:Notes:ajoutNoteMagasin }
+
+moyenne_notes:
+    path:   /moyenne
+    defaults: { _controller: NotesBundle:Notes:MoyenneMagasin }

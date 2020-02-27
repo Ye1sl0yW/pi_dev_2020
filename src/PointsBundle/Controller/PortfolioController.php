@@ -61,7 +61,11 @@ class PortfolioController extends Controller
 
         $em=$this->getDoctrine()->getManager();
         $portfolio=$this->getDoctrine()->getRepository(Portfolio::class)->find($id);
-        $em->remove($portfolio);
+        $tickets=$this->getDoctrine()->getRepository(Ticket::class)->findBy(['portfolio' =>$portfolio->getId()]);
+        foreach($tickets as $p)
+        {
+            $em->remove($p);
+        }
         $em->flush();
         return $this->redirectToRoute("portfolios_afficher");
 
